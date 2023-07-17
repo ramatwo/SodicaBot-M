@@ -10,8 +10,7 @@ var url = 'https://www.youtube.com/watch?v=' + videoId
 let vide = `https://yt.btch.bz/download?URL=${url}&videoName=video`
 let web = `https://yt.btch.bz/downloadAudio?URL=${url}&videoName=video`
 var tmb = thumbnail
-//let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytplay?apikey=${lolkeysapi}&query=${title}`)   
-let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkeysapi}&url=${url}`)    
+let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytplay?apikey=${lolkeysapi}&query=${title}`)   
 let lolh = await lolhuman.json()
 let n = lolh.result.title || 'error'
 var captionvid = `*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*
@@ -50,25 +49,16 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}})
    
-//await conn.sendMessage(m.chat, { audio: { url: lolh.result.audio.link }, mimetype: 'audio/mpeg', contextInfo: {
-//externalAdReply: {
-//title: title,
-//body: "",
-//thumbnailUrl: tmb,
-//sourceUrl: web,
-//mediaType: 1,
-//showAdAttribution: true,
-//renderLargerThumbnail: true
-//}}} , { quoted: m })
-
-q = '128kbps'
-v = yt_play[0].url
-yt = await youtubedl(v).catch(async _ => await youtubedlv2(v)).catch(async _ => await youtubedlv3(v))
-dl_url = await yt.audio[q].download()
-ttl = await yt.title
-size = await yt.audio[q].fileSizeH
-await conn.sendFile(m.chat, dl_url, ttl + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
-   
+await conn.sendMessage(m.chat, { audio: { url: lolh.result.audio.link }, mimetype: 'audio/mpeg', contextInfo: {
+externalAdReply: {
+title: title,
+body: "",
+thumbnailUrl: tmb,
+sourceUrl: web,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}} , { quoted: m })   
 }
    
 if (command == 'play2') {
