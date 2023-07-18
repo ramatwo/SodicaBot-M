@@ -153,8 +153,8 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}mates | matemáticas | math_
 ┃🎡➺ _${usedPrefix}lanzar *cara* | *cruz*
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
-┃🎡➺ _${usedPrefix}tictactoe | ttt *sala*_
-┃🎡➺ _${usedPrefix}deltictactoe | delttt_
+┃🎡➺ _${usedPrefix}tictactoe | ttt | tateti *sala*_
+┃🎡➺ _${usedPrefix}deltictactoe | deltateti_
 ┃🎡➺ _${usedPrefix}topgays_
 ┃🎡➺ _${usedPrefix}topotakus_
 ┃🎡➺ _${usedPrefix}toppajer@s_
