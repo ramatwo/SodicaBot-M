@@ -1,4 +1,4 @@
-/* hecho por https://github.com/GataNina-Li/DIEGO-OFC*/
+/* hecho por https://github.com/ramardo/DIEGO-OFC*/
 
 import MessageType from '@adiwajshing/baileys'
 

@@ -1,4 +1,4 @@
-// by https://github.com/elrebelde21 & https://github.com/GataNina-Li
+// by https://github.com/elrebelde21 & https://github.com/ramardo
 
 import { randomBytes } from 'crypto'
 
