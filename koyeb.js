@@ -7,9 +7,9 @@ RUN sudo dnf -y update &&\
 
 RUN git clone https://github.com/
 
-WORKDIR /root/GataBot-MD
+WORKDIR /root/SodicaBot-MD
 
-COPY ./root/GataBot-MD
+COPY ./root/SodicaBot-MD
 
 RUN yarn install
 

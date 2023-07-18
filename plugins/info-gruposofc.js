@@ -48,7 +48,7 @@ await conn.sendFile(m.chat, media, 'gata.mp4', str, fkontak)}
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m,)}*/
 
-handler.command = /^linkgc|grupos|gruposgatabot|gatabotgrupos|gruposdegatabot|groupofc|gruposgb|grupogb|groupgb$/i
+handler.command = /^linkgc|grupos|gruposSodicaBot|SodicaBotgrupos|gruposdeSodicaBot|groupofc|gruposgb|grupogb|groupgb$/i
 handler.exp = 33
 
 export default handler

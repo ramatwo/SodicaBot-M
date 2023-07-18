@@ -90,7 +90,7 @@ loadChatgptDB();
 
 /*------------------------------------------------*/
 
-global.authFile = `GataBotSession`
+global.authFile = `SodicaBotSession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = MessageRetryMap => { }
 let { version } = await fetchLatestBaileysVersion();
@@ -105,11 +105,11 @@ getMessage: async (key) => {
 if (store) {
 const msg = await store.loadMessage(key.remoteJid, key.id)
 return msg.message || undefined }
-return { conversation: "hello, i'm GataBot-MD" }},   
+return { conversation: "hello, i'm SodicaBot-MD" }},   
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['GataBot-MD','Edge','1.0.0'],
+browser: ['SodicaBot-MD','Edge','1.0.0'],
 version   
 }       
        
@@ -117,7 +117,7 @@ version
 /*msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['GataBot-MD','Edge','107.0.1418.26'],
+browser: ['SodicaBot-MD','Edge','107.0.1418.26'],
 version   
 }*/
 
@@ -143,13 +143,13 @@ return false })}
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./GataBotSession")
+let directorio = readdirSync("./SodicaBotSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') || file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./GataBotSession/${files}`)
+unlinkSync(`./SodicaBotSession/${files}`)
 })
 } 
 
@@ -178,7 +178,7 @@ console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
-const directories = ['./GataBotSession/', './GataJadiBot/']
+const directories = ['./SodicaBotSession/', './GataJadiBot/']
 const oneHourAgo = Date.now() - (1000 * 60 * 30) //30 min 
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {

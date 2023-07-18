@@ -33,13 +33,13 @@ global.prems = ['5491162480909']
    
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
-//Agrega el Idioma que quieres que tenga GataBot-MD
-//Add the language you want GataBot-MD to have
+//Agrega el Idioma que quieres que tenga SodicaBot-MD
+//Add the language you want SodicaBot-MD to have
 //  es = Español         id = Bahasa Indonesia
 //  en = English         pt = Português 
 //  ar = عرب  
 
-global.lenguajeGB = es  //Idioma de GataBot, Ejemplo: es | en | pt...
+global.lenguajeGB = es  //Idioma de SodicaBot, Ejemplo: es | en | pt...
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -127,7 +127,7 @@ global.ig = 'https://www.instagram.com/sodica.crew'
 global.md = 'https://instagram.com/sodica.crew'
 global.fb = 'https://instagram.com/sodica.crew'
 
-global.nna = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //UPDATE GATABOT
+global.nna = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //UPDATE SodicaBot
 global.nna2 = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Help
 global.nn = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 1
 global.nnn = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 2
