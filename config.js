@@ -117,7 +117,7 @@ global.author = 'SodicaBot'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.4.9'
+global.vs = '1.5.0'
 global.vsJB = '2.0'
 
 global.gt = 'SodicaBot'
