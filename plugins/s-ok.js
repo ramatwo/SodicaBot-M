@@ -4,7 +4,7 @@ let handler = async(m, { conn }) => {
 if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
  
 let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+let nombre2 = 'Sodica Crew'
  
 const s = [
 'https://media.makeameme.org/created/uh-ok-5ca824.jpg',
