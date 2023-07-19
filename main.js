@@ -105,11 +105,11 @@ getMessage: async (key) => {
 if (store) {
 const msg = await store.loadMessage(key.remoteJid, key.id)
 return msg.message || undefined }
-return { conversation: "hello, i'm SodicaBot-MD" }},   
+return { conversation: "hello, i'm SodicaBot-M" }},   
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['SodicaBot-MD','Edge','1.0.0'],
+browser: ['SodicaBot-M','Edge','1.0.0'],
 version   
 }       
        
@@ -117,7 +117,7 @@ version
 /*msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['SodicaBot-MD','Edge','107.0.1418.26'],
+browser: ['SodicaBot-M','Edge','107.0.1418.26'],
 version   
 }*/
 
