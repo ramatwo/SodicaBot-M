@@ -77,7 +77,7 @@ ${readMore}
 • *${chats.length}* \`\`\`Chats Totales\`\`\`
 
 *${htjava} S E R V I D O R*
-*🟢 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
+*🟢 RAM Usada:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 RAM Libre:* ${format(freemem())}
 
 *💻 Plataforma :* \`\`\`${os.platform()}\`\`\`
