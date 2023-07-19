@@ -1,1 +1,1 @@
-> <b>🚀 VERSIÓN 1.5.0 (anterior 1.4.9)</b>
+> <b>🚀 VERSIÓN 1.5.1 (anterior 1.4.9)</b>

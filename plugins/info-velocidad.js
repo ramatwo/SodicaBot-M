@@ -73,7 +73,7 @@ ${muptime}
 ${readMore}
 *${htjava} C H A T S*
 • *${groupsIn.length}* \`\`\`Chats Privados\`\`\`
-• *${chats.length - groupsIn.length}* \`\`\`Grupos\`\`\`
+• *0${chats.length - groupsIn.length}*  \`\`\`Grupos\`\`\`
 • *${chats.length}* \`\`\`Chats Totales\`\`\`
 
 *${htjava} S E R V I D O R*
