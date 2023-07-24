@@ -1346,7 +1346,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
                         m.reply(+m.limit + lenguajeGB.smsCont8())
                 }
                  if (m.money)
-                        m.reply(+m.money + 'ℹ️ | Monedas usadas:')
+                        m.reply('ℹ️ '+m.money + ' monedas usadas.')
               
                 break
             }
