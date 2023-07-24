@@ -2,7 +2,7 @@ import axios from 'axios';
 let previousCommitSHA = '';
 let previousUpdatedAt = '';
 const owner = 'GataNina-Li';
-const repo = 'SodicaBot-MD';
+const repo = 'SodicaBot-M';
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   async function checkRepoUpdates() {
     try {

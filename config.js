@@ -33,8 +33,8 @@ global.prems = ['5491162480909']
    
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
-//Agrega el Idioma que quieres que tenga SodicaBot-MD
-//Add the language you want SodicaBot-MD to have
+//Agrega el Idioma que quieres que tenga SodicaBot-M
+//Add the language you want SodicaBot-M to have
 //  es = Español         id = Bahasa Indonesia
 //  en = English         pt = Português 
 //  ar = عرب  

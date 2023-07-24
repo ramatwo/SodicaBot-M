@@ -54,7 +54,7 @@ let old = performance.now()
   let speed = neww - old
 
 let info = `╭━━━━[ ${gt} ]━━━━━⬣
-┃➥ *CREADORA | CREATOR*
+┃➥ *CREADOR | CREATOR*
 ┃ღ *Sodica Crew*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *CONTACTO | CONTACT* 
@@ -98,7 +98,7 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', info, fkontak)
 /*let info = `
 ╭━━━━[ ${gt} ]━━━━━⬣
 ┃
-┃➥ *CREADORA | CREATOR*
+┃➥ *CREADOR | CREATOR*
 ┃ღ *Sodica Crew*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *CONTACTO | CONTACT* 

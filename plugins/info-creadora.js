@@ -74,7 +74,7 @@ const listMessage = {
         switch (type) {
           case 'nombre':
           await conn.reply(m.chat, `𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀𝙇 𝘽𝙊𝙏 : ${gt} 🐈`, fkontak,  m)
-         // conn.reply(m.chat, "Nombre del bot : SodicaBot-MD 🐈", m, { contextInfo: { mentionedJid: [nowner] }})
+         // conn.reply(m.chat, "Nombre del bot : SodicaBot-M 🐈", m, { contextInfo: { mentionedJid: [nowner] }})
             break
             case 'bio':
              await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', teksbio, fkontak)

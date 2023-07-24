@@ -478,7 +478,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}estado | heygata | status_
 ∘ _${usedPrefix}infogata | infobot_
 ∘ _${usedPrefix}instalarbot | installbot_
-∘ _${usedPrefix}creadora | owner_
+∘ _${usedPrefix}creador | owner_
 ∘ _${usedPrefix}velocidad | ping_
 ∘ _${usedPrefix}serbot | jadibot_
 ∘ _${usedPrefix}bots | listjadibots_

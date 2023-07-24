@@ -47,7 +47,7 @@ sourceUrl: web,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})
+}}} , { quoted: m })
    
 await conn.sendMessage(m.chat, { audio: { url: lolh.result.audio.link }, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
@@ -60,7 +60,6 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })   
 }
-   
 if (command == 'play2') {
 var pesan = await conn.sendMessage(m.chat, {
 text: captionvid,
@@ -73,18 +72,18 @@ sourceUrl: web,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}})   
+}}} , { quoted: m })
 await conn.sendMessage(m.chat, { video: { url: lolh.result.video.link }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╭━❰  ${wm}  ❱━⬣\n┃ 💜 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀\n┃ ${title}\n╰━━━━━❰ *𓃠 ${vs}* ❱━━━━⬣` }, { quoted: m })
-
-}} catch {
+}
+} catch (e) {
 conn.reply(m.chat, `*ERROR/FALLO SE INTENTADA DESCARGA SUS VIDEO POR EL OTRO SERVER, AGUARDE UN MOMENTO POR FAVOR*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | Sodica Crew',
-body: 'Super Bot WhatsApp',         
+title: 'SodicaBot',
+body: 'Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/ramardo/SodicaBot-M`}}})
   
-let res = await fetch("https://violetics.pw/api/media/youtube-play?apikey=beta&query="+text) 
+let res = await fetch(`https://api.lolhuman.xyz/api/ytplay?apikey=${lolkeysapi}&query=${title}`) 
 let json = await res.json()
 conn.sendFile(m.chat, json.result.url, 'error.mp4', `${wm}`, m)
 }}

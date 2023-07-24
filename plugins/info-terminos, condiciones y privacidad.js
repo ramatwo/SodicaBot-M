@@ -68,7 +68,7 @@ let username = conn.getName(who)
 //user.registered = false
 
 let Terminos = `
-*_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de SodicaBot-MD_*
+*_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de SodicaBot-M_*
 *_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
 
 
@@ -121,7 +121,7 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 *https://www.instagram.com/gata_dios*
 
 
-*DONAR A LA CREADORA EN ESTA CUENTA OFICIAL*
+*DONAR A LA CREADOR EN ESTA CUENTA OFICIAL*
 ~ _Si te Agrada y valoras el Trabajo que he realizado, puedes ayudarme en Donar para que pueda continuar en este Proyecto_
 *https://paypal.me/OficialGD*
 

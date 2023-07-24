@@ -109,7 +109,7 @@ ${readMore}
 ┃💫➺ _${usedPrefix}estado | heygata | status_
 ┃💫➺ _${usedPrefix}infogata | infobot_
 ┃💫➺ _${usedPrefix}instalarbot | installbot_
-┃💫➺ _${usedPrefix}creadora | owner_
+┃💫➺ _${usedPrefix}creador | owner_
 ┃💫➺ _${usedPrefix}velocidad | ping_
 ┃💫➺ _Bot_ 
 ┃💫➺ _términos y condiciones_

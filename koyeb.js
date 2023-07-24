@@ -7,9 +7,9 @@ RUN sudo dnf -y update &&\
 
 RUN git clone https://github.com/
 
-WORKDIR /root/SodicaBot-MD
+WORKDIR /root/SodicaBot-M
 
-COPY ./root/SodicaBot-MD
+COPY ./root/SodicaBot-M
 
 RUN yarn install
 
