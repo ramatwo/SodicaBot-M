@@ -32,7 +32,7 @@ let handler = async (m, { conn, participants, command, usedPrefix }) => {
     }} 
     handler.help = ['kick']
     handler.tags = ['group']
-    handler.command = /^(kick|cumear|acabar|echar|hechar|sacar|ban)$/i
+    handler.command = /^(kick|cumear|echar|hechar|sacar|ban)$/i
     handler.admin = handler.group = handler.botAdmin = true
     export default handler
     

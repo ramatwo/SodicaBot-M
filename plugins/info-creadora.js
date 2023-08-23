@@ -50,7 +50,7 @@ const sections = [
 	title: `–––––––·• APOYA AL BOT –––––––·•`,
 	rows: [
 	    {title: "💹 • DONAS", rowId: ".paypal"},
-	{title: "🤖 • INSTALARBOT", rowId: ".instalarbot"},
+	{title: "🤖 • INSTALARBOT", rowId: ".instalarsodicabott"},
 	{title: "🌟 • PREMIUM", rowId: ".pasepremium"},
 	]
   },

@@ -47,12 +47,12 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 }*/
 
 if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sem prefixo
-    conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
-➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐥𝐥𝐚𝐦𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
-➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
-➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
-➽❌ 𝐑𝐞𝐬𝐩𝐞𝐭𝐚 𝐥𝐨𝐬 𝐭𝐞𝐫𝐦𝐢𝐧𝐨𝐬 𝐲 𝐜𝐨𝐧𝐝𝐢𝐜𝐢𝐨𝐧𝐞𝐬
-*╰═┅ৡৢ͜͡✦═╡ Sodica Crew ╞═┅ৡৢ͜͡✦═╯*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+    conn.reply(m.chat, `╭───────────┐ 
+    │🚫| No spamear con intención de rascar seguidores 
+    │🚫| Flood 
+    │🚫| Gore/Porno no permitido 
+    │🚫| Crear stickers en el grupo de stickers 
+    ╰───────────── `, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 

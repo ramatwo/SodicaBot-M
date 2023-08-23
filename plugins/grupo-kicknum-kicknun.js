@@ -22,12 +22,12 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
       let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net'
       let users = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol))
       for (let user of users) {
-      let error = `@${user.split("@")[0]} 𝙔𝘼 𝙃𝘼 𝙎𝙄𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 𝙊 𝙃𝘼 𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝘼𝘿𝙊 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 :v`    
+      let error = `@${user.split("@")[0]} 𝙔𝘼 𝙃𝘼 𝙎𝙄𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 𝙊 𝙃𝘼 𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝘼𝘿𝙊 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊`    
       if (user !== ownerGroup + '@s.whatsapp.net' && user !== global.conn.user.jid && user !== global.owner + '@s.whatsapp.net' && user.startsWith(lol || lol) && user !== isSuperAdmin && isBotAdmin && bot.restrict) { 
-      await delay(2000)    
+      await delay(500)    
       let responseb = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
       if (responseb[0].status === "404") m.reply(error, m.chat, { mentions: conn.parseMention(error)})  
-      await delay(10000)
+      await delay(500)
       } else return m.reply(`${lenguajeGB['smsAvisoFG']()}`)}
       break            
       }}
