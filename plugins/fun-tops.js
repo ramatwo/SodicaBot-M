@@ -18,7 +18,7 @@ let i = ps.getRandom()
 let j = ps.getRandom()
 
 if (command == 'topgays') {
-let vn = './media/gay2.mp3'
+let vn = './media/ah.mp3'
 let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
     
 *_1.- 🏳️‍🌈 ${user(a)}_* 🏳️‍🌈

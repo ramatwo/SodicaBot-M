@@ -96,7 +96,7 @@ let str = `
 ∘ _A nadie le importa_
 ∘ _Sexo_
 ∘ _Vete a la vrg_
-∘ _Ara ara_
+∘ _Ara-ara_
 ∘ _Hola_
 ∘ _Un pato_
 ∘ _Nyanpasu_
@@ -213,6 +213,7 @@ let str = `
 ∘ _Vamos!!_
 ∘ _Se pudrio_
 ∘ _Gol!_
+∘ _Ah_
 
 ╭════• ೋ•✧๑♡๑✧•ೋ •════╮
                       🐈 Sodica Crew 🐈
@@ -248,7 +249,7 @@ let menuB = `
 ∘ _A nadie le importa_
 ∘ _Sexo_
 ∘ _Vete a la vrg_
-∘ _Ara ara_
+∘ _Ara-ara_
 ∘ _Hola_
 ∘ _Un pato_
 ∘ _Nyanpasu_
@@ -389,7 +390,7 @@ rows: [
 {title: "➥🔊 A nadie le importa", description: null, rowId: `A nadie le importa`},
 {title: "➥🔊 Sexo", description: null, rowId: `Sexo`},
 {title: "➥🔊 Vete a la vrg", description: null, rowId: `Vete a la vrg`},
-{title: "➥🔊 Ara ara", description: null, rowId: `Ara ara`},
+{title: "➥🔊 Ara-ara", description: null, rowId: `Ara-ara`},
 {title: "➥🔊 Mierda de Bot", description: null, rowId: `Mierda de Bot`},
 {title: "➥🔊 Hola", description: null, rowId: `Hola`},
 {title: "➥🔊 Un pato", description: null, rowId: `Un pato`},
@@ -514,6 +515,7 @@ rows: [
 {title: "➥🔊 Vamos!!", description: null, rowId: `Vamos`},
 {title: "➥🔊 Se pudrio", description: null, rowId: `Se pudrio`},
 {title: "➥🔊 Gol!", description: null, rowId: `Gol`},
+{title: "➥🔊 Ah", description: null, rowId: `Ah`},
 {title: "➥🔊 Las reglas del grupo", description: null, rowId: `Las reglas del grupo`},
 ]}, ]
 
