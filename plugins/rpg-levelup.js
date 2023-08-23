@@ -1,5 +1,5 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
-import { levelup } from '../lib/canvas.js'
+import { levelup } from '../lib/canvas.js' 
 
 //import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
@@ -99,7 +99,7 @@ let user = global.db.data.users[m.sender]
     if (before !== user.level) {
         let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
         let str = `
-╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
+╭━━━[ *𝙉𝙄𝙑𝙀𝙇* ]━━━━⬣
 ┃ *NIVEL ANTERIOR:* *${before}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL ACTUAL:* *${user.level}*
@@ -109,12 +109,13 @@ let user = global.db.data.users[m.sender]
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
-*_Cuanto más interactúes con SodicaBot-M, mayor será tu nivel!!_*
+*_Cuanto más interactúes con SodicaBot, mayor será tu nivel!!_*
 *_Actualiza tú rango con el comando ${usedPrefix}rol!!_*
 `.trim()
         try {
             const img = await levelup(teks, user.level)
-            conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
+            conn.sendMessage(m.chat, {image: {url: img}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+            //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
             m.reply(str)
       }
