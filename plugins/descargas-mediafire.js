@@ -21,7 +21,7 @@ ${eg}
 ┃ ${mime}`.trim()
 conn.reply(m.chat, caption, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'SodicaBot | Sodica Crew',
+title: 'SodicaBot| Sodica Crew',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/ramardo/SodicaBot-M`}}})

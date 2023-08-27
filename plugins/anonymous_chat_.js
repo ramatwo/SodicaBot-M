@@ -11,4 +11,3 @@ await m.copyNForward(other, true)
 }
 return !0
 }
-handler.register = true

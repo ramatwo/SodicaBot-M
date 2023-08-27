@@ -1613,7 +1613,7 @@ conn.sendFile(m.chat, imgr, 'SodicaBot.exe', aineh, fkontak, m)}
 }
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
-handler.command = /^(inventory|inv|inventario|alimentos)$/i
+handler.command = /^(inventory|inv|inventario|animales|alimentos)$/i
 handler.register = true
 export default handler
 

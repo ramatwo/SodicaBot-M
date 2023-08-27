@@ -105,7 +105,11 @@ global.author = '@sodica.crew'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
+<<<<<<< HEAD
 global.vs = '1.6.0'
+=======
+global.vs = '1.5.1'
+>>>>>>> 81fdecd3656345dfe08993ded0c5ad44599e9ec5
 global.vsJB = '2.0'
 
 global.gt = 'SodicaBot'
@@ -274,7 +278,11 @@ global.fgif = {
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
+<<<<<<< HEAD
 global.multiplier = 500 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+=======
+global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+>>>>>>> 81fdecd3656345dfe08993ded0c5ad44599e9ec5
 
 //Emojis RPG - Referencias
 global.rpg = {

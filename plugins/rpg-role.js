@@ -39,11 +39,11 @@ const roles = {
       '*DIAMANTE III* 💎': 37,
        '*DIAMANTE II* 💎': 38,
         '*DIAMANTE I* 💎': 39,
-    '*PRO EN SodicaBot V* 😼': 40,
-     '*PRO EN SodicaBot IV* 😼': 41,
-      '*PRO EN SodicaBot III* 😼': 42,
-       '*PRO EN SodicaBot II* 😼': 43,
-        '*PRO EN SodicaBot I* 😼': 44,
+    '*PRO EN SodicaBotV* 😼': 40,
+     '*PRO EN SodicaBotIV* 😼': 41,
+      '*PRO EN SodicaBotIII* 😼': 42,
+       '*PRO EN SodicaBotII* 😼': 43,
+        '*PRO EN SodicaBotI* 😼': 44,
     '*SUPER PRO V* 🎩': 45,
      '*SUPER PRO IV* 🎩': 46,
       '*SUPER PRO III* 🎩': 47,
@@ -118,9 +118,9 @@ handler.before = function (m, text) {
                                                                                         : ((user.level >= 63) && (user.level <= 66)) ? '*DIAMANTE III* 💎'
                                                                                             : ((user.level >= 66) && (user.level <= 69)) ? '*DIAMANTE II* 💎'
                                                                                                 : ((user.level >= 69) && (user.level <= 71)) ? '*DIAMANTE I* 💎'
-                                                                                                    : ((user.level >= 71) && (user.level <= 74)) ? '*PRO EN SodicaBot III* 😼'
-                                                                                                        : ((user.level >= 74) && (user.level <= 77)) ? '*PRO EN SodicaBot II* 😼'
-                                                                                                            : ((user.level >= 77) && (user.level <= 80)) ? '*PRO EN SodicaBot I* 😼'
+                                                                                                    : ((user.level >= 71) && (user.level <= 74)) ? '*PRO EN SodicaBotIII* 😼'
+                                                                                                        : ((user.level >= 74) && (user.level <= 77)) ? '*PRO EN SodicaBotII* 😼'
+                                                                                                            : ((user.level >= 77) && (user.level <= 80)) ? '*PRO EN SodicaBotI* 😼'
                                                                                                                 : ((user.level >= 80) && (user.level <= 83)) ? '*SUPER PRO III* 🎩'
                                                                                                                     : ((user.level >= 83) && (user.level <= 86)) ? '*SUPER PRO II* 🎩'
                                                                                                                         : ((user.level >= 86) && (user.level <= 89)) ? '*SUPER PRO I* 🎩'

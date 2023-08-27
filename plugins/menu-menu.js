@@ -4,7 +4,8 @@ import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
-import { join } from 'path'
+import { join } from 'path' 
+
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 try {
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -92,7 +93,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '➺' : user.gen
 ⊜ *Experiencia ➟* ${exp} ⚡
 ⊜ *Tokens ➟* ${joincount} 🪙
 ${readMore}
-*╭━〔 INFORMACIÓN DE SODICABOT 〕⬣*
+*╭━〔 INFORMACIÓN DE SodicaBot〕⬣*
 ┃💫➺ _${usedPrefix}cuentasSodicaBot_
 ┃💫➺ _${usedPrefix}grupos_
 ┃💫➺ _${usedPrefix}listagrupos_
@@ -110,7 +111,7 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔 ÚNETE AL GRUPO 〕━⬣*
-┃ *Une a SodicaBot en Grupos*
+┃ *Une a SodicaBoten Grupos*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🪅 _${usedPrefix}addbot *enlace*_
 *╰━━━━━━━━━━━━⬣*
@@ -190,7 +191,7 @@ ${readMore}
 
 *╭━〔 JUEGOS - MULTI JUEGOS 〕━⬣*
 ┃🎡➺ _${usedPrefix}mates | matemáticas | math_
-┃🎡➺ _${usedPrefix}lanzar *cara* | *cruz*
+┃🎡➺ _${usedPrefix}lanzar *cara* | *cruz*_
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
 ┃🎡➺ _${usedPrefix}tictactoe | ttt | tateti *sala*_
 ┃🎡➺ _${usedPrefix}deltictactoe | deltateti_
@@ -255,7 +256,7 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━[ BÚSQUEDAS 🔍 ]━━⬣*
-┃ *Busca lo que quieres con SodicaBot *
+┃ *Busca lo que quieres con SodicaBot*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔍➺ _${usedPrefix}google *texto*_
 ┃🔍➺ _${usedPrefix}letra | lirik *texto*_
@@ -306,7 +307,6 @@ ${readMore}
 ┃⚗️➺ _${usedPrefix}inventario | inventory_
 ┃⚗️➺ _${usedPrefix}aventura | adventure_
 ┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
-┃⚗️➺ _${usedPrefix}animales_
 ┃⚗️➺ _${usedPrefix}alimentos_
 ┃⚗️➺ _${usedPrefix}curar_
 ┃⚗️➺ _${usedPrefix}buy_
@@ -409,7 +409,7 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━[ BÚSQUEDAS 🔍 ]━━⬣*
-┃ *Busca lo que quieres con SodicaBot *
+┃ *Busca lo que quieres con SodicaBot*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔍➺ _${usedPrefix}google *texto*_
 ┃🔍➺ _${usedPrefix}letra | lirik *texto*_

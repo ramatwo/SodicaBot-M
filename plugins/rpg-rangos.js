@@ -118,11 +118,11 @@ ${role}
 *SUPER PRO IV* 🎩
 *SUPER PRO V* 🎩
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*PRO EN SodicaBot I* 😼
-*PRO EN SodicaBot II* 😼
-*PRO EN SodicaBot III* 😼
-*PRO EN SodicaBot IV* 😼
-*PRO EN SodicaBot V* 😼
+*PRO EN SodicaBotI* 😼
+*PRO EN SodicaBotII* 😼
+*PRO EN SodicaBotIII* 😼
+*PRO EN SodicaBotIV* 😼
+*PRO EN SodicaBotV* 😼
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *DIAMANTE I* 💎
 *DIAMANTE II* 💎

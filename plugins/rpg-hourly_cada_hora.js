@@ -38,15 +38,12 @@ for (let reward of Object.keys(recompensas)) {
     user[reward] += recompensas[reward]
 texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n┃ `}
 let text = `╭━━🕐━🕑━🕒━━⬣
-┃ ♻️ 𝙀𝙉𝙏𝙍𝙀𝙂𝘼 𝘾𝘼𝘿𝘼 𝙃𝙊𝙍𝘼 
-┃ ♻️ 𝙃𝙊𝙐𝙍𝙇𝙔 𝘿𝙀𝙇𝙄𝙑𝙀𝙍𝙔 
+┃ ♻️ 𝙀𝙉𝙏𝙍𝙀𝙂𝘼 𝘾𝘼𝘿𝘼 𝙃𝙊𝙍𝘼  
 ┃ *${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*
 ┃ ${texto}
-╰━━🕕━🕔━🕓━━⬣\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`
-let pp = 'https://i.imgur.com/ZjvbaOA.jpg'
+╰━━🕕━🕔━🕓━━⬣\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}`
+let pp = 'https://google.com'
 conn.sendMessage(m.chat, {image: {url: pp}, caption: text, mentions: conn.parseMention(text)}, {quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
-//await conn.sendFile(m.chat, gata, 'SodicaBot.exe', text, fkontak)
-//await conn.sendButton(m.chat, text, texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, img5, [['🎁 𝙍𝙀𝙂𝘼𝙇𝙊 | 𝘾𝙇𝘼𝙄𝙈 🎁', '/claim'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, dos.getRandom())  
 user.lasthourly = new Date * 1
 }
 handler.help = ['hourly']

@@ -14,7 +14,7 @@ let text = `
 *Las funciones | The functions #jadibot #bots #serbot #subbot #getcode. No estan disponibles en | Are not available in* ${gt}`.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'SodicaBot | Sodica Crew',
+title: 'SodicaBot| Sodica Crew',
 body: 'Super Bot WhatsApp',         
 previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `${yt}`}}})  
