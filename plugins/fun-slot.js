@@ -50,13 +50,13 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} EXP*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} EXP*`
+end = `✨ *QUE PRO  HAS GANADO +${apuesta + apuesta} EXP*\n\n🥳 *COOL  YOU JUST WON +${apuesta + apuesta} EXP*`
 users.exp += apuesta
 } else if (a == b || a == c || b == c) {
-end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +50 EXP*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +50 EXP*`
+end = `🙀 *CASI , VUELVA A INTENTAR*\n*BONO DE +50 EXP*\n\n😯 *ALMOST , TRY AGAIN*\n*BONDS OF +50 EXP*`
 users.exp += 50
 } else {
-end = `😿 *HA PERDIDO!! ❌ -${apuesta} EXP*\n\n*HAS LOST!! ❌ -${apuesta} EXP*`
+end = `😿 *HA PERDIDO  ❌ -${apuesta} EXP*\n\n*HAS LOST  ❌ -${apuesta} EXP*`
 users.exp -= apuesta
 }
 //users.lastslot = new Date * 1
@@ -72,7 +72,7 @@ let s = `🎰 | *RANURAS* | 🎰
 
 ${end}`
 await conn.reply(m.chat, s, m)}
-/*await conn.sendHydrated(m.chat, `${s}\n\n${end}`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+/*await conn.sendHydrated(m.chat, `${s}\n\n${end}`, wm, null, md, 'SodicaBot', null, null, [
 ['⚡ 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕 | 𝘼𝙂𝘼𝙄𝙉', `${usedPrefix}slot1 ${apuesta}`],
 ['🐈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`],
 ['💎 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
@@ -111,13 +111,13 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} gatacoins*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} gatacoins*`
+end = `✨ *QUE PRO  HAS GANADO +${apuesta + apuesta} GataCoins*\n\n🥳 *COOL  YOU JUST WON +${apuesta + apuesta} GataCoins*`
 users.money += apuesta
 } else if (a == b || a == c || b == c) {
-end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +30 gatacoins*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +30 gatacoins*`
+end = `🙀 *CASI , VUELVA A INTENTAR*\n*BONO DE +30 GataCoins*\n\n😯 *ALMOST , TRY AGAIN*\n*BONDS OF +30 GataCoins*`
 users.money += 30
 } else {
-end = `😿 *HA PERDIDO!! ❌ -${apuesta} gatacoins*\n\n*HAS LOST!! ❌ -${apuesta} gatacoins*`
+end = `😿 *HA PERDIDO  ❌ -${apuesta} GataCoins*\n\n*HAS LOST  ❌ -${apuesta} GataCoins*`
 users.money -= apuesta
 }
 //users.lastslot = new Date * 1
@@ -132,7 +132,7 @@ let ss = `
  ────────
 🎰 |   *SLOTS*   | 🎰\n\n${end}`
 await conn.reply(m.chat, ss, m)}
-/*await conn.sendHydrated(m.chat, `${ss}\n\n${end}`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+/*await conn.sendHydrated(m.chat, `${ss}\n\n${end}`, wm, null, md, 'SodicaBot', null, null, [
 ['🐈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕 | 𝘼𝙂𝘼𝙄𝙉', `${usedPrefix}slot2 ${apuesta}`],
 ['⚡ 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['💎 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
@@ -171,13 +171,13 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} Diamantes*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} Diamantes*`
+end = `✨ *QUE PRO  HAS GANADO +${apuesta + apuesta} Diamantes*\n\n🥳 *COOL  YOU JUST WON +${apuesta + apuesta} Diamantes*`
 users.limit += apuesta
 } else if (a == b || a == c || b == c) {
-end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +2 Diamantes*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +2 Diamantes*`
+end = `🙀 *CASI , VUELVA A INTENTAR*\n*BONO DE +2 Diamantes*\n\n😯 *ALMOST , TRY AGAIN*\n*BONDS OF +2 Diamantes*`
 users.limit += 2
 } else {
-end = `😿 *HA PERDIDO!! ❌ -${apuesta} Diamantes*\n\n*HAS LOST!! ❌ -${apuesta} Diamantes*`
+end = `😿 *HA PERDIDO  ❌ -${apuesta} Diamantes*\n\n*HAS LOST  ❌ -${apuesta} Diamantes*`
 users.limit -= apuesta
 }
 //users.lastslot = new Date * 1
@@ -192,7 +192,7 @@ let sss = `
  ────────
 🎰 |   *SLOTS*   | 🎰\n\n${end}`
 await conn.reply(m.chat, sss, m)}
-/*await conn.sendHydrated(m.chat, `${sss}\n\n${end}`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+/*await conn.sendHydrated(m.chat, `${sss}\n\n${end}`, wm, null, md, 'SodicaBot', null, null, [
 ['💎 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕 | 𝘼𝙂𝘼𝙄𝙉', `${usedPrefix}slot3 ${apuesta}`],
 ['⚡ 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['🐈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`]
@@ -201,7 +201,7 @@ await conn.reply(m.chat, sss, m)}
         
 if (command == 'slot') {       
 await conn.reply(m.chat, `*Elija en que apostará ${apuesta}*\n\n⚡ 𝙀𝙓𝙋:\n${usedPrefix}slot1 ${apuesta}\n\n🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎:\n${usedPrefix}slot2 ${apuesta}\n\n💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎:\n${usedPrefix}slot3 ${apuesta}`, m)}
-/*await conn.sendHydrated(m.chat, `*Elija en que apostará ${apuesta}*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+/*await conn.sendHydrated(m.chat, `*Elija en que apostará ${apuesta}*`, wm, null, md, 'SodicaBot', null, null, [
 ['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`],
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
@@ -209,7 +209,7 @@ await conn.reply(m.chat, `*Elija en que apostará ${apuesta}*\n\n⚡ 𝙀𝙓�
         
 if (command == 'apostar') {       
 await conn.reply(m.chat, `*Elija en que apostará ${apuesta}*\n\n*Choose what you will*\n\n⚡ 𝙀𝙓𝙋:\n${usedPrefix}slot1 ${apuesta}\n🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎:\n${usedPrefix}slot2 ${apuesta}\n💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎:\n${usedPrefix}slot3 ${apuesta}`, m)}
-/*await conn.sendHydrated(m.chat, `*Elija en que apostará ${apuesta}*\n\n*Choose what you will*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+/*await conn.sendHydrated(m.chat, `*Elija en que apostará ${apuesta}*\n\n*Choose what you will*`, wm, null, md, 'SodicaBot', null, null, [
 ['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`],
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]

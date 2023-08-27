@@ -145,3 +145,4 @@ handler.command = /^(morse|morce)/i
 handler.money = 40
 
 export default handler
+handler.register = true

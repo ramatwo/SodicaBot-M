@@ -1,7 +1,5 @@
-import fetch from 'node-fetch'
-import fs from 'fs' 
 
-let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
+let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => { 
 //try{
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let chat = global.db.data.chats[m.chat]
@@ -472,12 +470,6 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-✦ ${lenguajeGB.smsParaOw()} ${bot.temporal ? '✅' : '❌'}
-✦ ${usedPrefix + command} temporal
-✦ ${lenguajeGB.smsTempo2()}
-
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
 ✦ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '✅' : '❌' : lenguajeGB.smsNoGg()}
 ✦ ${usedPrefix + command} stickers
 ✦ ${lenguajeGB.smsStik1()}
@@ -602,6 +594,6 @@ handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 export default handler
-
+handler.register = true
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)

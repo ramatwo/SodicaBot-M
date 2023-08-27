@@ -28,3 +28,4 @@ handler.tags = ['tool']
 handler.command = /^(cekreso(lution)?)$/i
 
 export default handler
+handler.register = true

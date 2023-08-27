@@ -19,7 +19,7 @@ let pp = 'https://c4.wallpaperflare.com/wallpaper/991/456/22/sketch-artist-anime
 let gata = Math.floor(Math.random() * 3000)
 global.db.data.users[m.sender].exp += gata * 1  
 let time = global.db.data.users[m.sender].lastwork + 600000
-if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*Ya trabajaste, espere unos ${msToTime(time - new Date())} para volver a trabajar!!*`
+if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*Ya trabajaste, espere unos ${msToTime(time - new Date())} para volver a trabajar *`
 
 await conn.reply(m.chat, `*${pickRandom(global.work)}* ${gata} XP`, fkontak, pp, m)
 /*conn.sendHydrated(m.chat, wm, `${pickRandom(global.work)} ${gata} XP`, pp, md, '饾檪饾櫈饾櫓饾檭饾櫔饾櫁', null, null, [
@@ -29,7 +29,7 @@ global.db.data.users[m.sender].lastwork = new Date * 1
 }
 handler.help = ['work']
 handler.tags = ['xp']
-handler.command = ['work', 'trabajar']
+handler.command = ['work', 'trabajar', 'chambear']
 handler.fail = null
 handler.exp = 0
 export default handler

@@ -761,8 +761,8 @@ let vn = './media/siu.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (chat.audios && m.text.match(/(ara ara)/gi)) {    
-let vn = './media/Ara ara.mp3'
+if (chat.audios && m.text.match(/(ara)/gi)) {    
+let vn = './media/Ara-ara.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
@@ -825,6 +825,16 @@ if (chat.audios && m.text.match(/(vetealavrg|vete a la vrg|vete a la verga)/gi))
 let vn = './media/vete a la verga.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(Ah|aah|aaah)/gi)) {    
+    let vn = './media/ah.mp3'
+    this.sendPresenceUpdate('recording', m.chat)   
+    this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(no)/gi)) {    
+        let vn = './media/no-momo.mp3'
+        this.sendPresenceUpdate('recording', m.chat)   
+        this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
    
 return !0 }
 export default handler

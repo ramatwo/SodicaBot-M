@@ -20,10 +20,10 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => imagen1[1]) 
-let teksbio = `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+let teksbio = `SodicaBot 💖🐈
 *Wa.me/51950758440*
 
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 *2* 💖🐈
+SodicaBot *2* 💖🐈
 *wa.me/573027834626*
 
 𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 💖🐈
@@ -50,7 +50,7 @@ const sections = [
 	title: `–––––––·• APOYA AL BOT –––––––·•`,
 	rows: [
 	    {title: "💹 • DONAS", rowId: ".paypal"},
-	{title: "🤖 • INSTALARBOT", rowId: ".instalarbot"},
+	{title: "🤖 • INSTALARBOT", rowId: ".instalarsodicabott"},
 	{title: "🌟 • PREMIUM", rowId: ".pasepremium"},
 	]
   },
@@ -74,10 +74,10 @@ const listMessage = {
         switch (type) {
           case 'nombre':
           await conn.reply(m.chat, `𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀𝙇 𝘽𝙊𝙏 : ${gt} 🐈`, fkontak,  m)
-         // conn.reply(m.chat, "Nombre del bot : SodicaBot-MD 🐈", m, { contextInfo: { mentionedJid: [nowner] }})
+         // conn.reply(m.chat, "Nombre del bot : SodicaBot-M 🐈", m, { contextInfo: { mentionedJid: [nowner] }})
             break
             case 'bio':
-             await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', teksbio, fkontak)
+             await conn.sendFile(m.chat, gataImg.getRandom(), 'SodicaBot.exe', teksbio, fkontak)
          // conn.sendButton(m.chat, teksbio, fkontak, pp, [`☘️ 𝗠 𝗘 𝗡 𝗨`, `.menu`], m)
             break
           default:
@@ -92,7 +92,7 @@ const listMessage = {
           break
 
         default:
-          return  await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', teksbio, fkontak)
+          return  await conn.sendFile(m.chat, gataImg.getRandom(), 'SodicaBot.exe', teksbio, fkontak)
       }
     }
   } catch (err) {
@@ -105,3 +105,4 @@ handler.tags = ['info']
 handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 
 export default handler
+handler.register = true

@@ -47,7 +47,7 @@ if (command == 'addprem' || command == 'userpremium') {
 if (now < user.premiumTime) user.premiumTime += hora1
 else user.premiumTime = now + hora1
 user.premium = true
-m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈!!!*
+m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 !*
 
 *✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${name}*
 *🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${hora1 } hora(s)*
@@ -57,7 +57,7 @@ if (command == 'addprem2' || command == 'userpremium2') {
 if (now < user.premiumTime) user.premiumTime += dia1
 else user.premiumTime = now + dia1
 user.premium = true
-m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈!!!*
+m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 !*
 
 *✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${name}*
 *🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${dia1} Día(s)*
@@ -68,7 +68,7 @@ if (command == 'addprem3' || command == 'userpremium3') {
 if (now < user.premiumTime) user.premiumTime += semana1
 else user.premiumTime = now + semana1
 user.premium = true
-m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈!!!*
+m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 !*
 
 *✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${name}*
 *🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${semana1} Semana(s)*
@@ -79,7 +79,7 @@ if (command == 'addprem4' || command == 'userpremium4') {
 if (now < user.premiumTime) user.premiumTime += mes1
 else user.premiumTime = now + mes1
 user.premium = true
-m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈!!!*
+m.reply(`*🎟️ 𝙐𝙎𝙏𝙀𝘿 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 !*
 
 *✨ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍 » ${name}*
 *🕐 𝙏𝙄𝙀𝙈𝙋𝙊 : 𝙏𝙄𝙈𝙀 » ${mes1} Mes(es)*

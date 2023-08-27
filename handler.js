@@ -946,19 +946,19 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
 		
             if (chat) {
                 if (!('isBanned' in chat)) chat.isBanned = false                    
-                if (!('welcome' in chat)) chat.welcome = true                    
+                if (!('welcome' in chat)) chat.welcome = false                    
                 if (!('detect' in chat)) chat.detect = true                    
                 if (!('sWelcome' in chat)) chat.sWelcome = ''                    
                 if (!('sBye' in chat)) chat.sBye = ''                    
                 if (!('sPromote' in chat)) chat.sPromote = ''                    
                 if (!('sDemote' in chat)) chat.sDemote = ''                    
                 if (!('delete' in chat))
-                    chat.delete = true                    
-                if (!('modohorny' in chat)) chat.modohorny = false                    
-                if (!('stickers' in chat)) chat.stickers = true                    
+                    chat.delete = false                    
+                if (!('modohorny' in chat)) chat.modohorny = true                    
+                if (!('stickers' in chat)) chat.stickers = false                    
                 if (!('autosticker' in chat)) chat.autosticker = false                      
-                if (!('audios' in chat)) chat.audios = true                     
-		if (!('antiver' in chat)) chat.antiver = true                    
+                if (!('audios' in chat)) chat.audios = false                     
+		if (!('antiver' in chat)) chat.antiver = false                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
 		if (!('antiTiktok' in chat)) chat.antiTiktok = false
@@ -969,7 +969,7 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
 		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
-                if (!('viewonce' in chat)) chat.viewonce = true         
+                if (!('viewonce' in chat)) chat.viewonce = false         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
                 if (!('antitoxic' in chat)) chat.antitoxic = true 
                 if (!('simi' in chat)) chat.simi = false
@@ -980,18 +980,18 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: true,
+                    welcome: false,
                     detect: true,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
                     sDemote: '', 
-                    delete: true,
+                    delete: false,
                     modohorny: true,
-                    stickers: true,
+                    stickers: false,
                     autosticker: false,
-                    audios: true,
-		    antiver: true,
+                    audios: false,
+		    antiver: false,
                     antiLink: false,
                     antiLink2: false,
 		    antiTiktok: false,
@@ -1016,7 +1016,7 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
 		if (!('autoread2' in settings)) settings.autoread2 = false
-                if (!('restrict' in settings)) settings.restrict = false
+                if (!('restrict' in settings)) settings.restrict = true
 		if (!('temporal' in settings)) settings.temporal = true
                 if (!('antiPrivate' in settings)) settings.antiPrivate = false
 		if (!('antiCall' in settings)) settings.antiCall = true
@@ -1026,7 +1026,7 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
                 self: false,
                 autoread: false,
 		autoread2: false,
-                restrict: false,
+                restrict: true,
 		temporal: true,
 		antiPrivate: false,
 		antiCall: true,
@@ -1189,7 +1189,7 @@ if (m.text && user.banned && !isROwner) {
   if (user.bannedMessageCount < 3) {
     const messageNumber = user.bannedMessageCount + 1;
     const messageText = `⛔ | Estás baneado/a.\nAviso (${messageNumber}/3)${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
-*👉 Podés conyactar con el propietario del bot si creés que se trata de un error:
+*👉 Podés contactar con el propietario del bot si creés que se trata de un error:
 
 👉 ${global.asistencia}
 👉 wa.me/5491162480909
@@ -1346,7 +1346,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
                         m.reply(+m.limit + lenguajeGB.smsCont8())
                 }
                  if (m.money)
-                        m.reply(+m.money + 'ℹ️ | Monedas usadas:')
+                        m.reply('ℹ️ '+m.money + ' monedas usadas.')
               
                 break
             }
@@ -1408,7 +1408,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
 	//if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 	    
         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
-        if (!m.fromMem && m.text.match(/(ata|des|able|izo|ido|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
+        if (!m.fromMem && m.text.match(/(ata|des|able|izo|ido|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|a|e|i|o|u|v':|:'v)/gi)) {
         let emot = pickRandom(["😦", "🐺", "✈️", "😐", "🖼️", "🤑", "⭐", "😘", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🌐", "🙄", "🎨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
@@ -1510,26 +1510,28 @@ export async function callUpdate(callUpdate) {
     }}}}
 
 export async function deleteUpdate(message) {
-    try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
-            return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
-            return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.delete)
-            return
-        await this.reply(msg.chat, `⚠️ | Mensaje eliminado detectado. Extrayendo información...
-Nombre: @${participant.split`@`[0]}
-Enviando el mensaje...
-`.trim(), msg, {
-            mentions: [participant]
-        })
-        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-    } catch (e) {
-        console.error(e)
-    }
+ //   export async function deleteUpdate(message) {
+//        try {
+//            const { fromMe, id, participant } = message
+//            if (fromMe)
+//                return
+  //          let msg = this.serializeM(this.loadMessage(id))
+    //        if (!msg)
+      //          return
+        //    let chat = global.db.data.chats[msg.chat] || {}
+//  mensajes eliminados        //  if (chat.delete)
+            //    return
+           // await this.reply(msg.chat, `⚠️ | Mensaje eliminado detectado. Extrayendo información...
+//    Nombre: @${participant.split`@`[0]}
+ //   Enviando el mensaje...
+//    `.trim(), msg, {
+ //               mentions: [participant]
+ //           })
+  //          this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+  //      } catch (e) {
+ //           console.error(e)
+ //       }
+  //  }
 }
 
 global.dfail = (type, m, conn) => {

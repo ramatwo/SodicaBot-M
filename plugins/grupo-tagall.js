@@ -17,3 +17,4 @@ handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i
 handler.admin = true
 handler.group = true
 export default handler
+handler.register = true

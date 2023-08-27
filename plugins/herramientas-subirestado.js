@@ -38,3 +38,4 @@ export default handler
 function pickRandom(arr) {
     return arr[Math.floor(Math.random() * arr.length)]
 }
+handler.register = true

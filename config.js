@@ -13,22 +13,13 @@ import { en, es, id, ar, pt, fr } from './lib/idiomas/total-idiomas.js'
 
 global.owner = [
   ['5491162480909', '⭐Owner', true],  
-  ['5491162480909', '💻Desarrollador', true],
-  ['5491162480909', '🌐Soporte', true],
-  ['5491162480909'],
-  ['5491162480909'],
-  ['5491162480909'],
-  ['5491162480909'],
-  ['5491162480909'],
-  ['5491162480909'],
-  ['5491162480909'],
-  ['5491162480909'],
-  ['5491162480909']
+  ['5491156664731', '💻Desarrollador', true],
+
 ]
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = [] 
+global.mods = ['5491162480909'] 
 global.prems = ['5491162480909'] 
    
   
@@ -102,10 +93,7 @@ global.moment = moment
 
 global.official = [ // Agregate si eres Owner
 ['5491162480909', '⭐Owner', 1], 
-['5491162480909', '💻Desarrollador', 1],  
-['5491162480909', '🌐Soporte', 1],
-['5491162480909', '🌐Soporte', 1],
-['5491162480909', 'ℹ️Prueba', 1]] 
+['5491156664731', '💻Desarrollador', 1],] 
 
 global.mail = '' //agrega tú correo
 global.desc = '' //agrega una descripción corta
@@ -117,7 +105,7 @@ global.author = '@sodica.crew'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.5.1'
+global.vs = '1.6.0'
 global.vsJB = '2.0'
 
 global.gt = 'SodicaBot'
@@ -127,17 +115,17 @@ global.ig = 'https://www.instagram.com/sodica.crew'
 global.md = 'https://instagram.com/sodica.crew'
 global.fb = 'https://instagram.com/sodica.crew'
 
-global.nna = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //UPDATE SodicaBot
-global.nna2 = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Help
-global.nn = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 1
-global.nnn = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 2
-global.nnnt = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 3
-global.nnntt = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 4
-global.nnnttt = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 5 COL
-global.nnnttt2 = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 6 COL
-global.nnnttt3 = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 7 COL
-global.nnnttt4 = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA' //Grupo 8 COL
-global.paypal = 'https://chat.whatsapp.com/IbvMD0RuEyG7U9dVzscvyA'
+global.nna = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //UPDATE SodicaBot
+global.nna2 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Help
+global.nn = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 1
+global.nnn = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 2
+global.nnnt = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 3
+global.nnntt = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 4
+global.nnnttt = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 5 COL
+global.nnnttt2 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 6 COL
+global.nnnttt3 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 7 COL
+global.nnnttt4 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 8 COL
+global.paypal = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4'
 global.asistencia = 'Wa.me/5491162480909' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
@@ -286,7 +274,7 @@ global.fgif = {
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
-global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+global.multiplier = 500 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 //Emojis RPG - Referencias
 global.rpg = {
@@ -391,7 +379,7 @@ global.rpgg = { //Solo emojis
     string = string.toLowerCase()
     let emott = {
       level: '🧬', limit: '💎', exp: '⚡', bank: '🏦',
-      diamond: '💎+', health: '❤️', kyubi: '🌀', joincount: '🪙',
+      diamond: '💎+', health: '❤️', kyubi: '🌀', joincount: '💳',
       emerald: '💚', stamina: '✨', role: '💪', premium: '🎟️',
       pointxp: '📧', gold: '👑',
       

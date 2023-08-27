@@ -33,7 +33,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 const sections = [{
 title: comienzo + ' ' + lenguajeGB['smsLista1']() + ' ' + fin,
 rows: [
-{title: lenguajeGB['smsLista2'](), rowId: `${usedPrefix}creadora`},
+{title: lenguajeGB['smsLista2'](), rowId: `${usedPrefix}creador`},
 {title: lenguajeGB['smsLista3'](), rowId: `${usedPrefix}donar`},
 {title: lenguajeGB['smsLista4'](), rowId: `${usedPrefix}ping`},
 {title: lenguajeGB['smsLista5'](), rowId: `${usedPrefix}infomenu`},

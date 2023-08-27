@@ -53,3 +53,4 @@ handler.tags = ['info']
 handler.command = /^(horario)$/i
 
 export default handler
+handler.register = true

@@ -1,4 +1,3 @@
-/*   Creditos - ig : https://www.instagram.com/fg98._/    */
 import hispamemes from 'hispamemes'
 let handler = async (m, {command, conn}) => {
 const url = await hispamemes.meme()  
@@ -6,5 +5,5 @@ conn.sendFile(m.chat, url, 'error.jpg', `😂😂😂`, m)}
 //conn.sendButton(m.chat, `_${command}_`.trim(), author, url, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏 🆕', `/${command}`]], m)}
 handler.help = ['meme']
 handler.tags = ['random']
-handler.command = /^(meme|memes)$/i
+handler.command = /^(meme|momo|memes)$/i
 export default handler

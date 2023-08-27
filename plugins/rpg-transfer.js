@@ -20,7 +20,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
 ┃ ✅ *RECURSOS DISPONIBLES*
 ┃──────────────
 ┃ limit *= Diamantes* 💎
-┃ money *= gatacoins* 🐈
+┃ money *= Coins* 🐈
 ┃ exp *= Experiencia* ⚡
 ╰━━━━━━━━━━━━━━━━━━ ღ 
 `.trim()
@@ -41,12 +41,12 @@ async function handler(m, { conn, args, usedPrefix, command }) {
 💹 *${count} ${type} para* *@${(who || '').replace(/@s\.whatsapp\.net/g, '')}* ? 
 
 *DESEAS CONTINUAR?*
-Tienes 60 segundos!!
+Tienes 60 segundos 
 
 Escriba: (si) para acertar
 escriba: (no) para cancelar\n\n${wm}`.trim()
     
-    let c = `${wm}\nTienes 60 segundos!!`
+    let c = `${wm}\nTienes 60 segundos `
     await conn.reply(m.chat, confirm, m, { mentions: [who] })
   //  conn.sendButton(m.chat, confirm, c, null, [['𝙎𝙄'], ['𝙉𝙊']], m, { mentions: [who] })
     confirmation[m.sender] = {
@@ -67,13 +67,13 @@ handler.before = async m => {
     if (m.id === message.id) return
     let user = global.db.data.users[sender]
     let _user = global.db.data.users[to]
-    if (/^No|no$/i.test(m.text) ) { 
+    if (/^No|no|ño$/i.test(m.text) ) { 
   //  if (/No?/m.text(m.text.toLowerCase())) {
         clearTimeout(timeout)
         delete confirmation[sender]
         return m.reply('*CANCELADO*')
     }
-    if (/^Si|si$/i.test(m.text) ) { 
+    if (/^Si|si|chi$/i.test(m.text) ) { 
   //  if (/Si?/m.text(m.text.toLowerCase())) {
         let previous = user[type] * 1
         let _previous = _user[type] * 1
@@ -92,7 +92,7 @@ handler.before = async m => {
 
 handler.help = ['transfer'].map(v => v + ' [tipo] [cantidad] [@tag]')
 handler.tags = ['xp']
-handler.command = ['payxp', 'transfer', 'darxp', 'dar', 'enviar', 'transferir'] 
+handler.command = ['transfer', 'transferir'] 
 
 handler.disabled = false
 

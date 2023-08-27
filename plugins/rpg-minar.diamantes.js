@@ -17,22 +17,22 @@ const fkontak = {
 let user = global.db.data.users[m.sender]
 let premium = user.premium  
 let minar = `${pickRandom(['Que pro 😎 has minado',
-'🌟✨ Genial!! Obtienes',
-'WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes',
-'Has Minado!!',
+'🌟✨ Genial  Obtienes',
+'WOW  eres un(a) gran Minero(a) ⛏️ Obtienes',
+'Has Minado ',
 '😲 Lograste Minar la cantidad de',
 'Tus Ingresos subiran gracias a que minaste',
 '⛏️⛏️⛏️⛏️⛏️ Minando',
-'🤩 SII!!! AHORA TIENES',
+'🤩 SII ! AHORA TIENES',
 'La minaria esta de tu lado, por ello obtienes',
 '😻 La suerte de Minar',
 '♻️ Tu Mision se ha cumplido, lograste minar',
 '⛏️ La Mineria te ha beneficiado con',
 '🛣️ Has encontrado un Lugar y por minar dicho lugar Obtienes',
 '👾 Gracias a que has minado tus ingresos suman',
-'Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
+'Felicidades  Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
 
-let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage180200332/95468325-mont%C3%B3n-de-piedras-preciosas-diamantes-azules-brillantes-concepto-de-joyas-caras-s%C3%ADmbolo-de-riqueza-d.jpg?ver=6'
+let pp = 'https://google.com'
 
 let kyubi = `${pickRandom([0, 1, 3, 1, 2])}` * 1
 let kyubipremium = `${pickRandom([2, 3, 5, 9, 10, 7])}` * 1
@@ -62,8 +62,8 @@ for (let reward of Object.keys(recompensas)) {
 texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 
 let gat = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${limit} ${global.rpgshop.emoticon('limit')}*\n\n🍁 𝗕 𝗢 𝗡 𝗢\n\n${texto}\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`
-await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak)
-/*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${limit} ${global.rpgshop.emoticon('limit')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+await conn.sendFile(m.chat, pp, 'SodicaBot.exe', gat, fkontak)
+/*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${limit} ${global.rpgshop.emoticon('limit')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, 'SodicaBot', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
 ['𝙈𝙞𝙣𝙖𝙧 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]

@@ -47,3 +47,4 @@ handler.tags = ['owner']
 handler.command = /^simulate|simular$/i
 handler.group = true
 export default handler
+handler.register = true

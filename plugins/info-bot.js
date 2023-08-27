@@ -21,3 +21,4 @@ conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt:
 return !0
 }
 export default handler
+handler.register = true

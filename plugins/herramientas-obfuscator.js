@@ -10,3 +10,4 @@ conn.sendMessage(m.chat, {text: obfuscatedCode}, {quoted: m});
 }
 handler.command = /^(ofuscar|ofuscador)$/i
 export default handler
+handler.register = true

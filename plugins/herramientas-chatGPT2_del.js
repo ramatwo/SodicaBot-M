@@ -8,3 +8,4 @@ throw `${lenguajeGB['smsAvisoFG']()}𝙀𝙍𝙍𝙊𝙍, 𝙑𝙐𝙀𝙇𝙑�
 }} 
 handler.command = ['delchatgpt']
 export default handler
+handler.register = true

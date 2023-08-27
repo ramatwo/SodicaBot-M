@@ -12,7 +12,7 @@ if (typeof res == 'number') throw res == -1 ? `${mg}𝙀𝙇 𝙇𝙊𝙂𝙊 ${
 let result = await axios.get(res, {
 responseType: 'arraybuffer'
 })
-await conn.sendFile(m.chat, result.data, 'Error.jpg', `✅ *AQUÍ ESTA TÚ LOGO!!*\n✅ *HERE IS YOUR LOGO!!*\n\n🔆 *EFECTO: ${effect}*\n${wm}`, m)
+await conn.sendFile(m.chat, result.data, 'Error.jpg', `✅ *AQUÍ ESTA TÚ LOGO *\n✅ *HERE IS YOUR LOGO *\n\n🔆 *EFECTO: ${effect}*\n${wm}`, m)
 }
 handler.help = ['logos']
 handler.tags = ['nulis']
@@ -827,7 +827,7 @@ async function textpro(effect, ...texts) {
   })
   let html = await resCookie.text()
   const $$$ = cheerio.load(html)
-  let textRequire = [!!$$$('#text-0').length, !!$$$('#text-1').length, !!$$$('#text-2').length].filter(v => v)
+  let textRequire = [ $$$('#text-0').length,  $$$('#text-1').length,  $$$('#text-2').length].filter(v => v)
   // console.log({ textRequire, texts, textRequireLength: textRequire.length, textsLength: texts.length })
   if (textRequire.length > texts.length) return textRequire.length
   let cookieParse = (cookie, query) => cookie.includes(query + '=') ? cookie.split(query + '=')[1].split(';')[0] : 'undefined'

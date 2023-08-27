@@ -82,7 +82,7 @@ let tex = `╭━━〔 *${wm}* 〕━━⬣
 ┃ ✪ *ROL*
 ┃ ➥ ${role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *gatacoins*
+┃ ✪ *GataCoins*
 ┃ ➥ *${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ ✪ *TOKENS*
@@ -97,7 +97,7 @@ let tex = `╭━━〔 *${wm}* 〕━━⬣
 ┃ ✪ *USUARIOS | USERS*
 ┃ ➥ *${Object.keys(global.db.data.users).length}* 
 ╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣`
-await conn.sendFile(m.chat, pp, 'gata.jpg', tex, fkontak, { mentions: [aa,] })
+await conn.sendFile(m.chat, pp, 'SodicaBot.exe', tex, fkontak, { mentions: [aa,] })
 /*await conn.sendButton(m.chat, tex, wm, [['𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 ⚡', '.buy'],
 ['𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 🐈', '/buy2'],
 ['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', '#top']], m)  */

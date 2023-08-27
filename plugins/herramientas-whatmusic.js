@@ -33,3 +33,4 @@ m.reply(txt)
 }
 handler.command = /^quemusica|quemusicaes|whatmusic$/i
 export default handler
+handler.register = true

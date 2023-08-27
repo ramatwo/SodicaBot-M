@@ -1,10 +1,6 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
-import { levelup } from '../lib/canvas.js'
 
 //import { xpRange } from '../lib/levelling.js'
-import PhoneNumber from 'awesome-phonenumber'
-import { promises } from 'fs'
-import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
   
   
@@ -99,7 +95,7 @@ let user = global.db.data.users[m.sender]
     if (before !== user.level) {
         let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
         let str = `
-╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
+╭━━━[ *𝙉𝙄𝙑𝙀𝙇* ]━━━━⬣
 ┃ *NIVEL ANTERIOR:* *${before}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL ACTUAL:* *${user.level}*
@@ -109,12 +105,13 @@ let user = global.db.data.users[m.sender]
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
-*_Cuanto más interactúes con SodicaBot-MD, mayor será tu nivel!!_*
-*_Actualiza tú rango con el comando ${usedPrefix}rol!!_*
+*_Cuanto más interactúes con SodicaBot, mayor será tu nivel _*
+*_Actualiza tú rango con el comando ${usedPrefix}rol _*
 `.trim()
         try {
-            const img = await levelup(teks, user.level)
-            conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
+           
+            conn.sendMessage(m.chat, {image: {}, caption: str, mentions: conn.parseMention(str)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+            //conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
         } catch (e) {
             m.reply(str)
       }

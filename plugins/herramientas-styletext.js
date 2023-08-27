@@ -22,3 +22,4 @@ obj[name + (obj[name] ? ' Reversed' : '')] = content
 }
 return obj 
 }
+handler.register = true

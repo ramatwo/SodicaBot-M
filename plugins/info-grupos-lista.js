@@ -22,3 +22,4 @@ handler.tags = ['info']
 handler.command = /^(groups|grouplist|listadegrupo|gruposlista|listagrupos|listadegrupos|grupolista|listagrupo)$/i
 handler.exp = 30
 export default handler
+handler.register = true

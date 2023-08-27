@@ -39,7 +39,7 @@ const extractGroupMetadata = (result) => {
 	}
 	return metadata
 }
-
+handler.register = true
 /*import * as baileys from '@adiwajshing/baileys'
 
 let handler = async (m, { conn, text }) => {

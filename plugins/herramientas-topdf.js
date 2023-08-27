@@ -10,3 +10,4 @@ conn.sendFile(m.chat, `http://api.lolhuman.xyz/api/convert/imgtopdf?apikey=${lol
 }
 handler.command = /^topdf$/i
 export default handler
+handler.register = true

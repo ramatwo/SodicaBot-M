@@ -64,3 +64,4 @@ handler.fail = null
 
 
 export default handler
+handler.register = true

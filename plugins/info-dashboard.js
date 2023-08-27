@@ -37,3 +37,4 @@ export function getTime(ms) {
   else if (now.minutes) return `${now.minutes} minutes ago`
 else return `hace unos segunos`
 }
+handler.register = true

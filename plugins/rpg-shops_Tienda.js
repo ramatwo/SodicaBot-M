@@ -2,8 +2,8 @@ const xpperlimit = 300
 import fetch from 'node-fetch'
 let handler = async (m, { command, conn, usedPrefix, args }) => {
 let user = global.db.data.users[m.sender]
-let time = user.lastmiming + 150000 //5 min
-if (new Date - user.lastmiming < 150000) return await conn.reply(m.chat, `⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙉𝙊 𝙃𝘼𝙂𝘼 𝙎𝙋𝘼𝙈`, m)
+let time = user.lastmiming + 1500 //5 min
+if (new Date - user.lastmiming < 1500) return await conn.reply(m.chat, `⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙉𝙊 𝙃𝘼𝙂𝘼 𝙎𝙋𝘼𝙈`, m)
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
 let grupos = [nna, nn, nnn, nnnt]
@@ -14,7 +14,7 @@ let dos = [enlace, enlace2]
 
 const items = {
    buy: {
-        exp: { eleksirb: 3 },
+        exp: { eleksirb: 100 },
         limit: { money: 400 },
         diamond: { berlian: 5 },
         joincount: { limit: 15 },
@@ -47,7 +47,7 @@ const items = {
         serigala: { kaleng: 125 },
         kayu: { wood: 40 },
         sword: { gold: 2 },
-        umpan: { aqua: 2 },
+        umpan: { aqua: 1 },
         healtmonster: { kyubi: 19 },
         pancingan: { trash: user.pancingan == 0 ? 5 : '' || user.pancingan == 1 ? 10 : '' || user.pancingan == 2 ? 15 : '' || user.pancingan == 3 ? 20 : '' || user.pancingan >= 4 ? 25 : '' },
         emas: { berlian: 20 },
@@ -91,26 +91,26 @@ const items = {
     },
    
     sell: {
-        exp: { trash: pickRandom([1, 1, 2]) },
+        exp: { trash: pickRandom([1, 1]) },
         limit: { eleksirb: pickRandom([1, 4, 1]) },
         diamond: { tiketcoin: pickRandom([1, 1, 2]) },
         joincount: { emasbatang: pickRandom([1, 1, 2]) },
         emerald: { money: pickRandom([10, 500, 1]) },
         berlian: { sword: pickRandom([1, 1, 2]) },
         kyubi: { aqua: pickRandom([1, 1, 2]) },
-        gold: { exp: pickRandom([1, 20, 800]) },
+        gold: { exp: pickRandom([1, 2]) },
         money: { aqua: pickRandom([1, 1, 2]) },
         tiketcoin: { kyubi: pickRandom([1, 1, 2]) },
         
         potion: { botol: pickRandom([1, 1, 3]) },
         aqua: { kaleng: pickRandom([1, 1, 2]) },
-        trash: { umpan: pickRandom([1, 1, 2]) },
+        trash: { umpan: pickRandom([0, 1]) },
         wood: { coal: pickRandom([1, 1, 2]) },
         rock: { string: pickRandom([1, 1, 2]) },
         batu: { joincount: pickRandom([1, 1, 2]) },
         string: { kardus: pickRandom([1, 1, 2]) },
         iron: { healtmonster: pickRandom([1, 1, 3]) },
-        coal: { money: pickRandom([1, 3, 30]) },
+        coal: { money: pickRandom([1, 3, 3]) },
         botol: { aqua: pickRandom([1, 1, 2]) },
         kaleng: { batu: pickRandom([1, 1, 2]) },
         kardus: { pancingan: pickRandom([1, 1, 2]) },
@@ -123,7 +123,7 @@ const items = {
         serigala: { petFood: pickRandom([1, 2, 22]) },
         kayu: { wood: pickRandom([1, 3, 5]) },
         sword: { berlian: pickRandom([1, 1, 2]) },
-        umpan: { exp: pickRandom([1, 5, 40, 0]) },
+        umpan: { exp: pickRandom([0, 1]) },
         healtmonster: { diamond: pickRandom([1, 1, 2]) },
         pancingan: { money: pickRandom([1, 10, 30]) },
         emas: { berlian: pickRandom([1, 1, 3]) },
@@ -142,7 +142,7 @@ const items = {
         pisang: { diamond: pickRandom([1, 1, 2]) },
         
         bibitanggur: { potion: pickRandom([1, 1, 2]) },
-        bibitapel: { umpan: pickRandom([1, 1, 3]) },
+        bibitapel: { umpan: pickRandom([0, 1]) },
         bibitjeruk: { healtmonster: pickRandom([1, 1, 2]) },
         bibitmangga: { pancingan: pickRandom([1, 1, 3]) },
         bibitpisang: { wood: pickRandom([1, 2, 4]) },
@@ -228,7 +228,7 @@ const item = (args[0] || '').toLowerCase()
 const total = Math.floor(isNumber(args[1]) ? Math.min(Math.max(parseInt(args[1]), 1), Number.MAX_SAFE_INTEGER) : 1) * 1
 let premium = user.premium
 
-if (!listItems[item]) return conn.sendFile(m.chat, image, 'gata.jpg', footer, fkontak)
+if (!listItems[item]) return conn.sendFile(m.chat, image, 'SodicaBot.exe', footer, fkontak)
 //conn.sendButton(m.chat, text, footer, image, buttons, m)
 if (command.toLowerCase() == 'buy') {
 let paymentMethod = Object.keys(listItems[item]).find(v => v in user)

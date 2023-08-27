@@ -183,3 +183,4 @@ await m.reply(`${fg}\`\`\`NO SE LOGRÓ TRADUCIR SU TEXTO, REPORTE ESTE COMANDO C
 }}}
 handler.command = /^(translate|traducir|trad)$/i
 export default handler
+handler.register = true

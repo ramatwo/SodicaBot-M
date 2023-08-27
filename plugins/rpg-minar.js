@@ -17,22 +17,22 @@ const fkontak = {
 let user = global.db.data.users[m.sender]
 let premium = user.premium  
 let minar = `${pickRandom(['Que pro 😎 has minado',
-'🌟✨ Genial!! Obtienes',
-'WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes',
-'Has Minado!!',
+'🌟✨ Genial  Obtienes',
+'WOW  eres un(a) gran Minero(a) ⛏️ Obtienes',
+'Has Minado ',
 '😲 Lograste Minar la cantidad de',
 'Tus Ingresos subiran gracias a que minaste',
 '⛏️⛏️⛏️⛏️⛏️ Minando',
-'🤩 SII!!! AHORA TIENES',
+'🤩 SII ! AHORA TIENES',
 'La minaria esta de tu lado, por ello obtienes',
 '😻 La suerte de Minar',
 '♻️ Tu Mision se ha cumplido, lograste minar',
 '⛏️ La Mineria te ha beneficiado con',
 '🛣️ Has encontrado un Lugar y por minar dicho lugar Obtienes',
 '👾 Gracias a que has minado tus ingresos suman',
-'Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
+'Felicidades  Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
 
-let pp = 'https://media.istockphoto.com/vectors/basic-rgb-vector-id1315251368?b=1&k=6&m=1315251368&s=170667a&w=0&h=2BgQx5Pu2CewGeq93Qxsyoyw5oT4gioHOOIkHb7PoyY='
+let pp = 'https://google.com'
 
 let string = `${pickRandom([1, 2, 3, 4, 5])}` * 1
 let stringpremium = `${pickRandom([3, 4, 6, 7, 9, 11])}` * 1
@@ -61,7 +61,7 @@ for (let reward of Object.keys(recompensas)) {
     user[reward] += recompensas[reward]
 texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 
-/*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${xp} ${global.rpgshop.emoticon('exp')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+/*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${xp} ${global.rpgshop.emoticon('exp')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, 'SodicaBot', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 💎', `.minar3`],
 ['𝙈𝙞𝙣𝙖𝙧 𝙂𝙖𝙩𝙖𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]

@@ -24,3 +24,4 @@ export default handler
 function formatDate(n, locale = 'id') {
 let d = new Date(n)
 return d.toLocaleDateString(locale, { timeZone: 'Asia/Jakarta' })}
+handler.register = true

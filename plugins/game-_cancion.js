@@ -21,3 +21,4 @@ return !0
 exp: 0
 }
 export default handler
+handler.register = true

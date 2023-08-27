@@ -8,3 +8,4 @@ handler.tags = ['tools']
 handler.command = /^qr(code)?$/i
 handler.money = 20
 export default handler
+handler.register = true
