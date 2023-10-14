@@ -15,4 +15,5 @@ handler.help = ['tagall <mesaje>','invocar <mesaje>']
 handler.tags = ['group']
 handler.command = /^(pedirayuda)$/i
 handler.group = true
+handler.register = true
 export default handler

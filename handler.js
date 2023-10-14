@@ -100,7 +100,7 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
           if (!isNumber(user.afk)) user.afk = -1
 	      //if (!('autolevelup' in user))  user.autolevelup = true
 	      if (!isNumber(user.reporte)) user.reporte = 0
-	      if (!('role' in user)) user.role = '*NOVATO(A)* 🪤'
+	      if (!('role' in user)) user.role = '*NOVATO* 🪤'
               if (!isNumber(user.agility)) user.agility = 0
               if (!isNumber(user.anakanjing)) user.anakanjing = 0
               if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
@@ -971,7 +971,7 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
-                if (!('antitoxic' in chat)) chat.antitoxic = true 
+                if (!('antitoxic' in chat)) chat.antitoxic = false
                 if (!('simi' in chat)) chat.simi = false
                 if (!('antiTraba' in chat)) chat.antiTraba = true
 		if (!('autolevelup' in chat))  chat.autolevelup = false
@@ -1004,7 +1004,7 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
 		    reaction: true,
                     viewonce: true,
                     modoadmin: false,
-                    antitoxic: true,
+                    antitoxic: false,
                     simi: false,
                     antiTraba: true,
 	            autolevelup: false,
@@ -1192,7 +1192,7 @@ if (m.text && user.banned && !isROwner) {
 *👉 Podés contactar con el propietario del bot si creés que se trata de un error:
 
 👉 ${global.asistencia}
-👉 wa.me/5491162480909
+👉 wa.me/5491125172076
 👉 ${global.ig}
 `.trim();
     
@@ -1207,24 +1207,21 @@ if (m.text && user.banned && !isROwner) {
   return;
 }
     
-if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - user.lastCommandTime) < 5000 && !isROwner) {
-  if (user.commandCount === 5) {
-    const remainingTime = Math.ceil((user.lastCommandTime + 5000 - Date.now()) / 1000)
+if (botSpam.antispam2 && m.text && user && user.lastCommandTime && (Date.now() - user.lastCommandTime) < 5000 && !isROwner) {
+    if (user.commandCount === 2) {
+    const remainingTime = Math.ceil((user.lastCommandTime + 5000 - Date.now()) / 1000);
     if (remainingTime > 0) {
-      const messageText = `⚠️ • Espere ${remainingTime}s antes de usar otro comando.*`
-      m.reply(messageText)
-      return
+    const messageText = `𝙀𝙎𝙋𝙀𝙍𝘼 ${remainingTime} 𝙎𝙀𝙂𝙐𝙉𝘿𝙊 𝘼𝙉𝙏𝙀𝙎 𝘿𝙀 𝙐𝙎𝘼𝙍 𝙊𝙏𝙍𝙊 𝘾𝙊𝙈𝘼𝙉𝘿𝙊`;
+     m.reply(messageText);
+    return;
     } else {
-      user.commandCount = 0
-    }
-  } else {
-    user.commandCount += 1
-  }
-} else {
-  user.lastCommandTime = Date.now()
-  user.commandCount = 1
- }
-}
+        user.commandCount = 0;
+    }} else {
+    user.commandCount += 1;
+    }} else {
+    user.lastCommandTime = Date.now();
+    user.commandCount = 1;
+    }}
 
                 let hl = _prefix 
                 let adminMode = global.db.data.chats[m.chat].modoadmin

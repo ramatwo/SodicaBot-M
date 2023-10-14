@@ -27,7 +27,9 @@ let users = m.isGroup ? participants.find(u => u.jid == user) : {}
 let number = user.split('@')[0]
   
 delete global.global.db.data.users[user]
-conn.reply(m.chat, `*SE REINICIÓ A @${number} DE LA BASE DE DATOS*`, null, { mentions: [user] })
+conn.reply(m.chat, `*🗑️➭⛃ ∫ Enviando solicitud de eliminación...*`, null, { mentions: [user] })
+conn.reply(m.chat, `*🛜➭⛃ ∫Conectando a la database...*`, null, { mentions: [user] })
+conn.reply(m.chat, `*👤➭🗑️ ∫ @${number} Eliminado de la base de datos.*`, null, { mentions: [user] })
 }}
 
 handler.tags = ['owner']

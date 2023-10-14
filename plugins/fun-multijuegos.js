@@ -208,6 +208,7 @@ handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
 handler.group = true
+handler.register = true
 //handler.exp = 200
 //handler.money = 200
 export default handler

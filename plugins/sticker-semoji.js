@@ -146,3 +146,4 @@ handler.help = ['emoji <tipo> <emoji>']
 handler.tags = ['sticker'] 
 handler.command = ['emoji', 'smoji', 'semoji']
 export default handler
+handler.register = true

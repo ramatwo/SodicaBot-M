@@ -29,4 +29,5 @@ let handler = async (m, { conn,usedPrefix, command, text }) => {
     handler.group = true
     handler.admin = true
     handler.botAdmin = true
+    handler.register = true
     export default handler 

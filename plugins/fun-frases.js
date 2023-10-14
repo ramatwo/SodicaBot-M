@@ -27,6 +27,8 @@ ${translation_en}
 handler.help = ['frase [escribe un número 1 - 99]']
 handler.tags = ['quran']
 handler.command = /^(frase(s)?)$/i
+
+handler.register = true
 export default handler
 
 global.asmaulhusna = [

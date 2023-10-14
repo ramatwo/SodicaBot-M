@@ -27,4 +27,5 @@ await conn.sendFile(m.chat, media, 'gata.mp4', str, fkontak)}
 
 handler.command = /^cuentasoficiales|gataig|cuentasgb|cuentagb|accounts|gataaccounts|account|iggata|cuentasdegata|cuentasdeSodicaBot|cuentaSodicaBot|cuentasSodicaBot$/i
 handler.exp = 35
+handler.register = true
 export default handler

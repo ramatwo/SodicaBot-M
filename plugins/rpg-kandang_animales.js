@@ -49,7 +49,7 @@ await conn.sendButton(m.chat, ndy, `🔖 𝘼𝙣𝙞𝙢𝙖𝙡𝙚𝙨 𝙡�
 handler.help = ['kandang']
 handler.tags = ['rpg']
 handler.command = /^(kandang|animales|animals)$/i
-
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

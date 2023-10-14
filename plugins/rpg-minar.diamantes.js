@@ -17,20 +17,20 @@ const fkontak = {
 let user = global.db.data.users[m.sender]
 let premium = user.premium  
 let minar = `${pickRandom(['Que pro 😎 has minado',
-'🌟✨ Genial  Obtienes',
-'WOW  eres un(a) gran Minero(a) ⛏️ Obtienes',
-'Has Minado ',
+'🌟✨ Genial,  Obtenés',
+'WOW  eres un gran Minero ⛏️ Obtenés',
+'Minaste',
 '😲 Lograste Minar la cantidad de',
-'Tus Ingresos subiran gracias a que minaste',
+'Tus Ingresos suben gracias a que minaste',
 '⛏️⛏️⛏️⛏️⛏️ Minando',
-'🤩 SII ! AHORA TIENES',
-'La minaria esta de tu lado, por ello obtienes',
+'🤩 SII ! AHORA TENÉS',
+'La minería esta de tu lado, por ello obtenés',
 '😻 La suerte de Minar',
-'♻️ Tu Mision se ha cumplido, lograste minar',
+'♻️ Tu Misión se ha cumplido, lograste minar',
 '⛏️ La Mineria te ha beneficiado con',
-'🛣️ Has encontrado un Lugar y por minar dicho lugar Obtienes',
-'👾 Gracias a que has minado tus ingresos suman',
-'Felicidades  Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
+'🛣️ Encontraste un lugar y por minar dicho lugar Obtienes',
+'👾 Gracias a que minaste, tus ingresos suman',
+'Felicidades, ahora tenés','⛏️⛏️⛏️ Obtenés'])}`
 
 let pp = 'https://google.com'
 
@@ -76,6 +76,7 @@ handler.command = ['minar3', 'miming3', 'mine3', 'minardiamantes', 'minargemas',
 handler.fail = null
 handler.exp = 0
 export default handler
+handler.register = true
 
 function msToTime(duration) {
 var milliseconds = parseInt((duration % 1000) / 100),

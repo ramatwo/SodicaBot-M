@@ -11,6 +11,7 @@ handler.tags = ['fun']
 handler.command = /^reto/i
 handler.fail = null
 export default handler
+handler.register = true
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]

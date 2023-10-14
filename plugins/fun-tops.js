@@ -17,9 +17,9 @@ let h = ps.getRandom()
 let i = ps.getRandom()
 let j = ps.getRandom()
 
-if (command == 'topgays') {
+if (command == 'tophomos') {
 let vn = './media/ah.mp3'
-let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
+let top = `*🌈TOP 10 HOMOSEXUALES/LESBIANAS DEL GRUPO🌈*
     
 *_1.- 🏳️‍🌈 ${user(a)}_* 🏳️‍🌈
 *_2.- 🪂 ${user(b)}_* 🪂
@@ -47,7 +47,7 @@ type: 'audioMessage',
 ptt: true })}
     
 if (command == 'topotakus') {
-let vn = './media/otaku.mp3'
+let vn = './media/ah.mp3'
 let top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
     
 *_1.- 💮 ${user(a)}_* 💮
@@ -88,6 +88,22 @@ let top = `*_💎TOP 10 L@S MEJORES INTEGRANTES👑_*
 *_9.- 💎 ${user(i)}_* 💎
 *_10.- 👑 ${user(j)}_* 👑`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
+
+
+if (command == 'toppenes') {
+   let top = `*_🍆TOP 10 PERSONAS CON EL PENE MAS GRANDE🍆_*
+       
+   *_1.- 🍆 ${user(a)}_* 🍆
+   *_2.- 🍆 ${user(b)}_* 🍆
+   *_3.- 🍆 ${user(c)}_* 🍆
+   *_4.- 🍆 ${user(d)}_* 🍆
+   *_5.- 🍆 ${user(e)}_* 🍆
+   *_6.- 🍆 ${user(f)}_* 🍆
+   *_7.- 🍆 ${user(g)}_* 🍆
+   *_8.- 🍆 ${user(h)}_* 🍆
+   *_9.- 🍆 ${user(i)}_* 🍆
+   *_10.- 🍆 ${user(j)}_* 🍆`
+   m.reply(top, null, { mentions: conn.parseMention(top) })}
    
 if (command == 'topintegrante') {
 let top = `*_💎TOP 10 L@S MEJORES INTEGRANTES👑_*
@@ -323,7 +339,8 @@ Genial! 💝, están de Luna de miel 🥵✨❤️‍🔥`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
   
 }
-handler.help = handler.command = ['topgays', 'topotakus', 'topintegrantes', 'topintegrante', 'toplagrasa', 'topgrasa', 'toppanafrescos', 'toppanafresco', 'topshiposters', 'topshipost', 'toppajer@s', 'toplindos', 'toplind@s', 'topput@s', 'topfamosos', 'topfamos@s', 'topparejas', 'top5parejas' ]
+handler.help = handler.command = ['toppenes', 'tophomos', 'topotakus', 'topintegrantes', 'topintegrante', 'toplagrasa', 'topgrasa', 'toppanafrescos', 'toppanafresco', 'topshiposters', 'topshipost', 'toppajer@s', 'toplindos', 'toplind@s', 'topput@s', 'topfamosos', 'topfamos@s', 'topparejas', 'top5parejas' ]
 handler.tags = ['games']
 handler.group = true
+handler.register = true
 export default handler  

@@ -35,6 +35,7 @@ if (!aa) return conn.sendFile(m.chat, json.link_song, 'coba-lagi.mp3', '', m)
 handler.help = ['tebaklagu']
 handler.tags = ['game']
 handler.command = /^cancion|canción$/i
+handler.register = true
 export default handler
 async function fetchJson(url, options) {
 try {

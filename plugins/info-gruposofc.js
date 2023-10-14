@@ -8,9 +8,7 @@ let str = `💕 𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝙊 𝘼 𝙇𝙊𝙎 𝙂�
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ 𝙂𝙍𝙐𝙋𝙊𝙎 𝙊𝙁𝙄𝘾𝙄𝘼𝙇𝙀𝙎
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-✨https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4
-✨https://chat.whatsapp.com/GkeE0AU0wFcAwhR55s1aIZ
-✨https://chat.whatsapp.com/KcJsQr4jiGlKS3PhLdFe9k`
+✨https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S`
 await conn.sendFile(m.chat, media, 'gata.mp4', str, fkontak)}
 
 handler.command = /^linkgc|grupos|gruposSodicaBot|SodicaBotgrupos|gruposdeSodicaBot|groupofc|gruposgb|grupogb|groupgb$/i

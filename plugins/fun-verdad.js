@@ -10,6 +10,7 @@ handler.help = ['verdad']
 handler.tags = ['fun']
 handler.command = /^verdad/i
 handler.fail = null
+handler.register = true
 export default handler
 
 function pickRandom(list) {

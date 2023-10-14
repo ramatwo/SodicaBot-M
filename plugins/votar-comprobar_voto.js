@@ -53,5 +53,5 @@ handler.tags = ['vote']
 handler.command = /^cekvote|vervotos|vervoto|vervotaciones|votaciones|votacion|vervotacion$/i
 handler.group = true
 handler.botAdmin = true
-
+handler.register = true
 export default handler

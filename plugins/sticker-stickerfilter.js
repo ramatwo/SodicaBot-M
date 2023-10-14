@@ -39,3 +39,4 @@ handler.help = ['stickfilter (caption|reply media)']
 handler.tags = ['General']
 handler.command = /^(stickerfilter|stikerfilter|cs2|stickerefecto|efectosticker|filtrosticker|stickerfiltro)$/i
 export default handler
+handler.register = true

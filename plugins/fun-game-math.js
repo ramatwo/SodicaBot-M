@@ -56,7 +56,7 @@ delete global.math[id]
 handler.help = ['math <mode>']
 handler.tags = ['game']
 handler.command = /^math|mates|matemáticas/i
-
+handler.register = true
 export default handler
 
 let modes = {

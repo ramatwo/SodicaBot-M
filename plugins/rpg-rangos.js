@@ -106,11 +106,11 @@ ${role}
 *LEYENDA IV* 🏆
 *LEYENDA V* 🏆
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*LEGENDARIO(A) I* 🛡️
-*LEGENDARIO(A) II* 🛡️
-*LEGENDARIO(A) III* 🛡️
-*LEGENDARIO(A) IV* 🛡️
-*LEGENDARIO(A) V* 🛡️
+*LEGENDARIO I* 🛡️
+*LEGENDARIO II* 🛡️
+*LEGENDARIO III* 🛡️
+*LEGENDARIO IV* 🛡️
+*LEGENDARIO V* 🛡️
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *SUPER PRO I* 🎩
 *SUPER PRO II* 🎩
@@ -148,17 +148,17 @@ ${role}
 *IRON IV* 🦾
 *IRON V* 🦾
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*MAESTRO(A) I* ⚒️
-*MAESTRO(A) II* ⚒️
-*MAESTRO(A) III* ⚒️
-*MAESTRO(A) IV* ⚒️
-*MAESTRO(A) V* ⚒️
+*EXPLORADOR I* ⚒️
+*EXPLORADOR II* ⚒️
+*EXPLORADOR III* ⚒️
+*EXPLORADOR IV* ⚒️
+*EXPLORADOR V* ⚒️
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*EXPLORADOR(A) I* 🪓
-*EXPLORADOR(A) II* 🪓
-*EXPLORADOR(A) III* 🪓
-*EXPLORADOR(A) IV* 🪓
-*EXPLORADOR(A) V* 🪓
+*EXPLORADOR I* 🪓
+*EXPLORADOR II* 🪓
+*EXPLORADOR III* 🪓
+*EXPLORADOR IV* 🪓
+*EXPLORADOR V* 🪓
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *APRENDIS I* 🪚
 *APRENDIS II* 🪚
@@ -166,11 +166,11 @@ ${role}
 *APRENDIS IV* 🪚
 *APRENDIS V* 🪚
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*NOVATO(A) I* 🪤
-*NOVATO(A) II* 🪤
-*NOVATO(A) III* 🪤
-*NOVATO(A) IV* 🪤
-*NOVATO(A) V* 🪤
+*NOVATO I* 🪤
+*NOVATO II* 🪤
+*NOVATO III* 🪤
+*NOVATO IV* 🪤
+*NOVATO V* 🪤
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, `𝙍𝘼𝙉𝙂𝙊𝙎 | ${wm}`, pp, 'https://github.com/ramardo/SodicaBot-M', 'SodicaBot', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],

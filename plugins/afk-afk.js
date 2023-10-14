@@ -4,8 +4,7 @@ let handler = async (m, { text, usedPrefix }) => {
       if (text.length < 1) return m.reply(`${lenguajeGB['smsAvisoMG']()}𝙀𝙇 𝙈𝙊𝙏𝙄𝙑𝙊 𝙀𝙎 𝙈𝙐𝙔 𝘾𝙊𝙍𝙏𝙊, 𝙈𝙄𝙉𝙄𝙈𝙊 1 𝘾𝘼𝙍𝘼́𝘾𝙏𝙀𝙍`)
   user.afk = + new Date
   user.afkReason = text
-  m.reply(`${lenguajeGB['smsAfkM1A']()} *${conn.getName(m.sender)}* ${lenguajeGB['smsAfkM1B']()}${text ? ': ' + text : ''}
-  `)}
+  m.reply(`${lenguajeGB['smsAfkM1A']()}`)}
   handler.help = ['afk [alasan]']
   handler.tags = ['main']
   handler.command = /^afk$/i

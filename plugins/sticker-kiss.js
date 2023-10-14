@@ -13,3 +13,4 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
 handler.command = /^(kiss|skiss|kis|besos|beso|besar|besando)$/i
 export default handler
+handler.register = true

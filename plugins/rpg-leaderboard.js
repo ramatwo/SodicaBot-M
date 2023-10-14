@@ -56,7 +56,7 @@ Tú : *${usersJoincount.indexOf(m.sender) + 1}* de *${usersJoincount.length} Usu
 
 ${sortedJoincount.slice(0, len).map(({ jid, joincount }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${joincount} 🪙*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *TOP ${len} GataCoins 🐈*
+💠 *TOP ${len} Coinss 🐈*
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} 🐈*`).join`\n`}
@@ -73,6 +73,7 @@ handler.command = ['leaderboard', 'lb', 'top']
 //handler.register = true
 handler.fail = null
 handler.exp = 0
+handler.register = true
 
 export default handler
 

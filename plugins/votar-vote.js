@@ -67,5 +67,5 @@ handler.tags = ['vote']
 handler.command = /^(up|si|de|no)vote|voto|votar$/i  
 handler.group = true
 handler.botAdmin = true
-
+handler.register = true
 export default handler

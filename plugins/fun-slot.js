@@ -111,13 +111,13 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO  HAS GANADO +${apuesta + apuesta} GataCoins*\n\n🥳 *COOL  YOU JUST WON +${apuesta + apuesta} GataCoins*`
+end = `✨ *QUE PRO  HAS GANADO +${apuesta + apuesta} Coins*\n\n🥳 *COOL  YOU JUST WON +${apuesta + apuesta} Coins*`
 users.money += apuesta
 } else if (a == b || a == c || b == c) {
-end = `🙀 *CASI , VUELVA A INTENTAR*\n*BONO DE +30 GataCoins*\n\n😯 *ALMOST , TRY AGAIN*\n*BONDS OF +30 GataCoins*`
+end = `🙀 *CASI , VUELVA A INTENTAR*\n*BONO DE +30 Coins*\n\n😯 *ALMOST , TRY AGAIN*\n*BONDS OF +30 Coins*`
 users.money += 30
 } else {
-end = `😿 *HA PERDIDO  ❌ -${apuesta} GataCoins*\n\n*HAS LOST  ❌ -${apuesta} GataCoins*`
+end = `😿 *HA PERDIDO  ❌ -${apuesta} Coins*\n\n*HAS LOST  ❌ -${apuesta} Coins*`
 users.money -= apuesta
 }
 //users.lastslot = new Date * 1
@@ -222,7 +222,7 @@ handler.help = ['slot <apuesta>']
 handler.tags = ['game']
 handler.command = ['slot', 'apostar', 'slot1', 'slot2', 'slot3']
 export default handler
-
+handler.register = true
 function msToTime(duration) {
 var milliseconds = parseInt((duration % 1000) / 100),
 seconds = Math.floor((duration / 1000) % 60),

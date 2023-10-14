@@ -110,7 +110,7 @@ conn.reply(m.chat, `@${m.sender.split("@s.whatsapp.net")[0]} *${['OBJETIVO FIJAD
 //conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['OBJETIVO FIJADO 🎯','Carnada en Marcha 🍫 🍇 🍖','ANIMALES DETECTADOS  🐂 🐅 🐘 🐼','ANIMALES DETECTADOS  🐖 🐃 🐮 🐒'].getRandom()}*`, wm, null, null, null, null, null, [[null, null]], null)}, 18000)
 
 setTimeout(() => {
-conn.reply(m.chat, `@${m.sender.split("@s.whatsapp.net")[0]} *${['Armas lista para la Caza ','Probando Armas 🔫 💣 🪓 🏹','CARROS PARA LA CAZA  🚗 🏍️ 🚜','TIEMPO BUENO PARA LA CAZA 🧤'].getRandom()}*`, null, { mentions: [m.sender]})}, 15000) 	
+conn.reply(m.chat, `@${m.sender.split("@s.whatsapp.net")[0]} *${['Armas lista para la Caza','Probando Armas 🔫 💣 🪓 🏹','CARROS PARA LA CAZA  🚗 🏍️ 🚜','TIEMPO BUENO PARA LA CAZA 🧤'].getRandom()}*`, null, { mentions: [m.sender]})}, 15000) 	
 //conn.sendHydrated(m.chat, `${conn.getName(m.sender)} *${['Armas lista para la Caza ','Probando Armas 🔫 💣 🪓 🏹','CARROS PARA LA CAZA  🚗 🏍️ 🚜','TIEMPO BUENO PARA LA CAZA 🧤'].getRandom()}*`, wm, null, null, null, null, null, [[null, null]], null)}, 15000)
 
 setTimeout(() => {

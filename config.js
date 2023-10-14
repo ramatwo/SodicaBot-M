@@ -12,15 +12,16 @@ import { en, es, id, ar, pt, fr } from './lib/idiomas/total-idiomas.js'
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰  
 
 global.owner = [
-  ['5491162480909', '⭐Owner', true],  
+  ['5491125172076', '⭐Owner', true],  
   ['5491156664731', '💻Desarrollador', true],
+  ['5491138819342', '💻Desarrollador', true],
 
 ]
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = ['5491162480909'] 
-global.prems = ['5491162480909'] 
+global.mods = ['5491125172076'] 
+global.prems = ['5491125172076'] 
    
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
@@ -92,7 +93,7 @@ global.moment = moment
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
 global.official = [ // Agregate si eres Owner
-['5491162480909', '⭐Owner', 1], 
+['5491125172076', '⭐Owner', 1], 
 ['5491156664731', '💻Desarrollador', 1],] 
 
 global.mail = '' //agrega tú correo
@@ -105,11 +106,7 @@ global.author = '@sodica.crew'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-<<<<<<< HEAD
-global.vs = '1.6.0'
-=======
-global.vs = '1.5.1'
->>>>>>> 81fdecd3656345dfe08993ded0c5ad44599e9ec5
+global.vs = '1.6.2'
 global.vsJB = '2.0'
 
 global.gt = 'SodicaBot'
@@ -119,43 +116,43 @@ global.ig = 'https://www.instagram.com/sodica.crew'
 global.md = 'https://instagram.com/sodica.crew'
 global.fb = 'https://instagram.com/sodica.crew'
 
-global.nna = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //UPDATE SodicaBot
-global.nna2 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Help
-global.nn = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 1
-global.nnn = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 2
-global.nnnt = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 3
-global.nnntt = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 4
-global.nnnttt = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 5 COL
-global.nnnttt2 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 6 COL
-global.nnnttt3 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 7 COL
-global.nnnttt4 = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4' //Grupo 8 COL
-global.paypal = 'https://chat.whatsapp.com/Jpid2yChlSA4x9zPEww6p4'
-global.asistencia = 'Wa.me/5491162480909' //Dudas? escríbeme...
+global.nna = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //UPDATE SodicaBot
+global.nna2 = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Help
+global.nn = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 1
+global.nnn = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 2
+global.nnnt = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 3
+global.nnntt = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 4
+global.nnnttt = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 5 COL
+global.nnnttt2 = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 6 COL
+global.nnnttt3 = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 7 COL
+global.nnnttt4 = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S' //Grupo 8 COL
+global.paypal = 'https://chat.whatsapp.com/G4tSpUXbUIB0bq1LVAwU1S'
+global.asistencia = 'Wa.me/5491125172076' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 //⊱ ━━━━━━━━━━━━━.⋅ Datos ⋅.━━━━━━━━━━━━━━ ⊰
 
-global.rg = '╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊* ⊱✅⊱╮\n\n'
+global.rg = '*✅ ∫ Resultado*\n\n'
 global.resultado = rg
 
-global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n'
+global.ag = '*⚠️ ∫ ADVERTENCIA*\n\n'
 global.advertencia = ag
 
-global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉* ⊱⊱╮\n\n'
+global.iig = '*❕∫ Información*\n\n'
 global.informacion = iig
 
-global.fg = '╰⊱❌⊱ *𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n'
+global.fg = '*❌ ∫ Error*\n\n'
 global.fallo = fg
 
-global.mg = '╰⊱❗️⊱ *𝙈𝘼𝙇* ⊱❗️⊱╮\n\n'
+global.mg = '*❗️∫ MAL*\n\n'
 global.mal = mg
 
-global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀* ⊱📩⊱╮\n\n'
+global.eeg = '*📩 ∫ 𝙍𝙀𝙋𝙊𝙍𝙏𝙀*\n\n'
 global.envio = eeg
 
-global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱💚⊱╮\n\n'
+global.eg = '*✅ ∫ Éxito*\n\n'
 global.exito = eg
 
 //𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
@@ -170,7 +167,7 @@ global.wait = '*⌛ Cargando ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ Cargando ▬▬▭▭▭*'
 global.waittt = '*⌛ Cargando ▬▬▬▬▭▭*'
 global.waitttt = '*⌛ Cargando ▬▬▬▬▬▬▭*'
-global.nomorown = '5491162480909'
+global.nomorown = '5491125172076'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
@@ -278,11 +275,7 @@ global.fgif = {
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
-<<<<<<< HEAD
-global.multiplier = 500 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
-=======
-global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
->>>>>>> 81fdecd3656345dfe08993ded0c5ad44599e9ec5
+global.multiplier = 20000 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 //Emojis RPG - Referencias
 global.rpg = {
@@ -360,7 +353,7 @@ global.rpg = {
       kambing: '🐐 Cabra',
       kerbau: '🐃 Búfalo',
       lion: '🦁 León',
-      money: lenguajeGB.eGataCoins(),
+      money: lenguajeGB.eCoinss(),
       monyet: '🐒 Mono',
       panda: '🐼 Panda',
       snake: '🐍 Serpiente',
@@ -424,7 +417,7 @@ global.rpgshop = { //Tienda
     let emottt = {
       exp: lenguajeGB.eExp(), limit: lenguajeGB.eDiamante(), diamond: lenguajeGB.eDiamantePlus(), joincount: lenguajeGB.eToken(),
       emerald: lenguajeGB.eEsmeralda(), berlian: lenguajeGB.eJoya(), kyubi: lenguajeGB.eMagia(), gold: lenguajeGB.eOro(),
-      money: lenguajeGB.eGataCoins(), tiketcoin: lenguajeGB.eGataTickers(), stamina: lenguajeGB.eEnergia(),
+      money: lenguajeGB.eCoinss(), tiketcoin: lenguajeGB.eGataTickers(), stamina: lenguajeGB.eEnergia(),
             
       potion: lenguajeGB.ePocion(), aqua: lenguajeGB.eAgua(), trash: lenguajeGB.eBasura(), wood: lenguajeGB.eMadera(),
       rock: lenguajeGB.eRoca(), batu: lenguajeGB.ePiedra(), string: lenguajeGB.eCuerda(), iron: lenguajeGB.eHierro(),

@@ -24,4 +24,5 @@ handler.tags = ['group']
 handler.command = /^enlace|link(gro?up)?$/i
 handler.group = true
 handler.botAdmin = true
+handler.register = true
 export default handler

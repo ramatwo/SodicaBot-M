@@ -34,4 +34,5 @@ let str =
 handler.help = ['profile [@user]']
 handler.tags = ['xp']
 handler.command = /^perfil|profile?$/i
+handler.register = true
 export default handler

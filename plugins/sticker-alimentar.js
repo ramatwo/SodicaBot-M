@@ -13,3 +13,4 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
 handler.command = /^(alimentar|food|alimentándose|alimentando|alimentar)$/i 
 export default handler
+handler.register = true

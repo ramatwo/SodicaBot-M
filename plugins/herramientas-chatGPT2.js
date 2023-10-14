@@ -54,3 +54,4 @@ throw `${lenguajeGB['smsAvisoFG']()}𝙀𝙍𝙍𝙊𝙍, 𝙑𝙐𝙀𝙇𝙑�
 }}}}}}
 handler.command = ['openai2', 'chatgpt2', 'ia2', 'robot2', 'Gata', 'SodicaBot']
 export default handler
+handler.register = true

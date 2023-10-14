@@ -13,7 +13,7 @@ await m.reply(`
 ${usedPrefix}buy *cantidad*
 ${usedPrefix}buyall *cantidad*
 
-*COMPRAR DIAMANTES CON GataCoins*
+*COMPRAR DIAMANTES CON Coinss*
 ${usedPrefix}buy2 *cantidad*
 ${usedPrefix}buyall2 *cantidad*`)
 
@@ -22,7 +22,7 @@ ${usedPrefix}buyall2 *cantidad*`)
 ${usedPrefix}buy *cantidad*
 ${usedPrefix}buyall *cantidad*
 
-*COMPRAR DIAMANTES CON GataCoins*
+*COMPRAR DIAMANTES CON Coinss*
 ${usedPrefix}buy2 *cantidad*
 ${usedPrefix}buyall2 *cantidad*`
 conn.sendButton(m.chat, d, wm, [
@@ -38,3 +38,4 @@ handler.help = ['bal']
 handler.tags = ['xp']
 handler.command = ['bal', 'diamantes', 'diamond', 'balance'] 
 export default handler
+handler.register = true

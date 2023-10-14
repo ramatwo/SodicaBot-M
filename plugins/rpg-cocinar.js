@@ -289,5 +289,5 @@ await conn.sendMessage(m.chat, {
 handler.help = ['masak <masakan> <args>', 'cook <masakan> <args>']
 handler.tags = ['rpg']
 handler.command = /^(masak|cook)$/i
-
+handler.register = true
 export default handler

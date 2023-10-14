@@ -96,4 +96,5 @@ await conn.reply(m.chat, `😼 𝙅𝙐𝙀𝙂𝙊 𝙏𝙍𝙀𝙎 𝙀𝙉 �
 conn.game[room.id] = room
 }}
 handler.command = /^(tictactoe|ttc|ttt|tateti|xo)$/i
+handler.register = true
 export default handler

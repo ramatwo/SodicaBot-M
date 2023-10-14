@@ -35,6 +35,6 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙐
 }
 handler.help = ['simsimi']
 handler.tags = ['General']
-handler.command = ['simi', 'simsimi'] 
+handler.command = ['simi', 'simsimi', 'bot'] 
 export default handler
 handler.register = true

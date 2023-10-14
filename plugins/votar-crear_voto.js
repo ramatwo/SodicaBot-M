@@ -62,5 +62,5 @@ handler.botAdmin = true
 handler.admin = true
 handler.level = 4
 handler.limit = 1
-
+handler.register = true
 export default handler 

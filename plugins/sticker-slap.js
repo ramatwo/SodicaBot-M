@@ -15,3 +15,4 @@ handler.help = ['slap']
 handler.tags = ['General']
 handler.command = /^slap|bofetada|manotada|abofetear|golpear/i
 export default handler
+handler.register = true

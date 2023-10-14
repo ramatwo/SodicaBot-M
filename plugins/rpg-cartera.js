@@ -31,3 +31,4 @@ handler.help = ['bal']
 handler.tags = ['xp']
 handler.command = ['bal2', 'cartera', 'wallet', 'cartera2', 'balance2'] 
 export default handler
+handler.register = true

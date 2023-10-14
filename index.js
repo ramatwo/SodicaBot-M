@@ -65,3 +65,6 @@ if (!opts['test'])
 if (!rl.listenerCount()) rl.on('line', line => {
 p.emit('message', line.trim())})}
 start('main.js')
+const { spawn } = require('child_process');
+const path = require('path');
+

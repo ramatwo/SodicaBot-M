@@ -18,5 +18,5 @@ handler.tags = ['sticker']
 handler.command = /^(smeme)$/i
 
 handler.limit = true
-
+handler.register = true
 export default handler
