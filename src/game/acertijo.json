@@ -1,28 +1,32 @@
 [
     {
-        "question": "¿Qué le dice un pingüino a otro pingüino?",
-        "response": "Te quiero como a ningüino" 
+        "question": "¿Cuál es el animal más antiguo?",
+        "response": "La cebra, porque está en blanco y negro desde siempre"
+    },
+    
+    {
+        "question": "¿Qué hace una abeja en el gimnasio?",
+        "response": "¡Zum-ba!"
+    },
+    
+    {
+        "question": "¿Qué hace una impresora en una fiesta?",
+        "response": "¡Imprime ambiente!"
     },
     {
-        "question": "¿Qué le dice un ciego a otro ciego?",
-        "response": "Después nos vemos"
+        "question": "¿Qué tiene llaves pero no abre ninguna puerta?",
+        "response": "Un piano"
     },
-    {
-        "question": "¿En qué se parece un alfiler a un policía?",
-        "response": "En que los dos prenden"
-    },
-    {
-        "question": "¿Qué se congela cuando se calienta?",
-        "response": "La computadora"
-    },
+    
     {
         "question": "¿Qué fruta tiene muchos ojos, pero no puede ver?",
         "response": "La piña"
     },
     {
-        "question": "¿En qué idioma se comunican las tortugas?",
-        "response": "En tortugués"
+        "question": "¿Qué hace una nube cuando está triste?",
+        "response": "Llora"
     },
+    
     {
         "question": "¿Cómo llama un policía sevillano a su pistola?",
         "response": "Mi arma"
@@ -32,9 +36,10 @@
         "response": "La mente"
     },
     {
-        "question": "¿Cuál es el colmo de una aspiradora?",
-        "response": "Ser alérgica al polvo"
+        "question": "¿Cuál es el colmo de un electricista?",
+        "response": "No tener corriente de trabajo"
     },
+    
     {
         "question": "¿Qué es aquello que si nombras, desaparece?",
         "response": "El silencio"
@@ -263,6 +268,14 @@
        "question": "No son flores, pero tienes plantas y olores ¿que es?",
         "response": "Los pies"
     },
+    {
+        "question": "¿A qué país le pertenecen las Islas Malvinas?",
+         "response": "A Argentina"
+     },
+     {
+        "question": "Es un gordo puto y es mas facil saltarlo que rodearlo ¿Quién es?",
+         "response": "El gordo tomi"
+     },
     {
        "question": "No lo puedes ver, pero no puedes vivir sin él. ¿Qué es?",
        "response": "El aire"
