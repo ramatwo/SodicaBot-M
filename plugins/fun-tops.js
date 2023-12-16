@@ -224,7 +224,20 @@ let top = `*_😏TOP L@S MAS PAJEROS/AS DEL GRUPO💦_*
 *_9.- 🥵 ${user(i)}_* 💦
 *_10.- 🥵 ${user(j)}_* 💦`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
-   
+if (command == 'topsalames') {
+   let top = `*_😱TOP 10 SALAMES DEL GRUPO😱_* 
+       
+   *_1.- 😈 ${user(a)}_* 😈
+   *_2.- 🤙 ${user(b)}_* 🤙
+   *_3.- 🥶 ${user(c)}_* 🥶
+   *_4.- 🤑 ${user(d)}_* 🤑
+   *_5.- 🥵 ${user(e)}_* 🥵
+   *_6.- 🤝 ${user(f)}_* 🤝
+   *_7.- 😟 ${user(g)}_* 😟
+   *_8.- 😨 ${user(h)}_* 😨
+   *_9.- 😇 ${user(i)}_* 😇
+   *_10.- 🤠 ${user(j)}_* 🤠`
+   m.reply(top, null, { mentions: conn.parseMention(top) })}
 if (command == 'toplind@s') {
 let top = `*_😳TOP L@S MAS LIND@S Y SEXIS DEL GRUPO😳_*
     
@@ -300,6 +313,20 @@ let top = `*_🌟TOP PERSONAS FAMOSAS EN EL GRUPO🌟_*
 *_10.- 🛫 ${user(j)}_* 🛫`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
    
+if (command == 'topskibiditoilets') {
+   let top = `*_🚽TOP SKIBIDI TOILETS DEL GRUPO🚽_* 
+       
+   *_1.- 🚽 ${user(a)}_* 🚽
+   *_2.- 🚽 ${user(b)}_* 🚽
+   *_3.- 🚽 ${user(c)}_* 🚽
+   *_4.- 🚽 ${user(d)}_* 🚽
+   *_5.- 🚽 ${user(e)}_* 🚽
+   *_6.- 🚽 ${user(f)}_* 🚽
+   *_7.- 🚽 ${user(g)}_* 🚽
+   *_8.- 🚽 ${user(h)}_* 🚽
+   *_9.- 🚽 ${user(i)}_* 🚽
+   *_10.- 🚽 ${user(j)}_* 🚽`
+   m.reply(top, null, { mentions: conn.parseMention(top) })}
 if (command == 'topparejas') {
 let top = `*_😍 Las 5 maravillosas parejas del grupo 😍_*
     
@@ -339,7 +366,7 @@ Genial! 💝, están de Luna de miel 🥵✨❤️‍🔥`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
   
 }
-handler.help = handler.command = ['toppenes', 'tophomos', 'topotakus', 'topintegrantes', 'topintegrante', 'toplagrasa', 'topgrasa', 'toppanafrescos', 'toppanafresco', 'topshiposters', 'topshipost', 'toppajer@s', 'toplindos', 'toplind@s', 'topput@s', 'topfamosos', 'topfamos@s', 'topparejas', 'top5parejas' ]
+handler.help = handler.command = ['toppenes','topsalames', 'topskibiditoilets', 'tophomos', 'topotakus', 'topintegrantes', 'topintegrante', 'toplagrasa', 'topgrasa', 'toppanafrescos', 'toppanafresco', 'topshiposters', 'topshipost', 'toppajer@s', 'toplindos', 'toplind@s', 'topput@s', 'topfamosos', 'topfamos@s', 'topparejas', 'top5parejas' ]
 handler.tags = ['games']
 handler.group = true
 handler.register = true

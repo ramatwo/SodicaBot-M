@@ -24,6 +24,7 @@ handler.tags = ['econ']
 handler.command = ['robar', 'rob']
 export default handler  
 handler.register = true
+handler.group = true
 function msToTime(duration) {
 var seconds = Math.floor((duration / 1000) % 60),
 minutes = Math.floor((duration / (1000 * 60)) % 60),

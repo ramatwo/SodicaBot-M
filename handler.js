@@ -1001,13 +1001,13 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
 		    antiInstagram: false,
 		    antiTwitter: false,
 		    antifake: false,
-		    reaction: true,
+		    reaction: false,
                     viewonce: true,
                     modoadmin: false,
                     antitoxic: false,
                     simi: false,
                     antiTraba: true,
-	            autolevelup: false,
+	            autolevelup: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]

@@ -5,6 +5,13 @@ handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
 
+if (/^callate$/i.test(m.text) ) { //sem prefixo
+    let teks = `
+${pickRandom([`callame`])}
+`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}
 
 if (/^que$/i.test(m.text) ) { //sem prefixo
     let teks = `

@@ -1,7 +1,7 @@
 {
   "name": "SodicaBot", 
   "description": "Bot WhatsApp",
-  "repository": "https://github.com/ramardo/SodicaBot-M",
+  "repository": "https://github.com/ramatwo/SodicaBot-M",
   "logo": "https://i.imgur.com/ZjvbaOA.jpg",
   "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
   "buildpacks": [

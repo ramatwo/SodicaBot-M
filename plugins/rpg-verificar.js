@@ -56,7 +56,7 @@ conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO*\n\nSi no usa el botón 
 if (user.registered === true) throw `${iig}𝙔𝘼 𝙀𝙎𝙏𝘼𝙎 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝘼𝘿𝙊\n𝙎𝙄 𝙌𝙐𝙄𝙀𝙍𝙀 𝘼𝙉𝙐𝙇𝘼𝙍 𝙎𝙐 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝙊 𝙐𝙎𝙀 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊\n*${usedPrefix}unreg numero de serie*\n\n𝙎𝙄 𝙉𝙊 𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝘼 𝙎𝙐 𝙉𝙐𝙈𝙀𝙍𝙊 𝘿𝙀 𝙎𝙀𝙍𝙄𝙀 𝙐𝙎𝙀\n*${usedPrefix}myns*` 	
 
 if (command == 'verificar' || command == 'verify' || command == 'register' || command == 'reg' || command == 'registrar') {
-if (registrando === true) throw '*ALGUIEN SE ESTÁ REGISTRANDO...\n\nESPERE 1 MINUTO*'
+if (registrando === true) throw '*Alguien se está registrando en este momento. Vuelva a intentar más tarde.*'
 conn.reply(m.chat, `*👀 REGISTRO PARA SODICABOT*\n\n📑 *REGISTRO RAPIDO*\nUsted obtiene:\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n\n• Escriba para registrarse\n\n${usedPrefix}reg1 nombre edad\n\nEjemplo: ${usedPrefix}reg1 Rama 25 `, fkontak, m)
 //await conn.sendButton(m.chat, iig + '👀 *CÓMO DESEA REGISTRARSE?*', '📑 *REGISTRO RAPIDO*\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n\n🗂️ *REGISTRO COMPLETO*\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n• Premium Temporal Gratis\n• Más opciones para este registro\n\n' + wm, null, [[`📑 REGISTRO RÁPIDO`, usedPrefix + 'Reg1'], [`🗂️ REGISTRO COMPLETO`, usedPrefix + 'nombre']], m) 
 }
@@ -559,7 +559,7 @@ user.pasatiempo = pasatiempo === 0 ? 'No encontrada' : pasatiempo
 fecha = `${week}, ${date} || `
 hora = `${time}`
 user.tiempo = fecha + hora
-user.name = nombre === 0 ? 'No encontrada' : nombre + '✓'
+user.name = nombre === 0 ? 'No encontrada' : nombre + '✅'
 user.age = edad === 0 ? 'No encontrada' : `${edad >= 18 ? edad += ' Años *||* ' + '(Persona Adulta)' : edad += ' Años *||* ' + '(Persona Joven)'}`
 user.descripcion = bio	
 }
@@ -586,7 +586,7 @@ clearInterval(intervalId)
 ❱❱ ${sn}
 
 ✅ *INSIGNIA DE VERIFICACIÓN*
-❱❱   *${user.registered === true ? '✓' : ''}*
+❱❱   *${user.registered === true ? '✅' : ''}*
 
 ✨ *NOMBRE* 
 ❱❱ ${user.name}
@@ -627,7 +627,7 @@ await conn.reply(m.chat, `🍃 \`\`\`VERIFICACIÓN EXITOSA\`\`\` 🍃
 ❱❱ ${sn}
 
 ✅ *INSIGNIA DE VERIFICACIÓN*
-❱❱   *${user.registered === true ? '✓' : ''}*
+❱❱   *${user.registered === true ? '✅' : ''}*
 
 ✨ *NOMBRE* 
 ❱❱ ${user.name}
@@ -652,5 +652,5 @@ ${user.premLimit === 1 ? '' : `🎟️ *PREMIUM*
 //await conn.sendButton(m.chat, caption, user.registroC === true ? 'Si elimina su registro se eliminará los datos e insignia y dejara de tener acceso a los comandos con registro\n\nTendrá Premium solo la premira vez que se registre si llega a volver a registrarse no tendrá premium a excepción si compra usando #pase premium\n\nPuede volver a eliminar su registro y registrarse desde 0 sin problema.\n\nSu código de serie le permitirá borrar su registro ejemplo:\n' + `${usedPrefix}unreg ${sn}` : 'Si elimina su registro se eliminará los datos e insignia y dejara de tener acceso a los comandos con registro\n\nPuede volver a eliminar su registro y registrarse desde 0 sin problema.\n\nSu código de serie le permitirá borrar su registro ejemplo:\n' + `${usedPrefix}unreg ${sn}`, [['𝘼𝙝𝙤𝙧𝙖 𝙚𝙨𝙩𝙤𝙮 𝙑𝙚𝙧𝙞𝙛𝙞𝙘𝙖𝙙𝙤(𝙖)  ✅', '/profile']], m)
 }}
 handler.command = ['verify', 'verificar', 'register', 'registrar', 'reg', 'reg1', 'nombre', 'name', 'nombre2', 'name2', 'edad', 'age', 'edad2', 'age2', 'genero', 'género', 'gender', 'identidad', 'pasatiempo', 'hobby', 'identity', 'finalizar', 'pas2', 'pas3', 'pas4', 'pas5']  ///^(verify|verificar|reg(ister)?)$/i
-handler.private = true 
+handler.private = false 
 export default handler

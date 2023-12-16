@@ -43,8 +43,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
 *DESEAS CONTINUAR?*
 Tienes 60 segundos 
 
-Escriba: (si) para acertar
-escriba: (no) para cancelar\n\n${wm}`.trim()
+Escriba: si o no`.trim()
     
     let c = `${wm}\nTienes 60 segundos `
     await conn.reply(m.chat, confirm, m, { mentions: [who] })
@@ -79,7 +78,7 @@ handler.before = async m => {
         let _previous = _user[type] * 1
         user[type] -= count * 1
         _user[type] += count * 1
-        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`✅ *TRANSFERENCIA HECHA CON ÉXITO:*\n\n*${count} ${type} para* @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
+        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`*✅ ∫ Transferencia realizada con éxito.*`, null, { mentions: [to] })
         else {
             user[type] = previous
             _user[type] = _previous

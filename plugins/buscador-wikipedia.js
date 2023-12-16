@@ -32,7 +32,7 @@ let info = `𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙀 𝙀𝙎𝙏𝙊 | 𝙄 𝙁𝙊�
     conn.reply(m.chat, `${info} `, m, {
      contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
       title: 'SodicaBot| 𝙒𝙞𝙠𝙞𝙥𝙚𝙙𝙞𝙖',
-       body: '𝗦𝘂𝗽𝗲𝗿 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝗕𝗼𝘁 🐱❤️',         
+       body: 'Sodicabot',         
         previewType: 0, thumbnail: imagen2,
          sourceUrl: welgata}}})
   
