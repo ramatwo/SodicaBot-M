@@ -28,7 +28,7 @@ Responde a este mensaje con la palabra correcta.
        await conn.reply(m.chat, caption, m),
         json, poin,
         setTimeout(async () => {
-            if (conn.tekateki[id]) await conn.reply(m.chat, `Se acabó el tiempo!\n*Palabra:* ${json.response}`, conn.tekateki[id][0])
+            if (conn.tekateki[id]) await conn.reply(m.chat, `Se acabó el tiempo`, conn.tekateki[id][0])
             delete conn.tekateki[id]
         }, timeout)
     ]
