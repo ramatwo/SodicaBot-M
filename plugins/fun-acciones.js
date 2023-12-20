@@ -14,7 +14,7 @@ let handler = async (m, { conn, groupMetadata, text, command }) => {
     if (!m.mentionedJid[0] && !m.quoted) throw '⛃➭⛔ ∫ Respondé el mensaje de alguien para hacerle alguna acción.'
     let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
     let participants = groupMetadata.participants
-    conn.reply(m.chat, `Le acabas de ${command} ${text} a *@${user.split('@')[0]}* 😳`, null, { mentions: [user] })
+    conn.reply(m.chat, `Le acabás de ${command} ${text} a *@${user.split('@')[0]}* 😳`, null, { mentions: [user] })
 
     // Establecer el tiempo de espera de 5 segundos
     cooldowns[id] = Date.now() + 10000

@@ -34,7 +34,7 @@ function mensajeRegistro() {
 if (edad === 0) {
 clearInterval(intervalId)	
 registrando = false
-m.reply('```REGISTRO NO COMPLETADO. VUELVA A INTENTAR```')
+m.reply('```REGISTRO NO COMPLETADO.```')
 return
 }
 if (user.registered === true) {
@@ -43,13 +43,13 @@ return
 if (typeof genero === 'string') {
 global.db.data.users[m.sender]['registroC'] = true
 registrando = false
-conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO*\n\nSi no usa el botón de abajo en este momento su registro no se guardará, si guarda más tarde su registro se habrá perdido\n\nEscriba ${usedPrefix}finalizar`, fkontak, m)
+conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO*\n\nEscriba ${usedPrefix}finalizar`, fkontak, m)
 //conn.sendButton(m.chat, "*SU TIEMPO DE REGISTRO HA TERMINADO *", 'Si no usa el botón de abajo en este momento su registro no se guardará, si guarda más tarde su registro se habrá perdido\n\n' + wm, null, [[`🐈 FINALIZAR REGISTRO`, usedPrefix + 'finalizar']], m)	
 }else{
 clearInterval(intervalId)
 global.db.data.users[m.sender]['registroR'] = true		
 registrando = false
-conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO*\n\nSi no usa el botón de abajo en este momento su registro no se guardará, si guarda más tarde su registro se habrá perdido\n\nEscriba ${usedPrefix}finalizar`, fkontak, m)}
+conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO*\n\nEscriba ${usedPrefix}finalizar`, fkontak, m)}
 //conn.sendButton(m.chat, "*SU TIEMPO DE REGISTRO HA TERMINADO *", 'Si no usa el botón de abajo en este momento su registro no se guardará, si guarda más tarde su registro se habrá perdido\n\n' + wm, null, [[`🐈 FINALIZAR REGISTRO`, usedPrefix + 'finalizar']], m)}
 }
 		
@@ -57,7 +57,7 @@ if (user.registered === true) throw `${iig}𝙔𝘼 𝙀𝙎𝙏𝘼𝙎 𝙍�
 
 if (command == 'verificar' || command == 'verify' || command == 'register' || command == 'reg' || command == 'registrar') {
 if (registrando === true) throw '*Alguien se está registrando en este momento. Vuelva a intentar más tarde.*'
-conn.reply(m.chat, `*👀 REGISTRO PARA SODICABOT*\n\n📑 *REGISTRO RAPIDO*\nUsted obtiene:\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n\n• Escriba para registrarse\n\n${usedPrefix}reg1 nombre edad\n\nEjemplo: ${usedPrefix}reg1 Rama 25 `, fkontak, m)
+conn.reply(m.chat, `*👀 REGISTRO PARA SODICABOT*\n\n• Escriba para registrarse\n\n${usedPrefix}reg1 tu nombre y edad\n\nEjemplo: ${usedPrefix}reg1 Rama 18 `, fkontak, m)
 //await conn.sendButton(m.chat, iig + '👀 *CÓMO DESEA REGISTRARSE?*', '📑 *REGISTRO RAPIDO*\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n\n🗂️ *REGISTRO COMPLETO*\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n• Premium Temporal Gratis\n• Más opciones para este registro\n\n' + wm, null, [[`📑 REGISTRO RÁPIDO`, usedPrefix + 'Reg1'], [`🗂️ REGISTRO COMPLETO`, usedPrefix + 'nombre']], m) 
 }
 	
@@ -71,19 +71,19 @@ clearInterval(intervalId)}, 126000) //2.1 min
 	
 registro = text.replace(/\s+/g, usedPrefix) 
 _registro = text.split(" ",2)
-if (!text) return conn.reply(m.chat, iig + `*👉 PARÁMETROS DEL REGISTRO:*\n${usedPrefix + command} nombre edad\n\n*EJEMPLO:* \`\`\`${usedPrefix + command} ${gt} 20\`\`\`\n\n✨ CONSEJO:\n• Su nombre no debe de contener números\n• La edad no debe de contener Letras`, fkontak, m)
+if (!text) return conn.reply(m.chat, iig + `*👉 PARÁMETROS:*\n${usedPrefix + command} reg1 tu nombre y edad\n\n*EJEMPLO:* \`\`\`${usedPrefix + command} ${gt} 20\`\`\`\n\n✨ CONSEJO:\n• Su nombre no debe de contener números\n• La edad no debe de contener Letras`, fkontak, m)
 //conn.sendButton(m.chat,  `👉 *PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\`\n\n*EJEMPLO:* \`\`\`${usedPrefix + command} ${gt} 20\`\`\``, '✨ ```CONSEJO:```\n• Su nombre no debe de contener números\n• La edad no debe de contener Letras\n\n*Sabías que puede personalizar su registro?*\n➘ _Usando el Botón de abajo_', null, [[`🗂️ USAR REGISTRO COMPLETO`, usedPrefix + 'nombre']], m)
 if (_registro['length'] >= 3 || isNaN(_registro[1])) return 
 //conn.sendButton(m.chat, fg + '🙃 *ESTÁ INTENTANDO SEPRAR SU NOMBRE O UNIR TODO?* ', '🧐 *COINCIDE COMO EN ESTOS EJEMPLOS:*\n' + `\`\`\`${usedPrefix + command} Super${gt}20\`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super 15 ${gt} \`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super ${gt} 24 De ${author}\`\`\`\n\n` + '*Si cumple que tenga (Nombre/Frase y Edad) Autocompletaremos su Registro, de lo contraio vuelva a registrarse*\n➘ _Use el Botón de abajo_', null, [[`🌟 AUTOCOMPLETAR MI REGISTRO`, usedPrefix + 'reg1' + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\0-9]/gi, "") + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\a-z]/gi, "")], ['📑 VOLVER A REGISTRAR', command + usedPrefix]], m)
 if (!_registro[0]) throw fg + `*FALTA SU NOMBRE, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``
-if (_registro[0].length >= 30) throw fg + '*SU NOMBRE ES MUY LARGO, USE OTRO NOMBRE POR FAVOR*' 
-if (_registro[0].length <= 2) throw fg + '*SU NOMBRE ES MUY CORTO, USE OTRO NOMBRE POR FAVOR*'
+if (_registro[0].length >= 30) throw fg + '*Usá tu nombre real.*' 
+if (_registro[0].length <= 2) throw fg + '*Usá tu nombre real.*'
 _registro[0] = text.replace(/\s+/g, '').replace(/[0-9]+/gi, "")
 nombre = _registro[0]
 	
 if (!_registro[1]) throw fg + `*FALTA SU EDAD, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``
-if (_registro[1] > 30) throw fg + `*SU EDAD ES MUY MAYOR, USE OTRA EDAD POR FAVOR*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``
-if (_registro[1] < 10) throw fg + `*SU EDAD ES MUY MENOR, USE OTRA EDAD POR FAVOR*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``
+if (_registro[1] > 30) throw fg + `*Usá tu edad real.*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``
+if (_registro[1] < 10) throw fg + `*Usá tu edad real.*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``
 edad = parseInt(_registro[1]) //_registro[1]	
 global.db.data.users[m.sender]['registroR'] = true
 
