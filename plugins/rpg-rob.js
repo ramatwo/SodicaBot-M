@@ -1,4 +1,4 @@
-let ro = 3000
+let ro = 10000
 let handler = async (m, { }) => {
 let time = global.db.data.users[m.sender].lastrob + 7200000
 if (new Date - global.db.data.users[m.sender].lastrob < 7200000) throw `*⏱️ ∫ Esperá ${msToTime(time - new Date())}*`
@@ -8,7 +8,7 @@ else who = m.chat
 if (!who) throw `*⛃➭⛔ ∫ Etiquetá a alguien para robar.*`
 if (!(who in global.db.data.users)) throw `*⛃➭⛔ ∫ Este usuario no está en la base de datos.*`
 let users = global.db.data.users[who]
-let rob = Math.floor(Math.random() * ro)
+let rob = Math.floor(Math.random() * ro * 2)
 if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} tiene menos de *${ro} xp*`, null, { mentions: [who] })    
 global.db.data.users[m.sender].exp += rob
 global.db.data.users[who].exp -= rob 
@@ -16,12 +16,12 @@ global.db.data.users[m.sender].limit += rob
 global.db.data.users[who].limit -= rob 
 global.db.data.users[m.sender].money += rob
 global.db.data.users[who].money -= rob 
-m.reply(`*‣ Robaste ${rob} Xp a @${who.split`@`[0]}*`, null, { mentions: [who] })
+m.reply(`*‣ Le afanaste ${rob} Xp a @${who.split`@`[0]}*`, null, { mentions: [who] })
 global.db.data.users[m.sender].lastrob = new Date * 1
 }
 handler.help = ['rob']
 handler.tags = ['econ']
-handler.command = ['robar', 'rob']
+handler.command = ['robar', 'rob', 'afanar']
 export default handler  
 handler.register = true
 handler.group = true

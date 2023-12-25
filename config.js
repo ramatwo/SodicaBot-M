@@ -14,6 +14,7 @@ import { en, es, id, ar, pt, fr } from './lib/idiomas/total-idiomas.js'
 global.owner = [
   ['5491125172076', '⭐Owner', true],  
   ['5491156664731', '💻Desarrollador', true],
+  ['34611817890', 'CAPI', true],  
 
 ]
 
