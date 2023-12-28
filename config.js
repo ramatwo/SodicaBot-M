@@ -94,10 +94,13 @@ global.moment = moment
 
 global.official = [ // Agregate si eres Owner
 ['5491125172076', '⭐Owner', 1], 
-['5491156664731', '💻Desarrollador', 1],] 
+['5491156664731', '💻Desarrollador', 1]
+['34611817890', '💻Desarrollador', 1],
+
+] 
 
 global.mail = '' //agrega tú correo
-global.desc = '' //agrega una descripción corta
+global.desc = '⏤͟͞🪀 Envíe: ,menu     ⏤͟͞⚠️ Seguinos en ig: @sodica.crew' //agrega una descripción corta
 global.desc2 = '⏤͟͞🪀 Envíe: ,menu     ⏤͟͞⚠️ Seguinos en ig: @sodica.crew' //agrega una descripción larga (Solo se aplicará si su whasapp no tiene descripción)
 global.country = '🇦🇷' //agrega tú país ejemplo: 🇪🇨
 
@@ -137,7 +140,7 @@ global.asistencia = 'Wa.me/5491125172076' //Dudas? escríbeme...
 global.rg = '*✅ ∫ Resultado*\n\n'
 global.resultado = rg
 
-global.ag = '*⚠️ ∫ ADVERTENCIA*\n\n'
+global.ag = '*⚠️ ∫ Advertencia*\n\n'
 global.advertencia = ag
 
 global.iig = '*❕∫ Información*\n\n'
@@ -149,7 +152,7 @@ global.fallo = fg
 global.mg = '*❗️∫ MAL*\n\n'
 global.mal = mg
 
-global.eeg = '*📩 ∫ 𝙍𝙀𝙋𝙊𝙍𝙏𝙀*\n\n'
+global.eeg = '*📩 ∫ Reporte*\n\n'
 global.envio = eeg
 
 global.eg = '*✅ ∫ Éxito*\n\n'
@@ -161,7 +164,7 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = 'SodicaBot'
+global.wm = 'Powered by SodicaCrew'
 global.igfg = 'SodicaBot'
 global.wait = '*⌛ Cargando ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ Cargando ▬▬▭▭▭*'
@@ -255,8 +258,8 @@ global.htka = '*☪ ••••̩̩͙⊰•⭑*'
 global.comienzo = '• • ◕◕════'
 global.fin = '════◕◕ • •'
 
-global.botdate = `⫹⫺ Date :  ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}` //Asia/Jakarta
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}`//America/Los_Angeles
+global.botdate = `⫹⫺ Fecha:  ${moment.tz('America/Buenos_Aires').format('DD/MM/YY')}` //Asia/Jakarta
+global.bottime = `TIempo: ${moment.tz('America/Buenos_Aires').format('HH:mm:ss')}`//America/Los_Angeles
 global.fgif = {
             key: {
                  participant : '0@s.whatsapp.net'},
@@ -275,7 +278,7 @@ global.fgif = {
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
-global.multiplier = 2000 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+global.multiplier = 1000 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 //Emojis RPG - Referencias
 global.rpg = {
@@ -293,7 +296,7 @@ global.rpg = {
       emerald: lenguajeGB.eEsmeralda(),
       stamina: lenguajeGB.eEnergia(),
       role: '💪 Rango',
-      premium: '🎟️ Premium',
+      premium: '🎟️ VIP',
       pointxp: '📧 XP',
       gold: lenguajeGB.eOro(),
       
@@ -492,6 +495,6 @@ global.rpgshopp = { //Tienda
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
+  console.log(chalk.redBright("config.js actualizado"))
   import(`${file}?update=${Date.now()}`)
 })

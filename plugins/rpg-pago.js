@@ -69,7 +69,7 @@ let text = `
 ┃ ✅ 𝗣𝗔𝗚𝗢 𝗥𝗘𝗔𝗟𝗜𝗭𝗔𝗗𝗢
 ╰━━💰━💰━💰━━⬣`
 
-await conn.sendButton(m.chat, text, texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, gata.getRandom(), [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace)  
+await conn.sendButton(m.chat, text, texto + `\n\n🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}`, gata.getRandom(), [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace)  
 user.lastpago = new Date * 1
 }else{
 m.reply('```USTED NO TIENE AUTORIZACIÓN PARA USAR ESTE COMANDO.```')}

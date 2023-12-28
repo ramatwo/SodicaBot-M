@@ -54,7 +54,7 @@ let text = `╭━━🎁━🎁━🎁━━⬣
 ┃ ${texto}
 ╰━━🎁━🎁━🎁━━⬣
 
-🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`
+🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}`
 let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
 await conn.sendFile(m.chat, img, 'SodicaBot.exe', text, fkontak)
 

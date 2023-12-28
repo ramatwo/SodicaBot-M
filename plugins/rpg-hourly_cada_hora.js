@@ -41,7 +41,7 @@ let text = `╭━━🕐━🕑━🕒━━⬣
 ┃ ♻️ 𝙀𝙉𝙏𝙍𝙀𝙂𝘼 𝘾𝘼𝘿𝘼 𝙃𝙊𝙍𝘼  
 ┃ *${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*
 ┃ ${texto}
-╰━━🕕━🕔━🕓━━⬣\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}`
+╰━━🕕━🕔━🕓━━⬣\n\n🎟️ VIP ⇢ ${premium ? '✅' : '❌'}`
 let pp = 'https://google.com'
 conn.sendMessage(m.chat, {image: {url: pp}, caption: text, mentions: conn.parseMention(text)}, {quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
 user.lasthourly = new Date * 1
