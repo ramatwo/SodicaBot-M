@@ -78,7 +78,6 @@ ${readMore}
 ┃🧩 _${usedPrefix}kpop *blackpink : exo : bts*_
 ┃🧩 _${usedPrefix}lolivid_
 ┃🧩 _${usedPrefix}loli_
-┃🧩 _${usedPrefix}navidad_
 ┃🧩 _${usedPrefix}ppcouple_
 ┃🧩 _${usedPrefix}neko_
 ┃🧩 _${usedPrefix}waifu_
@@ -116,7 +115,6 @@ ${readMore}
 ┃🧩 _${usedPrefix}sagiri_
 ┃🧩 _${usedPrefix}sasuke_
 ┃🧩 _${usedPrefix}sakura_
-┃🧩 _${usedPrefix}cosplay_
 *╰━━━━━━━━━━━━⬣*`.trim()
 await conn.sendFile(m.chat, gataVidMenu, 'Menú de Aleatorios', menu, fkontak)
 	

@@ -26,7 +26,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     [lenguajeGB.smsToxic4(), '.ok'],
     [lenguajeGB.smsAdveu6(), lenguajeGB.lenguaje() == 'en' ? usedPrefix + 'inventory' : usedPrefix + 'inventario']], false, { mentions: [who] }) //[m.sender]*/
         
-    if (user.warn >= 4) {
+    if (user.warn >= 3) {
     user.warn = 0
     await m.reply(`${lenguajeGB['smsAdveu7']()}\n*@${who.split`@`[0]}* ${lenguajeGB['smsAdveu8']()}`, false, { mentions: [who] })
     user.banned = true
@@ -42,7 +42,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     }}
     handler.help = ['addprem <@user>']
     handler.tags = ['owner']
-    handler.command = /^(advertir|advertencia|Advertencias|warn|warning)$/i
+    handler.command = /^(advertir|advertencia|Advertencias|strike|warn|warning)$/i
     handler.group = true
     handler.admin = true
     handler.botAdmin = true

@@ -42,7 +42,7 @@ curreyCode: 'IDR',
 totalCurrencyCode: '>〰<',
 totalAmount1000: '1000000',
 sellerJid: 'https://github.com/ramardo/SodicaBot-M',
-thumbnail: fs.readFileSync('./src/avatar_contact.png')
+thumbnail: fs.readFileSync('./media/menus/img1.jpg')
 }}, {contextInfo: null, quoted: m})
 conn.relayWAMessage(prep)
 		//	conn.sendMessage(m.chat, `${teks}`, MessageType.text, rtimebro)

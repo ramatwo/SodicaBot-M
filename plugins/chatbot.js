@@ -1,4 +1,4 @@
-// by https://github.com/elrebelde21/The-LoliBot-MD
+/* by https://github.com/elrebelde21/The-LoliBot-MD
  
 let handler = m => m
 handler.all = async function (m) {
@@ -43,7 +43,7 @@ ${pickRandom([`no puedo esta contra las política del grupo.😸`, `_uff miren u
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
-}*/
+}
 
 
 

@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     try{
     user.warn -= 1
      
-       await m.reply(`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `♻️ *@${who.split`@`[0]}*`}  ${lenguajeGB['smsAdveu10']()}\n\n*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${lenguajeGB['smsAdveu11']()} ${user.warn + 1}/4*\n⚠️ *${lenguajeGB['smsAdveu12']()} ${user.warn}/4*`, null, { mentions: [who]})
+       await m.reply(`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `♻️ *@${who.split`@`[0]}*`}  ${lenguajeGB['smsAdveu10']()}\n\n*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${lenguajeGB['smsAdveu11']()} ${user.warn + 1}/3*\n⚠️ *${lenguajeGB['smsAdveu12']()} ${user.warn}/3*`, null, { mentions: [who]})
     /*await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `♻️ *@${who.split`@`[0]}*`} ${lenguajeGB['smsAdveu10']()}`, `*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${lenguajeGB['smsAdveu11']()} ${user.warn + 1}/4*\n⚠️ *${lenguajeGB['smsAdveu12']()} ${user.warn}/4*\n\n${wm}`, img, [
     [lenguajeGB.smsAdveu9(), '.ok'],
     [lenguajeGB.smsAdveu6(), lenguajeGB.lenguaje() == 'en' ? usedPrefix + 'inventory' : usedPrefix + 'inventario']], false, { mentions: [who] }) //[m.sender]*/
@@ -26,7 +26,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     }}
     handler.help = ['addprem <@user>']
     handler.tags = ['owner']
-    handler.command = /delwarn|unwarn|deladvertencia/i
+    handler.command = /delwarn|unwarn|unstrike|deladvertencia/i
     handler.group = true
     handler.admin = true
     handler.botAdmin = true
