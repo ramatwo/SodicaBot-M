@@ -160,11 +160,11 @@ ${role}
 *EXPLORADOR IV* 🪓
 *EXPLORADOR V* 🪓
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*APRENDIS I* 🪚
-*APRENDIS II* 🪚
-*APRENDIS III* 🪚
-*APRENDIS IV* 🪚
-*APRENDIS V* 🪚
+*NUEVAZO I* 🪚
+*NUEVAZO II* 🪚
+*NUEVAZO III* 🪚
+*NUEVAZO IV* 🪚
+*NUEVAZO V* 🪚
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *NOVATO I* 🪤
 *NOVATO II* 🪤
