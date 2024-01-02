@@ -15,7 +15,7 @@ if (isBotAdmin) {
 const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
 if (m.text.includes(linkThisGroup)) return !0
 }    
-await m.reply(`${lenguajeGB['smsEnlaceWat']()} ${await this.getName(m.sender)}`)
+await m.reply(`*🛡️➭⛔ ∫ Enlace detectado.* Removiendo vagabundo...`)
 //await conn.sendButton(m.chat, `${lenguajeGB['smsEnlaceWat']()} ${await this.getName(m.sender)} ${isBotAdmin ? '' : `\n\n${lenguajeGB['smsAllAdmin']()}`}`, wm, [`${lenguajeGB['smsApagar']()}`, '/disable antilink'], m)    
 if (!isBotAdmin) return m.reply(`${lenguajeGB['smsAllAdmin']()}`)  
 if (isBotAdmin) {

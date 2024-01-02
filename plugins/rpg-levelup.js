@@ -84,15 +84,15 @@ let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dir
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier);
         throw `
-╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
-┃ *NOMBRE | NAME*
+╭━━━[ *NIVEL* ]━━━━⬣
+┃ *USUARIO*
 ┃ ${name}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL:* *${user.level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *RANGO:* ${user.role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *XP:* *${user.exp - min}/${xp}*
+┃ *EXP:* *${user.exp - min}/${xp}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
 *Te falta ${max - user.exp} de XP para subir de nivel*

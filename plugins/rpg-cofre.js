@@ -14,13 +14,11 @@ let handler = async (m, { isPrems, conn }) => {
     global.db.data.users[m.sender].exp += expp
     
   let texto = `
-  ╭━━🎉━🎉━🎉━━━━━━━━━━━━━━━━━━━━━⬣
-  ┃✨ 𝙊𝘽𝙏𝙄𝙀𝙉𝙀𝙎 𝙐𝙉 𝘾𝙊𝙁𝙍𝙀 
-  ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈
-  ┃⚗️ *${dia} Diamantes* 💎
-  ┃⚗️ *${tok} Tokens* 🪙
-  ┃⚗️ *${gata} Coinss* 🐈
-  ┃⚗️ *${expp} Exp* ⚡
+  ╭━━━━━━━━━━━━━━━━━━━━━━━⬣
+  ┃✨ Conseguiste un cofre con:
+  ┃ 💎 *${dia} Diamantes* 💎
+  ┃ 🪙 *${gata} Moneditas* 🪙
+  ┃ ⚡ *${expp} Exp* ⚡
   ╰━━〔 𓃠 *${vs} x2 recompensas* 〕━━⬣`
   
   const fkontak = {

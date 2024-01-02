@@ -2,8 +2,8 @@ const xpperlimit = 300
 import fetch from 'node-fetch'
 let handler = async (m, { command, conn, usedPrefix, args }) => {
 let user = global.db.data.users[m.sender]
-let time = user.lastmiming + 150000 //5 min
-if (new Date - user.lastmiming < 150000) return await conn.reply(m.chat, `⏱️ Vuelva en ${msToTime(time - new Date())} NO EXPLOTES AL BOT`, m)
+let time = user.lastmiming + 1800000 //5 min
+if (new Date - user.lastmiming < 1800000) return await conn.reply(m.chat, `⏱️ Volvé en ${msToTime(time - new Date())}`, m)
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
 let grupos = [nna, nn, nnn, nnnt]
@@ -17,21 +17,21 @@ const items = {
         exp: { eleksirb: 3 },
         limit: { money: 400 },
         diamond: { berlian: 5 },
-        joincount: { limit: 15 },
+        joincount: { limit: 2 },
         emerald: { emasbatang: 5 },
         berlian: { kyubi: 25 },
         kyubi: { trash: 15 },  
-        gold: {  diamond: 35 },
+        gold: {  diamond: 2 },
         money: { kaleng: 2 },
         tiketcoin: { joincount: 3 },
         stamina: { potion: 2 },
         
         potion: { money: 550 },
-        aqua: { botol: 2 },
+        aqua: { botol: 1 },
         trash: { eleksirb: 5 },
         wood: { string: 5 },
         rock: { kardus: 6 },
-        batu: { coal: 25 },
+        batu: { coal: 1 },
         string: { kaleng: 4 },
         iron: { kyubi: 20 },
         coal: { trash: 20 },
@@ -46,7 +46,7 @@ const items = {
         sampah: { trash: 70 },
         serigala: { kaleng: 125 },
         kayu: { wood: 40 },
-        sword: { gold: 2 },
+        sword: { gold: 1 },
         umpan: { aqua: 2 },
         healtmonster: { kyubi: 19 },
         pancingan: { trash: user.pancingan == 0 ? 5 : '' || user.pancingan == 1 ? 10 : '' || user.pancingan == 2 ? 15 : '' || user.pancingan == 3 ? 20 : '' || user.pancingan >= 4 ? 25 : '' },
@@ -57,7 +57,7 @@ const items = {
         uncoommon: { kyubi: 55 },
         mythic: { tiketcoin: 17 },
         pet: { kayu: 45 },
-        gardenboxs: { healtmonster: 25 },
+        gardenboxs: { healtmonster: 1 },
         legendary: { emerald: 75 },
         
         anggur: { emerald: 3 },
@@ -91,39 +91,39 @@ const items = {
     },
    
     sell: {
-        exp: { trash: pickRandom([1, 1, 2]) },
+        exp: { trash: 1 },
         limit: { eleksirb: pickRandom([1, 4, 1]) },
         diamond: { tiketcoin: pickRandom([1, 1, 2]) },
-        joincount: { emasbatang: pickRandom([1, 1, 2]) },
+        joincount: { emasbatang: 1 },
         emerald: { money: pickRandom([10, 500, 1]) },
         berlian: { sword: pickRandom([1, 1, 2]) },
         kyubi: { aqua: pickRandom([1, 1, 2]) },
-        gold: { exp: pickRandom([1, 20, 800]) },
+        gold: { exp: 1 },
         money: { aqua: pickRandom([1, 1, 2]) },
         tiketcoin: { kyubi: pickRandom([1, 1, 2]) },
         
-        potion: { botol: pickRandom([1, 1, 3]) },
-        aqua: { kaleng: pickRandom([1, 1, 2]) },
-        trash: { umpan: pickRandom([1, 1, 2]) },
+        potion: { botol: 1 },
+        aqua: { kaleng: 1 },
+        trash: { umpan: 1 },
         wood: { coal: pickRandom([1, 1, 2]) },
         rock: { string: pickRandom([1, 1, 2]) },
-        batu: { joincount: pickRandom([1, 1, 2]) },
+        batu: { joincount: 1 },
         string: { kardus: pickRandom([1, 1, 2]) },
         iron: { healtmonster: pickRandom([1, 1, 3]) },
         coal: { money: pickRandom([1, 3, 30]) },
         botol: { aqua: pickRandom([1, 1, 2]) },
-        kaleng: { batu: pickRandom([1, 1, 2]) },
+        kaleng: { batu: 1 },
         kardus: { pancingan: pickRandom([1, 1, 2]) },
         
         eleksirb: { rubah: pickRandom([1, 1, 2]) },
         emasbatang: { emasbiasa: pickRandom([1, 1, 3]) },
         emasbiasa: { potion: pickRandom([1, 1, 2]) },
         rubah: { petFood: pickRandom([1, 1, 4]) },
-        sampah: { trash: pickRandom([1, 2, 20]) },
+        sampah: { trash: 1 },
         serigala: { petFood: pickRandom([1, 2, 22]) },
         kayu: { wood: pickRandom([1, 3, 5]) },
         sword: { berlian: pickRandom([1, 1, 2]) },
-        umpan: { exp: pickRandom([1, 5, 40, 0]) },
+        umpan: { exp: 1 },
         healtmonster: { diamond: pickRandom([1, 1, 2]) },
         pancingan: { money: pickRandom([1, 10, 30]) },
         emas: { berlian: pickRandom([1, 1, 3]) },
@@ -132,13 +132,13 @@ const items = {
         uncoommon: { diamond: pickRandom([1, 4, 15]) },
         mythic: { berlian: pickRandom([1, 3, 13]) },
         pet: { money: pickRandom([1, 500, 1500]) },
-        gardenboxs: { gold: pickRandom([1, 1, 3]) },
+        gardenboxs: { gold: 1 },
         legendary: { emerald: pickRandom([1, 4, 20]) },
         
         anggur: { joincount: pickRandom([1, 1, 2]) },
         apel: { tiketcoin: pickRandom([1, 1, 2]) },
         jeruk: { berlian: pickRandom([1, 1, 2]) },
-        mangga: { gold: pickRandom([1, 1, 2]) },
+        mangga: { gold: 1 },
         pisang: { diamond: pickRandom([1, 1, 2]) },
         
         bibitanggur: { potion: pickRandom([1, 1, 2]) },
@@ -195,7 +195,7 @@ ${Object.keys(listItems).map((v) => {
 🔖 LISTA DE ÍTEMS
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
-        return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Ganancia:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Venda* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n*---------------------------------------------------*\n`.trim()
+        return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Ganancia:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Venta* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n*---------------------------------------------------*\n`.trim()
     }).join('\n')}
 ✨ Ejemplo de venta:
 *» ${usedPrefix}${command} ítem cantidad*
@@ -215,7 +215,7 @@ if (!listItems[item]) return conn.sendFile(m.chat, image, 'Tienda de ítems', fo
 
 if (command.toLowerCase() == 'buy') {
 let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
-if (user[paymentMethod] < listItems[item][paymentMethod] * total) return await conn.reply(m.chat, `*–--『 𝙄𝙉𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀𝙎 𝙍𝙀𝘾𝙐𝙍𝙎𝙊𝙎 』--–*\n\n*Necesitas ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* *${global.rpgshop.emoticon(paymentMethod)} Para Comprar ${total} ${global.rpgshop.emoticon(item)}.*\n\n*Solo tienes ${user[paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}.*\n*–––––––––––––––––––––––––*\n*Misiones para Obtener Recursos*\n*Quests to Obtain Resources*\n*⛰️ Aventura : Adventure : » ${new Date - user.lastadventure < 1500000 ? '❌' : `✅ _${usedPrefix}aventura_`}*\n*♻️ Cada hora : Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : `✅ _${usedPrefix}cadahora_`}*\n*💫 Semanalmente : Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : `✅ _${usedPrefix}cadasemana_`}*\n*🏅 Mensual : Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : `✅ _${usedPrefix}cadames_`}*\n\n*RECURSOS BAJOS : LOW RESOURCES*\n${wm}`, fkontak, m)
+if (user[paymentMethod] < listItems[item][paymentMethod] * total) return await conn.reply(m.chat, `*–--『 Insuficiente 』--–*\n\n*Necesitas ${(listItems[item][paymentMethod] * total) - user[paymentMethod]}* *${global.rpgshop.emoticon(paymentMethod)} Para Comprar ${total} ${global.rpgshop.emoticon(item)}.*`, fkontak, m)
 
 user[paymentMethod] -= listItems[item][paymentMethod] * total
 user[item] += total
@@ -251,7 +251,7 @@ hours = (hours < 10) ? "0" + hours : hours
 minutes = (minutes < 10) ? "0" + minutes : minutes
 seconds = (seconds < 10) ? "0" + seconds : seconds
 
-return minutes + " m y " + seconds + " s " 
+return minutes + " minutos y " + seconds + " segundos " 
 }  
 
 function pickRandom(list) {

@@ -378,18 +378,6 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 ┃
 ┃ *${rpg.emoticon('health')}* 
 ┃ *» ${healt}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpg.emoticon('pickaxe')}* 
-┃ *» ${pickaxe == 0 ? 'No tenés' : '' || pickaxe == 1 ? 'Nivel  ✦ 1' : '' || pickaxe == 2 ? 'Nivel  ✦ 2' : '' || pickaxe == 3 ? 'Nivel  ✦ 3' : '' || pickaxe == 4 ? 'Nivel  ✦ 4' : '' || pickaxe == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ${rpgshopp.emoticon('sword')} *Espada*
-┃ *» ${sword == 0 ? 'No tenés' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ${rpgg.emoticon('armor')} *Armadura* 
-┃ *» ${armor == 0 ? 'No tenés' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🎣 *Caña de Pescar* 
-┃ *» ${fishingrod}* 
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣
@@ -416,38 +404,6 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 ┃ *${rpgshop.emoticon('gardenboxs')}*
 ┃ *» ${user.gardenboxs}*
 ╰━━━━━━━━━⬣
-
-*╭* ${htki} *PROGSES* ${htka}
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫ ${rpg.emoticon('level')} » ${user.level} ➠  ${user.level + 1}*
-*╭┫ ✨ Exp » ${user.exp} ➠ ${max - user.exp}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('fox')}*\n${rubah == 0 ? '*╰┫❌' : '' || rubah > 0 && rubah < 5 ? `*╰┫ Nivel » ${rubah} ➠ ${rubah + 1}*\n*╭┫ ExpPet » ${_rubah} -> ${rubah *100}` : '' || rubah == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('cat')}*\n${kucing == 0 ? '*╰┫❌' : '' || kucing > 0 && kucing < 5 ? `*╰┫ Nivel » ${kucing} ➠ ${kucing + 1}*\n*╭┫ ExpPet » ${_kucing} -> ${kucing *100}` : '' || kucing == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('horse')}*\n${kuda == 0 ? '*╰┫❌' : '' || kuda > 0 && kuda < 5 ? `*╰┫ Nivel » ${kuda} ➠ ${kuda + 1}*\n*╭┫ ExpPet » ${_kuda} -> ${kuda *100}` : '' || kuda == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('dragon')}*\n${naga == 0 ? '*╰┫❌' : '' || naga > 0 && naga < 5 ? `*╰┫ Nivel » ${naga} ➠ ${naga + 1}*\n*╭┫ ExpPet » ${_naga} -> ${naga *100}` : '' || naga == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('phonix')}*\n${phonix == 0 ? '*╰┫❌' : '' || phonix > 0 && phonix < 5 ? `*╰┫ Nivel » ${phonix} ➠ ${phonix + 1}*\n*╭┫ ExpPet » ${_phonix} -> ${phonix *100}` : '' || phonix == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('centaur')}*\n${centaur == 0 ? '*╰┫❌' : '' || centaur > 0 && centaur < 5 ? `*╰┫ Nivel » ${centaur} ➠ ${centaur + 1}*\n*╭┫ ExpPet » ${_centaur} -> ${centaur *100}` : '' || centaur == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('griffin')}*\n${griffin == 0 ? '*╰┫❌' : '' || griffin > 0 && griffin < 5 ? `*╰┫ Nivel » ${griffin} ➠ ${griffin + 1}*\n*╭┫ ExpPet » ${_griffin} -> ${griffin *100}` : '' || griffin == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('wolf')}*\n${serigala == 0 ? '*╰┫❌' : '' || serigala > 0 && serigala < 5 ? `*╰┫ Nivel » *${serigala}* ➠ ${serigala + 1}*\n*╭┫ ExpPet » ${_serigala} -> ${serigala *100}` : '' || serigala == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰────────────┄⸙*
-
 `.trim()
 
 const fkontak = {
@@ -471,7 +427,6 @@ conn.sendFile(m.chat, imgr, 'SodicaBot.exe', caption, fkontak, m, { mentions: co
 
 let member = global.db.data.users[m.sender]
 let user = global.db.data.users[m.sender]
-let usuario = global.db.data.users[m.sender]
 
 let healt = member.health
 //let level = member.level
@@ -482,89 +437,14 @@ let money = member.money
 let exp = member.exp
 let token = member.joincount
 let dia = member.limit
-let tiketm = member.healtmonster
 
-let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
-    let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
-    let sorteddiamond = Object.entries(global.db.data.users).sort((a, b) => b[1].diamond - a[1].diamond)
-    let sortedpotion = Object.entries(global.db.data.users).sort((a, b) => b[1].potion - a[1].potion)
-    let sortedsampah = Object.entries(global.db.data.users).sort((a, b) => b[1].sampah - a[1].sampah)
-    let sortedmakananpet = Object.entries(global.db.data.users).sort((a, b) => b[1].makananpet - a[1].makananpet)
-    let sortedbatu = Object.entries(global.db.data.users).sort((a, b) => b[1].batu - a[1].batu)
-    let sortediron = Object.entries(global.db.data.users).sort((a, b) => b[1].iron - a[1].iron)
-    let sortedkayu = Object.entries(global.db.data.users).sort((a, b) => b[1].kayu - a[1].kayu)
-    let sortedstring = Object.entries(global.db.data.users).sort((a, b) => b[1].string - a[1].string)
-    let sortedcommon = Object.entries(global.db.data.users).sort((a, b) => b[1].common - a[1].common)
-    let sorteduncoommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncoommon - a[1].uncoommon)
-    let sortedmythic = Object.entries(global.db.data.users).sort((a, b) => b[1].mythic - a[1].mythic)
-    let sortedlegendary = Object.entries(global.db.data.users).sort((a, b) => b[1].legendary - a[1].legendary)
-    let sortedpet = Object.entries(global.db.data.users).sort((a, b) => b[1].pet - a[1].pet)
-    let sortedgold = Object.entries(global.db.data.users).sort((a, b) => b[1].gold - a[1].gold)
-    let sortedarlok = Object.entries(global.db.data.users).sort((a, b) => b[1].arlok - a[1].arlok)
-    
-    let usersmoney = sortedmoney.map(v => v[0])
-    let userslevel = sortedlevel.map(v => v[0])
-    let usersdiamond = sorteddiamond.map(v => v[0])
-    let userspotion = sortedpotion.map(v => v[0])
-    let userssampah = sortedsampah.map(v => v[0])
-    let usersmakananpet = sortedmakananpet.map(v => v[0])
-    let usersbatu = sortedbatu.map(v => v[0])
-    let usersiron = sortediron.map(v => v[0])
-    let userskayu = sortedkayu.map(v => v[0])
-    let usersstring = sortedstring.map(v => v[0])
-    let userscommon = sortedcommon.map(v => v[0])
-    let usersuncoommon = sorteduncoommon.map(v => v[0])
-    let usersmythic = sortedmythic.map(v => v[0])
-    let userslegendary = sortedlegendary.map(v => v[0])
-    let userspet = sortedpet.map(v => v[0])
-    let usersgold = sortedgold.map(v => v[0])
-    let usersarlok = sortedarlok.map(v => v[0])
-    
-let pickaxe = user.pickaxe
-let sword = user.sword
-let armor = user.armor
-let fishingrod = user.fishingrod
 
 //armor
-let adurability = user.armordurability
-//sword
-let sdurability = user.sworddurability
-//pickaxe
-let pdurability = user.pickaxedurability
-
-let pancing = user.pancing
-let fdurability = user.fishingroddurability
-
-let bow = user.bow
-let bdurability = user.bowdurability
-
-let naga = user.naga
-let _naga = user.anaknaga
-
-let phonix = user.phonix
-let _phonix = user.anakphonix
-
-let centaur = user.centaur
-let _centaur = user.anakcentaur
-
-let griffin = user.griffin
-let _griffin = user.anakgriffin
-
-let serigala = user.serigala
-let _serigala = user.anakserigala
+akserigala
 
 let level = user.level
 let { min, max } = xpRange(level, global.multiplier)
 
-let kuda = user.kuda
-let rubah = user.rubah
-let kucing = user.kucing
-let anjing = user.anjing
-
-let _rubah = user.anakrubah
-let _kucing = user.anakkucing
-let _kuda = user.anakkuda
-let _anjing = user.anakanjing
 
 let ayam = user.ayam
 let kambing = user.kambing
@@ -579,21 +459,7 @@ let panda = user.panda
 let gajah = user.gajah
 let buaya = user.buaya
 
-let paus = user.paus 
-let kepiting = user.kepiting
-let gurita = user.gurita 
-let cumi = user.cumi 
-let buntal = user.buntal 
-let dory = user.dory 
-let lumba = user.lumba 
-let lobster = user.lobster 
-let hiu = user.hiu 
-let udang = user.udang
-let ikan = user.ikan 
-let orca = user.orca 
-let pancingan = user.pancingan
-let _pancingan = user.anakpancingan 
-	 
+
 //let makananpet = user.makananpet
 let ayamb = user.ayamb
 let ayamg = user.ayamg
@@ -601,34 +467,16 @@ let sapir = user.sapir
 let ssapi = user.ssapi
 
 let makananpet = user.makananpet
-let makanannaga = user.makanannaga                                         
-let makananphonix = user.makananphonix                                     
-let makanangriffin = user.makanangriffin
-let makanankyubi = user.makanankyubi                                       
-let makanancentaur = user.makanancentaur
 
-let mangga = user.mangga
-let anggur = user.anggur
-let pisang = user.pisang
-let jeruk = user.jeruk
-let apel = user.apel
-
-let bibitanggur = user.bibitanggur                            
-let bibitjeruk = user.bibitjeruk                              
-let bibitapel = user.bibitapel
-let bibitmangga = user.bibitmangga                            
-let bibitpisang = user.bibitpisang
 //let number = `${PhoneNumber('+' + pasangan.replace('@s.whatsapp.net', '')).getNumber('international')}`
 						   
     let pepe = flaaa.getRandom()
-    let pp = pepe + 'Inventario : Inventory'
+    let pp = pepe + 'Inventario'
     let str = `
 🎒 *𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 𝙏𝙊𝙏𝘼𝙇*
-🎒 *𝙏𝙊𝙏𝘼𝙇 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔*
 ${readMore}
 ╭━━━━━━━━━⬣
-┃ *𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 𝗗𝗘 𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗢𝗦* 
-┃ *𝙄𝙏𝙀𝙈 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔*
+┃ *𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 𝗗𝗘 𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗢𝗦* *
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpg.emoticon('health')} » ${healt}* 
 ┃ ${rpgg.emoticon('level')} *Nivel » ${level}*
@@ -638,15 +486,13 @@ ${readMore}
 ┃ 🏦 *Banco : Bank » ${member.bank}*
 ┃ 💞 *Pareja : Pasangan »* ${pasangan ? `@${pasangan.split("@")[0]}` : `❌`}
 ┃ ⚠️ *Advertencia : Warn » ${warn}*
-┃ 🚷 *Baneado(a) : Banned » No*
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
-┃ 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗦 𝗩𝗔𝗟𝗜𝗢𝗦𝗢𝗦
-┃ 𝗩𝗔𝗟𝗨𝗔𝗕𝗟𝗘 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗦
+┃ 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ ${rpgg.emoticon('exp')} *Exp » ${exp}*
 ┃ ${rpgg.emoticon('limit')} *Diamante : Diamond » ${dia}*
-┃ ${rpgg.emoticon('money')} *Coinss: » ${money}*
+┃ ${rpgg.emoticon('money')} *Moneditas: » ${money}*
 ┃ ${rpgg.emoticon('joincount')} *Token » ${token}*
 ┃ *${rpgshop.emoticon('emerald')} » ${member.emerald}*
 ┃ *${rpgshop.emoticon('berlian')} » ${member.berlian}*
@@ -660,7 +506,6 @@ ${readMore}
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗦𝗨𝗣𝗘𝗥𝗩𝗜𝗩𝗘𝗡𝗖𝗜𝗔
-┃ 𝗦𝗨𝗥𝗩𝗜𝗩𝗔𝗟 𝗜𝗧𝗘𝗠
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('potion')} » ${member.potion}*
 ┃ *${rpgshop.emoticon('aqua')} » ${member.aqua}*
@@ -677,7 +522,6 @@ ${readMore}
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗢𝗕𝗝𝗘𝗧𝗢𝗦 𝗠𝗜𝗦𝗧𝗘𝗥𝗜𝗢𝗦𝗢𝗦
-┃ 𝗠𝗬𝗦𝗧𝗘𝗥𝗜𝗢𝗨𝗦 𝗢𝗕𝗝𝗘𝗖𝗧𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('eleksirb')} » ${member.eleksirb}*
 ┃ *${rpgshop.emoticon('emasbatang')} » ${member.emasbatang}*
@@ -698,59 +542,10 @@ ${readMore}
 ╰━━━━━━━━━⬣
 
 👤» *${name}* ( @${who.split("@")[0]} )\n
-🛣️ 𝗘𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗜𝗔𝗦 | 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦
-
-
-╭━━━━━━━━━⬣
-┃ *𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘*
-┃
-┃ *${rpg.emoticon('health')}* 
-┃ *» ${healt}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpg.emoticon('pickaxe')}* 
-┃ *» ${pickaxe == 0 ? 'No tenés' : '' || pickaxe == 1 ? 'Nivel  ✦ 1' : '' || pickaxe == 2 ? 'Nivel  ✦ 2' : '' || pickaxe == 3 ? 'Nivel  ✦ 3' : '' || pickaxe == 4 ? 'Nivel  ✦ 4' : '' || pickaxe == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ${rpgshopp.emoticon('sword')} *Espada | Sword*
-┃ *» ${sword == 0 ? 'No tenés' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ ${rpgg.emoticon('armor')} *Armadura | Armor* 
-┃ *» ${armor == 0 ? 'No tenés' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🎣 *Caña de Pescar | FishingRod* 
-┃ *» ${fishingrod}* 
-╰━━━━━━━━━⬣
-
-*╭───━• ESTRATEGIAS*
-*╭────━• STRATEGIES*
-*│🥼 Armadura : Armor:* 
-*│➠ ${armor == 0 ? 'No tenés' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
-*│🥼⇡ Durabilidad : Durability:* 
-*│↸ ${adurability}*
-*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
-*│⚔️ Espada : Sword* 
-*│➠ ${sword == 0 ? 'No tenés' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${sword}* / *${sword *100}*)` : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
-*│⚔️⇡ Durabilidad : Durability:* 
-*│↸ ${sdurability}*
-*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
-*│⛏️ Pico : Peak* 
-*│➠ ${pickaxe == 0 ? 'No tenés' : '' || pickaxe == 1 ? 'Nivel  ✦ 1' : '' || pickaxe == 2 ? 'Nivel  ✦ 2' : '' || pickaxe == 3 ? 'Nivel  ✦ 3' : '' || pickaxe == 4 ? 'Nivel  ✦ 4' : '' || pickaxe == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│⛏️⇡ Durabilidad : Durability:* 
-*│↸ ${pdurability}*
-*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
-*│🎣 Caña de pescar : Fishing Rod* 
-*│➠ ${pancing == 0 ? 'No tenés' : '' || pancing == 1 ? 'Nivel  ✦ 1' : '' || pancing == 2 ? 'Nivel  ✦ 2' : '' || pancing == 3 ? 'Nivel  ✦ 3' : '' || pancing == 4 ? 'Nivel  ✦ 4' : '' || pancing == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│🎣⇡ Durabilidad : Durability:* 
-*│↸ ${fdurability}*
-*│┈┈┈┈┈┈┈┈┈┈┈┈┈*
-*│🏹 Arco : Bow*
-*│➠ ${bow == 0 ? 'No tenés' : '' || bow == 1 ? '✦ Arco de Poca Distancia || 1' : '' || bow == 2 ? '✦ Flechas Mejoradas || 2' : '' || bow == 3 ? '✦ Arco de última tecnología || 3' : '' || bow == 4 ? '✦ Arco Explosivo || 4' : '' || bow == 5 ? '✦ Arco Nuclear || 5' : ''}*
-*│🏹⇡ Durabilidad : Durability:* 
-*│↸ ${bdurability}*
-*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
+🛣️ 𝗘𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗜𝗔𝗦
 
 ╭━━━━━━━━━⬣
 ┃ *𝗖𝗔𝗝𝗔𝗦 𝗘𝗡𝗖𝗢𝗡𝗧𝗥𝗔𝗗𝗔𝗦*
-┃ *𝗕𝗢𝗫𝗘𝗦 𝗙𝗢𝗨𝗡𝗗*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpgshop.emoticon('common')}*
 ┃ *» ${user.common}*
@@ -774,87 +569,6 @@ ${readMore}
 ┃ *» ${user.gardenboxs}*
 ╰━━━━━━━━━⬣
 
-╭━━━━━━━━━⬣
-┃ *𝗠𝗔𝗦𝗖𝗢𝗧𝗔𝗦 : 𝗣𝗘𝗧𝗦*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('kuda')}*
-┃ *${kuda == 0 ? 'No tenés' : '' || kuda == 1 ? 'Nivel  ✦ 1' : '' || kuda == 2 ? 'Nivel  ✦ 2' : '' || kuda == 3 ? 'Nivel  ✦ 3' : '' || kuda == 4 ? 'Nivel  ✦ 4' : '' || kuda == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('fox')}*
-┃ *${rubah == 0 ? 'No tenés' : '' || rubah == 1 ? 'Nivel  ✦ 1' : '' || rubah == 2 ? 'Nivel  ✦ 2' : '' || rubah == 3 ? 'Nivel  ✦ 3' : '' || rubah == 4 ? 'Nivel  ✦ 4' : '' || rubah == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('kucing')}*
-┃ *${kucing == 0 ? 'No tenés' : '' || kucing == 1 ? 'Nivel  ✦ 1' : '' || kucing == 2 ? 'Nivel  ✦ 2' : '' || kucing == 3 ? 'Nivel  ✦ 3' : '' || kucing == 4 ? 'Nivel  ✦ 4' : '' || kucing == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('anjing')}*
-┃ *${anjing == 0 ? 'No tenés' : '' || anjing == 1 ? 'Nivel  ✦ 1' : '' || anjing == 2 ? 'Nivel  ✦ 2' : '' || anjing == 3 ? 'Nivel  ✦ 3' : '' || anjing == 4 ? 'Nivel  ✦ 4' : '' || anjing == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-╰━━━━━━━━━⬣
-
-*PROGRESO : PROGRESS*
-*╭────────────┄⸙*
-*│ ${rpg.emoticon('level')} » ${user.level}*
-*│ ${rpg.emoticon('role')}*
-*│ »* ${user.role}
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*│🦊 Zorro : Fox*
-*│* ${rubah == 0 ? '*No tenés*' : '' || rubah > 0 && rubah < 5 ? `*Nivel ${rubah} A Nivel/To Level ${rubah + 1}*\n*│* Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 5 ? '*Nivel Máximo : Max Level*' : ''}
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*│🐈 Gato : Cat* 
-*│* ${kucing == 0 ? '*No tenés*' : '' || kucing > 0 && kucing < 5 ? `*Nivel ${kucing} A Nivel/To Level ${kucing + 1}*\n*│* Exp *${_kucing}* -> *${kucing *100}*` : '' || kucing == 5 ? '*Nivel Máximo : Max Level*' : ''}
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*│🐎 Caballo : Horse* 
-*│* ${kuda == 0 ? '*No tenés*' : '' || kuda > 0 && kuda < 5 ? `*Nivel ${kuda} A Nivel/To Level ${kuda + 1}*\n*│* Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 5 ? '*Nivel Máximo : Max Level*' : ''}
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*│🐶 Perro : Dog* 
-*│* ${anjing == 0 ? '*No tenés*' : '' || anjing > 0 && anjing < 5 ? `*Nivel ${anjing} A Nivel/To Level ${anjing + 1}*\n*│* Exp *${_anjing}* -> *${anjing *100}*` : '' || anjing == 5 ? '*Nivel Máximo : Max Level*' : ''}
-*╰────┄⸙*
-
-*╭─━• MASCOTAS EN COMBATE*
-*╭━• PET COMBAT*
-*│${rpg.emoticon('horse')} » ${kuda == 0 ? '❌' : '' || kuda == 1 ? 'Nivel  ✦ 1' : '' || kuda == 2 ? 'Nivel  ✦ 2' : '' || kuda == 3 ? 'Nivel  ✦ 3' : '' || kuda == 4 ? 'Nivel  ✦ 4' : '' || kuda == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│${rpg.emoticon('fox')} » ${rubah == 0 ? '❌' : '' || rubah == 1 ? 'Nivel  ✦ 1' : '' || rubah == 2 ? 'Nivel  ✦ 2' : '' || rubah == 3 ? 'Nivel  ✦ 3' : '' || rubah == 4 ? 'Nivel  ✦ 4' : '' || rubah == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│${rpg.emoticon('cat')} » ${kucing == 0 ? '❌' : '' || kucing == 1 ? 'Nivel  ✦ 1' : '' || kucing == 2 ? 'Nivel  ✦ 2' : '' || kucing == 3 ? 'Nivel  ✦ 3' : '' || kucing == 4 ? 'Nivel  ✦ 4' : '' || kucing == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│${rpg.emoticon('dragon')} » ${naga == 0 ? '❌' : '' || naga == 1 ? 'Nivel  ✦ 1' : '' || naga == 2 ? 'Nivel  ✦ 2' : '' || naga == 3 ? 'Nivel  ✦ 3' : '' || naga == 4 ? 'Nivel  ✦ 4' : '' || naga == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│${rpg.emoticon('phonix')} » ${phonix == 0 ? '❌' : '' || phonix == 1 ? 'Nivel  ✦ 1' : '' || phonix == 2 ? 'Nivel  ✦ 2' : '' || phonix == 3 ? 'Nivel  ✦ 3' : '' || phonix == 4 ? 'Nivel  ✦ 4' : '' || phonix == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│${rpg.emoticon('centaur')} » ${centaur == 0 ? '❌' : '' || centaur == 1 ? 'Nivel  ✦ 1' : '' || centaur == 2 ? 'Nivel  ✦ 2' : '' || centaur == 3 ? 'Nivel  ✦ 3' : '' || centaur == 4 ? 'Nivel  ✦ 4' : '' || centaur == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│${rpg.emoticon('griffin')} » ${griffin == 0 ? '❌' : '' || griffin == 1 ? 'Nivel  ✦ 1' : '' || griffin == 2 ? 'Nivel  ✦ 2' : '' || griffin == 3 ? 'Nivel  ✦ 3' : '' || griffin == 4 ? 'Nivel  ✦ 4' : '' || griffin == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│${rpg.emoticon('wolf')} » ${serigala == 0 ? '❌' : '' || serigala == 1 ? 'Nivel  ✦ 1' : '' || serigala == 2 ? 'Nivel  ✦ 2' : '' || serigala == 3 ? 'Nivel  ✦ 3' : '' || naga == 4 ? 'Nivel  ✦ 4' : '' || serigala == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
-
-*╭* ${htki} *PROGSES* ${htka}
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫ ${rpg.emoticon('level')} » ${user.level} ➠  ${user.level + 1}*
-*╭┫ ✨ Exp » ${user.exp} ➠ ${max - user.exp}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('fox')}*\n${rubah == 0 ? '*╰┫❌' : '' || rubah > 0 && rubah < 5 ? `*╰┫ Nivel » ${rubah} ➠ ${rubah + 1}*\n*╭┫ ExpPet » ${_rubah} -> ${rubah *100}` : '' || rubah == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('cat')}*\n${kucing == 0 ? '*╰┫❌' : '' || kucing > 0 && kucing < 5 ? `*╰┫ Nivel » ${kucing} ➠ ${kucing + 1}*\n*╭┫ ExpPet » ${_kucing} -> ${kucing *100}` : '' || kucing == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('horse')}*\n${kuda == 0 ? '*╰┫❌' : '' || kuda > 0 && kuda < 5 ? `*╰┫ Nivel » ${kuda} ➠ ${kuda + 1}*\n*╭┫ ExpPet » ${_kuda} -> ${kuda *100}` : '' || kuda == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('dragon')}*\n${naga == 0 ? '*╰┫❌' : '' || naga > 0 && naga < 5 ? `*╰┫ Nivel » ${naga} ➠ ${naga + 1}*\n*╭┫ ExpPet » ${_naga} -> ${naga *100}` : '' || naga == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('phonix')}*\n${phonix == 0 ? '*╰┫❌' : '' || phonix > 0 && phonix < 5 ? `*╰┫ Nivel » ${phonix} ➠ ${phonix + 1}*\n*╭┫ ExpPet » ${_phonix} -> ${phonix *100}` : '' || phonix == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('centaur')}*\n${centaur == 0 ? '*╰┫❌' : '' || centaur > 0 && centaur < 5 ? `*╰┫ Nivel » ${centaur} ➠ ${centaur + 1}*\n*╭┫ ExpPet » ${_centaur} -> ${centaur *100}` : '' || centaur == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('griffin')}*\n${griffin == 0 ? '*╰┫❌' : '' || griffin > 0 && griffin < 5 ? `*╰┫ Nivel » ${griffin} ➠ ${griffin + 1}*\n*╭┫ ExpPet » ${_griffin} -> ${griffin *100}` : '' || griffin == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰──┬─┄*
-*╭──┴─────────┄⸙*
-*╰┫${rpg.emoticon('wolf')}*\n${serigala == 0 ? '*╰┫❌' : '' || serigala > 0 && serigala < 5 ? `*╰┫ Nivel » *${serigala}* ➠ ${serigala + 1}*\n*╭┫ ExpPet » ${_serigala} -> ${serigala *100}` : '' || serigala == 5 ? 'Nivel  ✦ ǁ MAX' : ''}*
-*╰────────────┄⸙*
 
 🤺 *${name}* ( @${who.split("@")[0]} )\n
 *✅ » MISIÓN DISPONIBLE : MISSION AVAILABLE*
@@ -865,13 +579,13 @@ ${readMore}
 *│ ⛏️⚡ Minar EXP » ${new Date - user.lastmiming < 600000 ? '❌' : '✅'}*
 *│ ⛏️🪙 Minar Moneditas » ${new Date - user.lastcoins < 600000 ? '❌' : '✅'}*
 *│ ⛏️💎 Minar Diamantes » ${new Date - user.lastdiamantes < 900000 ? '❌' : '✅'}* 
-*│ ⚗️ Cofre : Coffer » ${new Date - user.lastcofre < 86400000 ? '❌' : '✅'}* 
-*│ 🏹 Caza : Berburu » ${new Date - user.lastberburu < 2700000 ? '❌' : '✅'}* 
-*│ ⛰️ Aventura : Adventure : » ${new Date - user.lastadventure < 1500000 ? '❌' : '✅'}* 
-*│ 🕐 Cada hora : Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : '✅'}* 
-*│ 📦 Reclamar : Claim » ${new Date - user.lastclaim < 7200000 ? '❌' : '✅'}* 
-*│ 🎁 Semanalmente : Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : '✅'}* 
-*│ 📮 Mensual : Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : '✅'}* 
+*│ ⚗️ Cofre » ${new Date - user.lastcofre < 86400000 ? '❌' : '✅'}* 
+*│ 🏹 Caza » ${new Date - user.lastberburu < 2700000 ? '❌' : '✅'}* 
+*│ ⛰️ Aventura » ${new Date - user.lastadventure < 1500000 ? '❌' : '✅'}* 
+*│ 🕐 Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : '✅'}* 
+*│ 📦 Daily » ${new Date - user.lastclaim < 7200000 ? '❌' : '✅'}* 
+*│ 🎁 Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : '✅'}* 
+*│ 📮 Monthly ${new Date - user.lastmonthly < 432000000 ? '❌' : '✅'}* 
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭──━• 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦 𝗘𝗡 𝗥𝗘𝗦𝗘𝗥𝗩𝗔*
@@ -894,122 +608,27 @@ ${readMore}
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭────━• 𝗖𝗢𝗠𝗜𝗗𝗔*
-*╭────━• 𝗙𝗢𝗢𝗗*
-*│🥓 Comida de Mascota : Food Pet » ${makananpet}*
-*│🍖 Pollo a la Parrilla : Grilled Chicken » ${ayamb}*
-*│🍗 Pollo frito : Fried Chicken » ${ayamg}*
-*│🥘 Alimento de Carne : Meat Food » ${sapir}*
-*│🥩 Bistec de Carne : Beef Steak » ${ssapi}*
+*│🥓 Food Pet » ${makananpet}*
+*│🍖 Grilled Chicken » ${ayamb}*
+*│🍗 Fried Chicken » ${ayamg}*
+*│🥘 Meat Food » ${sapir}*
+*│🥩 Beef Steak » ${ssapi}*
 *│*
 *│🎒 Total inv » ${makananpet + ayamb + ayamg + sapir + ssapi} Comida*
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
-*╭──━• 𝗙𝗥𝗨𝗧𝗔𝗦 𝗬 𝗦𝗘𝗠𝗜𝗟𝗟𝗔𝗦*
-*╭────━• 𝗙𝗥𝗨𝗜𝗧 & 𝗦𝗘𝗘𝗗*
-*│🥭 Mango » ${mangga}*
-*│🍇 Uva : Grape » ${anggur}*
-*│🍌 Platano : Banana » ${pisang}*
-*│🍊 Naranja : Orange » ${jeruk}*
-*│🍎 Manzana : Apple » ${apel}*
-*│*
-*│🌾 Semillas de Mango : Mango Seeds*
-*│» ${bibitmangga}*
-*│🌾 Semillas de uva : Grape Seeds*
-*│» ${bibitanggur}*                                   
-*│🌾 Semillas de plátano : Banana Seeds*
-*│» ${bibitpisang}*
-*│🌾 Semillas de naranja : Orange Seeds*
-*│» ${bibitjeruk}*
-*│🌾 Semillas de manzana : Apple seeds*
-*│» ${bibitapel}*
-*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
-
-╭━━━━━━━━━⬣ 
-┃ 🍱 *Alimentos para mascotas: Pet Food*
-┃ » *${makananpet}*
-┃ 🕊️ *Comida para Fénix : Phoenix Food*
-┃ » *${makananphonix}*
-┃ 🐉 *Comida para Dragón : Dragon Food*
-┃ » *${makanannaga}*
-┃ 🦅 *Comida para Ave : Griffin Food*
-┃ » *${makanangriffin}*
-┃ 🌀 *Comida Mágica : Magic Food*
-┃ » *${makanankyubi}*
-┃ 🐐 *Comida para Centauro : Centauro Food*
-┃ » *${makanancentaur}*
-╰━━━━━━━━━⬣
-
-╭━━━━━━━━━⬣ 
-┃ *𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦 : 𝗙𝗜𝗦𝗛 𝗣𝗢𝗢𝗟*
-┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
-┃ 🦈 *Tiburón : Shark » ${hiu}*
-┃ 🐟 *Pez : Fish » ${ikan}*
-┃ 🐠 *Dory : Surgeonfish » ${dory}*
-┃ 🐋 *Orca : Killer whale » ${orca}*
-┃ 🐳 *Ballena : Whale » ${paus}*
-┃ 🦑 *Calamar : Squid » ${cumi}*
-┃ 🐙 *Pulpo : Octopus » ${gurita}*
-┃ 🐡 *Pez Globo : Blowfish » ${buntal}*
-┃ 🦐 *Camarón : Shrimp » ${udang}*
-┃ 🐬 *Delfín : Dolphin » ${lumba}*
-┃ 🦞 *Langosta : Lobster » ${lobster}*
-┃ 🦀 *Cangrejo : Crab » ${kepiting}*
-╰━━━━━━━━━⬣
-
-*DATOS DEL GANCHO : HOOK DATA*
-*╭────────────────*
-*│🪝 Gancho : Hook » ${pancingan == 0 ? 'No tenés' : '' || pancingan == 1 ? 'Nivel  ✦ 1' : '' || pancingan == 2 ? 'Nivel  ✦ 2' : '' || pancingan == 3 ? 'Nivel  ✦ 3' : '' || pancingan == 4 ? 'Nivel  ✦ 4' : '' || pancingan == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*│ Poder del Gancho*\n*│ ${pancingan == 0 ? 'No tenés' : '' || pancingan > 0 && pancingan < 5 ? `Nivel » ${pancingan} a Nivel ${pancingan + 1}*\n*│ Exp » ${_pancingan} -> ${pancingan *10000}*` : '' || pancingan == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
-*╰────────────────*
-
 ╭━━━━━━━━━⬣
-┃ *CAJAS : BOX*
+┃ *CAJAS*
 ┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
-┃📥 *Cajas : Boxs » ${user.boxs}*
-┃📦 *Caja Común : Common Box » ${user.common}*
-┃🥡 *Caja Poco Común : Uncommon » ${user.uncoommon}*
-┃🗳️ *Caja Mítica : Mythic Box » ${user.mythic}*
-┃🎁 *Caja Legendaria : Legendary Box » ${user.legendary}*.
-┃🍱 *Caja para Mascota : Pet Box » ${user.pet}*
-┃💐 *Caja de Jardinería : Garden boxs » ${user.gardenboxs}*
+┃📥 *Boxs » ${user.boxs}*
+┃📦 *Common Box » ${user.common}*
+┃🥡 *Uncommon » ${user.uncoommon}*
+┃🗳️ *Mythic Box » ${user.mythic}*
+┃🎁 *Legendary Box » ${user.legendary}*.
+┃🍱 *Pet Box » ${user.pet}*
+┃💐 *Garden boxs » ${user.gardenboxs}*
 ╰━━━━━━━━━⬣
-
-👤» *${name}* ( @${who.split("@")[0]} )\n
-*✅ » DISPONIBLE*
-
-*❌ » NO DISPONIBLE*
-
-*╭──━• MISIONES*
-*│ ⛏️⚡ Minar EXP » ${new Date - user.lastmiming < 600000 ? '❌' : '✅'}*
-${new Date - user.lastmiming < 600000 ? `${clockString(user.lastmiming + 600000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ ⛏️🪙 Minar Moneditas » ${new Date - user.lastcoins < 600000 ? '❌' : '✅'}*
-${new Date - user.lastcoins < 600000 ? `${clockString(user.lastcoins + 600000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ ⛏️💎 Minar Diamantes » ${new Date - user.lastdiamantes < 900000 ? '❌' : '✅'}* 
-${new Date - user.lastdiamantes < 900000 ? `${clockString(user.lastdiamantes + 900000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ ⚗️ Cofre » ${new Date - user.lastcofre < 86400000 ? '❌' : '✅'}* 
-${new Date - user.lastcofre < 86400000 ? `${clockString(user.lastcofre + 86400000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 🏹 Caza » ${new Date - user.lastberburu < 2700000 ? '❌' : '✅'}* 
-${new Date - user.lastberburu < 2700000 ? `${clockString(user.lastberburu + 2700000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ ⛰️ Aventura » ${new Date - user.lastadventure < 1500000 ? '❌' : '✅'}* 
-${new Date - user.lastadventure < 1500000 ? `${clockString(user.lastadventure + 1500000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 🕐 Cada hor » ${new Date - user.lasthourly < 3600000 ? '❌' : '✅'}* 
-${new Date - user.lasthourly < 3600000 ? `${clockString(user.lasthourly + 3600000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 📦 Reclamar » ${new Date - user.lastclaim < 7200000 ? '❌' : '✅'}* 
-${new Date - user.lastclaim < 7200000 ? `${clockString(user.lastclaim + 7200000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 🎁 Semanalmente ${new Date - user.lastweekly < 259200000 ? '❌' : '✅'}* 
-${new Date - user.lastweekly < 259200000 ? `${clockString(user.lastweekly + 259200000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 📮 Mensual ${new Date - user.lastmonthly < 432000000 ? '❌' : '✅'}* 
-${new Date - user.lastmonthly < 432000000 ? `${clockString(user.lastmonthly + 432000000 - new Date())}` : '*│* ✅ DISPONIBLE'}
-*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*`
+`
  
 const fkontak = {
 	"key": {
@@ -1037,41 +656,6 @@ conn.sendFile(m.chat, imgr, 'SodicaBot.exe', str, {quoted: fkontak})
     let name = m.sender
     let usuario = await conn.getName(name)
     
-    let sortedmoney = Object.entries(global.db.data.users).sort((a, b) => b[1].money - a[1].money)
-    let sortedlevel = Object.entries(global.db.data.users).sort((a, b) => b[1].level - a[1].level)
-    let sorteddiamond = Object.entries(global.db.data.users).sort((a, b) => b[1].diamond - a[1].diamond)
-    let sortedpotion = Object.entries(global.db.data.users).sort((a, b) => b[1].potion - a[1].potion)
-    let sortedsampah = Object.entries(global.db.data.users).sort((a, b) => b[1].sampah - a[1].sampah)
-    let sortedmakananpet = Object.entries(global.db.data.users).sort((a, b) => b[1].makananpet - a[1].makananpet)
-    let sortedbatu = Object.entries(global.db.data.users).sort((a, b) => b[1].batu - a[1].batu)
-    let sortediron = Object.entries(global.db.data.users).sort((a, b) => b[1].iron - a[1].iron)
-    let sortedkayu = Object.entries(global.db.data.users).sort((a, b) => b[1].kayu - a[1].kayu)
-    let sortedstring = Object.entries(global.db.data.users).sort((a, b) => b[1].string - a[1].string)
-    let sortedcommon = Object.entries(global.db.data.users).sort((a, b) => b[1].common - a[1].common)
-    let sorteduncoommon = Object.entries(global.db.data.users).sort((a, b) => b[1].uncoommon - a[1].uncoommon)
-    let sortedmythic = Object.entries(global.db.data.users).sort((a, b) => b[1].mythic - a[1].mythic)
-    let sortedlegendary = Object.entries(global.db.data.users).sort((a, b) => b[1].legendary - a[1].legendary)
-    let sortedpet = Object.entries(global.db.data.users).sort((a, b) => b[1].pet - a[1].pet)
-    let sortedgold = Object.entries(global.db.data.users).sort((a, b) => b[1].gold - a[1].gold)
-    let sortedarlok = Object.entries(global.db.data.users).sort((a, b) => b[1].arlok - a[1].arlok)
-    
-    let usersmoney = sortedmoney.map(v => v[0])
-    let userslevel = sortedlevel.map(v => v[0])
-    let usersdiamond = sorteddiamond.map(v => v[0])
-    let userspotion = sortedpotion.map(v => v[0])
-    let userssampah = sortedsampah.map(v => v[0])
-    let usersmakananpet = sortedmakananpet.map(v => v[0])
-    let usersbatu = sortedbatu.map(v => v[0])
-    let usersiron = sortediron.map(v => v[0])
-    let userskayu = sortedkayu.map(v => v[0])
-    let usersstring = sortedstring.map(v => v[0])
-    let userscommon = sortedcommon.map(v => v[0])
-    let usersuncoommon = sorteduncoommon.map(v => v[0])
-    let usersmythic = sortedmythic.map(v => v[0])
-    let userslegendary = sortedlegendary.map(v => v[0])
-    let userspet = sortedpet.map(v => v[0])
-    let usersgold = sortedgold.map(v => v[0])
-    let usersarlok = sortedarlok.map(v => v[0])
     
     let str = `
 👤» *${usuario}* ( @${who.split("@")[0]} )\n
@@ -1081,84 +665,25 @@ conn.sendFile(m.chat, imgr, 'SodicaBot.exe', str, {quoted: fkontak})
 
 *╭──━• MISIONES*
 *│ ⛏️⚡ Minar EXP » ${new Date - user.lastmiming < 600000 ? '❌' : '✅'}*
-${new Date - user.lastmiming < 600000 ? `${clockString(user.lastmiming + 600000 - new Date())}` : '*│* ✅ DISPONIBLE'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ ⛏️🪙 Minar Moneditas » ${new Date - user.lastcoins < 600000 ? '❌' : '✅'}*
-${new Date - user.lastcoins < 600000 ? `${clockString(user.lastcoins + 600000 - new Date())}` : '*│* ✅ DISPONIBLE'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ ⛏️💎 Minar Diamantes » ${new Date - user.lastdiamantes < 900000 ? '❌' : '✅'}* 
-${new Date - user.lastdiamantes < 900000 ? `${clockString(user.lastdiamantes + 900000 - new Date())}` : '*│* ✅ DISPONIBLE'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ ⚗️ Cofre » ${new Date - user.lastcofre < 86400000 ? '❌' : '✅'}* 
-${new Date - user.lastcofre < 86400000 ? `${clockString(user.lastcofre + 86400000 - new Date())}` : '*│* ✅ DISPONIBLE'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ 🏹 Caza » ${new Date - user.lastberburu < 2700000 ? '❌' : '✅'}* 
-${new Date - user.lastberburu < 2700000 ? `${clockString(user.lastberburu + 2700000 - new Date())}` : '*│* ✅ DISPONIBLE'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ ⛰️ Aventura » ${new Date - user.lastadventure < 1500000 ? '❌' : '✅'}* 
-${new Date - user.lastadventure < 1500000 ? `${clockString(user.lastadventure + 1500000 - new Date())}` : '*│* ✅ DISPONIBLE'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ 🕐 Cada hora » ${new Date - user.lasthourly < 3600000 ? '❌' : '✅'}* 
-${new Date - user.lasthourly < 3600000 ? `${clockString(user.lasthourly + 3600000 - new Date())}` : '*│* ✅ 𝗗𝗜𝗦𝗣𝗢𝗡𝗜𝗕𝗟𝗘'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ 📦 Diario » ${new Date - user.lastclaim < 7200000 ? '❌' : '✅'}* 
-${new Date - user.lastclaim < 7200000 ? `${clockString(user.lastclaim + 7200000 - new Date())}` : '*│* ✅ 𝗗𝗜𝗦𝗣𝗢𝗡𝗜𝗕𝗟𝗘'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ 🎁 Semanal ${new Date - user.lastweekly < 259200000 ? '❌' : '✅'}* 
-${new Date - user.lastweekly < 259200000 ? `${clockString(user.lastweekly + 259200000 - new Date())}` : '*│* ✅ 𝗗𝗜𝗦𝗣𝗢𝗡𝗜𝗕𝗟𝗘'}
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ 📮 Mensual ${new Date - user.lastmonthly < 432000000 ? '❌' : '✅'}* 
-${new Date - user.lastmonthly < 432000000 ? `${clockString(user.lastmonthly + 432000000 - new Date())}` : '*│* ✅ 𝗗𝗜𝗦𝗣𝗢𝗡𝗜𝗕𝗟𝗘'}
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*`.trim()
-/*
-*Hero*
-My Hero: *${hero == 0 ? 'Tidak Punya' : '' || hero == 1 ? 'Level 1' : '' || hero == 2 ? 'Level 2' : '' || hero == 3 ? 'Level 3' : '' || hero == 4 ? 'Level 4' : '' || hero == 5 ? 'Level 5' : '' || hero == 6 ? 'Level 6' : '' || hero == 7 ? 'Level 7' : '' || hero == 8 ? 'Level 8' : '' || hero == 9 ? 'Level 9' : '' || hero == 10 ? 'Level 10' : '' || hero == 11 ? 'Level 11' : '' || hero == 12 ? 'Level 12' : '' || hero == 13 ? 'Level 13' : '' || hero == 14 ? 'Level 14' : '' || hero == 15 ? 'Level 15' : '' || hero == 16 ? 'Level 16' : '' || hero == 17 ? 'Level 17' : '' || hero == 18 ? 'Level 18' : '' || hero == 19 ? 'Level 19' : '' || hero == 20 ? 'Level 20' : '' || hero == 21 ? 'Level 21' : '' || hero == 22 ? 'Level 22' : '' || hero == 23 ? 'Level 23' : '' || hero == 24 ? 'Level 24' : '' || hero == 25 ? 'Level 25' : '' || hero == 26 ? 'Level 26' : '' || hero == 27 ? 'Level 27' : '' || hero == 28 ? 'Level 28' : '' || hero == 29 ? 'Level 29' : '' || hero == 30 ? 'Level 30' : '' || hero == 31 ? 'Level 31' : '' || hero == 32 ? 'Level 32' : '' || hero == 33 ? 'Level 33' : '' || hero == 34 ? 'Level 34' : '' || hero == 35 ? 'Level 35' : '' || hero == 36 ? 'Level 36' : '' || hero == 37 ? 'Level 37'  : '' || hero == 38 ? 'Level 38' : '' || hero == 39 ? 'Level 39' : '' || hero == 40 ? 'Level MAX' : ''}*
-
-*Pet*
-Kucing: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level MAX' : ''}*
-Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level MAX' : ''}*
-Naga: *${naga == 0 ? 'Tidak Punya' : '' || naga == 1 ? 'Level 1' : '' || naga == 2 ? 'Level 2' : '' || naga == 3 ? 'Level 3' : '' || naga == 4 ? 'Level 4' : '' || naga == 5 ? 'Level 5' : '' || naga == 6 ? 'Level 6' : '' || naga == 7 ? 'Level 7' : '' || naga == 8 ? 'Level 8' : '' || naga == 9 ? 'Level 9' : '' || naga == 10 ? 'Level 10' : '' || naga == 11 ? 'Level 11' : '' || naga == 12 ? 'Level 12' : '' || naga == 13 ? 'Level 13' : '' || naga == 14 ? 'Level 14' : '' || naga == 15 ? 'Level 15' : '' || naga == 16 ? 'Level 16' : '' || naga == 17 ? 'Level 17' : '' || naga == 18 ? 'Level 18' : '' || naga == 19 ? 'Level 19' : '' || naga == 20 ? 'Level MAX' : ''}*
-Kyubi: *${kyubi == 0 ? 'Tidak Punya' : '' || kyubi == 1 ? 'Level 1' : '' || kyubi == 2 ? 'Level 2' : '' || kyubi == 3 ? 'Level 3' : '' || kyubi == 4 ? 'Level 4' : '' || kyubi == 5 ? 'Level 5' : '' || kyubi == 6 ? 'Level 6' : '' || kyubi == 7 ? 'Level 7' : '' || kyubi == 8 ? 'Level 8' : '' || kyubi == 9 ? 'Level 9' : '' || kyubi == 10 ? 'Level 10' : '' || kyubi == 11 ? 'Level 11' : '' || kyubi == 12 ? 'Level 12' : '' || kyubi == 13 ? 'Level 13' : '' || kyubi == 14 ? 'Level 14' : '' || kyubi == 15 ? 'Level 15' : '' || kyubi == 16 ? 'Level 16' : '' || kyubi == 17 ? 'Level 17' : '' || kyubi == 18 ? 'Level 18' : '' || kyubi == 19 ? 'Level 19' : '' || kyubi == 20 ? 'Level MAX' : ''}*
-Centaur: *${centaur == 0 ? 'Tidak Punya' : '' || centaur == 1 ? 'Level 1' : '' || centaur == 2 ? 'Level 2' : '' || centaur == 3 ? 'Level 3' : '' || centaur == 4 ? 'Level 4' : '' || centaur == 5 ? 'Level 5' : '' || centaur == 6 ? 'Level 6' : '' || centaur == 7 ? 'Level 7' : '' || centaur == 8 ? 'Level 8' : '' || centaur == 9 ? 'Level 9' : '' || centaur == 10 ? 'Level 10' : '' || centaur == 11 ? 'Level 11' : '' || centaur == 12 ? 'Level 12' : '' || centaur == 13 ? 'Level 13' : '' || centaur == 14 ? 'Level 14' : '' || centaur == 15 ? 'Level 15' : '' || centaur == 16 ? 'Level 16' : '' || centaur == 17 ? 'Level 17' : '' || centaur == 18 ? 'Level 18' : '' || centaur == 19 ? 'Level 19' : '' || centaur == 20 ? 'Level MAX' : ''}*
-Rubah: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level MAX' : ''}*  
-Phonix: *${phonix == 0 ? 'Tidak Punya' : '' || phonix == 1 ? 'Level 1' : '' || phonix == 2 ? 'Level 2' : '' || phonix == 3 ? 'Level 3' : '' || phonix == 4 ? 'Level 4' : '' || phonix == 5 ? 'Level 5' : '' || phonix == 6 ? 'Level 6' : '' || phonix == 7 ? 'Level 7' : '' || phonix == 8 ? 'Level 8' : '' || phonix == 9 ? 'Level 9' : '' || phonix == 10 ? 'Level 10' : '' || phonix == 11 ? 'Level 11' : '' || phonix == 12 ? 'Level 12' : '' || phonix == 13 ? 'Level 13' : '' || phonix == 14 ? 'Level 14' : '' || phonix == 15 ? 'Level MAX' : ''}*
-Griffin: *${griffin == 0 ? 'Tidak Punya' : '' || griffin == 1 ? 'Level 1' : '' || griffin == 2 ? 'Level 2' : '' || griffin == 3 ? 'Level 3' : '' || griffin == 4 ? 'Level 4' : '' || griffin == 5 ? 'Level 5' : '' || griffin == 6 ? 'Level 6' : '' || griffin == 7 ? 'Level 7' : '' || griffin == 8 ? 'Level 8' : '' || griffin == 9 ? 'Level 9' : '' || griffin == 10 ? 'Level 10' : '' || griffin == 11 ? 'Level 11' : '' || griffin == 12 ? 'Level 12' : '' || griffin == 13 ? 'Level 13' : '' || griffin == 14 ? 'Level 14' : '' || griffin == 15 ? 'Level MAX' : ''}*
-Serigala: *${serigala == 0 ? 'Tidak Punya' : '' || serigala == 1 ? 'Level 1' : '' || serigala == 2 ? 'Level 2' : '' || serigala == 3 ? 'Level 3' : '' || serigala == 4 ? 'Level 4' : '' || serigala == 5 ? 'Level 5' : '' || serigala == 6 ? 'Level 6' : '' || serigala == 7 ? 'Level 7' : '' || serigala == 8 ? 'Level 8' : '' || serigala == 9 ? 'Level 9' : '' || serigala == 10 ? 'Level 10' : '' || serigala == 11 ? 'Level 11' : '' || serigala == 12 ? 'Level 12' : '' || serigala == 13 ? 'Level 13' : '' || serigala == 14 ? 'Level 14' : '' || serigala == 15 ? 'Level MAX' : ''}*\n
-*Proges*
-╭────────────────
-│Level *${level}* To Level *${level}*
-│Exp *${exp}* -> *${max}*
-│
-│Hero ${hero == 0 ? 'Tidak Punya' : '' || hero > 0 && hero < 40 ? `Level *${hero}* To level *${hero + 1}*\n│Exp *${exphero}* -> *${hero *500}*` : '' || hero == 40 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Rubah ${rubah == 0 ? 'Tidak Punya' : '' || rubah > 0 && rubah < 5 ? `Level *${rubah}* To level *${rubah + 1}*\n│Exp *${_rubah}* -> *${rubah *1000}*` : '' || rubah == 5 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Kucing ${kucing == 0 ? 'Tidak Punya' : '' || kucing > 0 && kucing < 5 ? `Level *${kucing}* To level *${kucing + 1}*\n│Exp *${_kucing}* -> *${kucing *1000}*` : '' || kucing == 5 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Kuda ${kuda == 0 ? 'Tidak Punya' : '' || kuda > 0 && kuda < 5 ? `Level *${kuda}* To level *${kuda + 1}*\n│Exp *${_kuda}* -> *${kuda *1000}*` : '' || kuda == 5 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Naga ${naga == 0 ? 'Tidak Punya' : '' || naga > 0 && naga < 20 ? `Level *${naga}* To level *${naga + 1}*\n│Exp *${_naga}* -> *${naga *10000}*` : '' || naga == 20 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Phonix ${phonix == 0 ? 'Tidak Punya' : '' || phonix > 0 && phonix < 15 ? `Level *${phonix}* To level *${phonix + 1}*\n│Exp *${_phonix}* -> *${phonix *10000}*` : '' || phonix == 15 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Kyubi ${kyubi == 0 ? 'Tidak Punya' : '' || kyubi > 0 && kyubi < 20 ? `Level *${kyubi}* To level *${kyubi + 1}*\n│Exp *${_kyubi}* -> *${kyubi *10000}*` : '' || kyubi == 20 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Centaur ${centaur == 0 ? 'Tidak Punya' : '' || centaur > 0 && centaur < 20 ? `Level *${centaur}* To level *${centaur + 1}*\n│Exp *${_centaur}* -> *${centaur *10000}*` : '' || centaur == 20 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Griffin ${griffin == 0 ? 'Tidak Punya' : '' || griffin > 0 && griffin < 15 ? `Level *${griffin}* To level *${griffin + 1}*\n│Exp *${_griffin}* -> *${griffin *10000}*` : '' || griffin == 15 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Serigala ${serigala == 0 ? 'Tidak Punya' : '' || serigala > 0 && serigala < 15 ? `Level *${serigala}* To level *${serigala + 1}*\n│Exp *${_serigala}* -> *${serigala *10000}*` : '' || serigala == 15? '*Max Level*' : ''}
-╰────────────────\n\n
-*/
 
 const fkontak = {
 	"key": {
@@ -1236,7 +761,6 @@ let bibitpisang = user.bibitpisang
 
 let aineh = `
 *╭──━• 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦 𝗘𝗡 𝗥𝗘𝗦𝗘𝗥𝗩𝗔*
-*╭─━• 𝗔𝗡𝗜𝗠𝗔𝗟𝗦 𝗜𝗡 𝗥𝗘𝗦𝗘𝗥𝗩𝗔𝗧𝗜𝗢𝗡*
 *│${rpg.emoticon('bull')} ➡️ ${banteng}*
 *│${rpg.emoticon('tiger')} ➡️ ${harimau}*
 *│${rpg.emoticon('elephant')} ➡️ ${gajah}*
@@ -1256,7 +780,6 @@ let aineh = `
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭────━• 𝗖𝗢𝗠𝗜𝗗𝗔*
-*╭────━• 𝗙𝗢𝗢𝗗*
 *│🥓 Comida de Mascota : Food Pet » ${makananpet}*
 *│🍖 Pollo a la Parrilla : Grilled Chicken » ${ayamb}*
 *│🍗 Pollo frito : Fried Chicken » ${ayamg}*
@@ -1267,7 +790,6 @@ let aineh = `
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭──━• 𝗙𝗥𝗨𝗧𝗔𝗦 𝗬 𝗦𝗘𝗠𝗜𝗟𝗟𝗔𝗦*
-*╭────━• 𝗙𝗥𝗨𝗜𝗧 & 𝗦𝗘𝗘𝗗*
 *│🥭 Mango » ${mangga}*
 *│🍇 Uva : Grape » ${anggur}*
 *│🍌 Platano : Banana » ${pisang}*
@@ -1302,7 +824,7 @@ let aineh = `
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣ 
-┃ *𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦 : 𝗙𝗜𝗦𝗛 𝗣𝗢𝗢𝗟*
+┃ *𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦*
 ┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
 ┃ 🦈 *Tiburón : Shark » ${hiu}*
 ┃ 🐟 *Pez : Fish » ${ikan}*

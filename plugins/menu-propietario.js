@@ -92,7 +92,7 @@ let menu = `
 ┃💎➺ _${usedPrefix}broadcastgc *texto*_
 ┃💎➺ _${usedPrefix}cleartmp_
 ┃💎➺ _${usedPrefix}delexp *@tag*_
-┃💎➺ _${usedPrefix}delCoinss *@tag*_
+┃💎➺ _${usedPrefix}delMoneditas *@tag*_
 ┃💎➺ _${usedPrefix}deldiamantes *@tag*_
 ┃💎➺ _${usedPrefix}reiniciar | restart_
 ┃💎➺ _${usedPrefix}listapremium | listprem_

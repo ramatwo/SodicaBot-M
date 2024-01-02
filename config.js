@@ -22,7 +22,7 @@ global.owner = [
 
 global.mods = ['5491125172076'] 
 global.prems = ['5491125172076'] 
-   
+global.ROwner = ['5491125172076'] 
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
 //Agrega el Idioma que quieres que tenga SodicaBot-M

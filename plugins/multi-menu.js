@@ -584,7 +584,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}comunicargrupos *texto*_
 ∘ _${usedPrefix}borrartmp | cleartmp_
 ∘ _${usedPrefix}delexp *@tag*_
-∘ _${usedPrefix}delCoinss *@tag*_
+∘ _${usedPrefix}delMoneditas *@tag*_
 ∘ _${usedPrefix}deldiamantes *@tag*_
 ∘ _${usedPrefix}reiniciar | restart_
 ∘ _${usedPrefix}ctualizar | update_
@@ -593,7 +593,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}listapremium | listprem_
 ∘ _${usedPrefix}añadirdiamantes *@tag cantidad*_
 ∘ _${usedPrefix}añadirxp *@tag cantidad*_
-∘ _${usedPrefix}añadirCoinss *@tag cantidad*_
+∘ _${usedPrefix}añadirMoneditas *@tag cantidad*_
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
@@ -708,7 +708,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}myns_
 ∘ _${usedPrefix}unreg *numero de serie*_
 ∘ _${usedPrefix}minardiamantes | minargemas_
-∘ _${usedPrefix}minarCoinss | minarcoins_
+∘ _${usedPrefix}minarMoneditas | minarcoins_
 ∘ _${usedPrefix}minarexperiencia | minarexp_
 ∘ _${usedPrefix}minar *:* minar2 *:* minar3_
 ∘ _${usedPrefix}reclamar | regalo | claim_
