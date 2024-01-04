@@ -24,7 +24,7 @@ let pp = 'https://google.com'
 let imgr = flaaa.getRandom()
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
-if (user.health < 80) return await conn.reply(m.chat, `𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 💔 𝙀𝙎𝙏𝘼 𝙋𝙊𝙍 𝘿𝙀𝘽𝘼𝙅𝙊 𝘿𝙀 *80*\n𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘾𝙐𝙍𝘼𝙏𝙀 𝙋𝙍𝙄𝙈𝙀𝙍𝙊 𝙋𝘼𝙍𝘼 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`, fkontak, imgr, m)
+if (user.health < 80) return await conn.reply(m.chat, `Tu salud está por abajo de 80. Curate con .heal`, fkontak, imgr, m)
 /*conn.sendButton(m.chat,`${htki} 𝘽𝘼𝙅𝘼 𝙎𝘼𝙇𝙐𝘿 ${htka}`,
 `𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 💔 𝙀𝙎𝙏𝘼 𝙋𝙊𝙍 𝘿𝙀𝘽𝘼𝙅𝙊 𝘿𝙀 *80 *
 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘾𝙐𝙍𝘼𝙏𝙀 𝙋𝙍𝙄𝙈𝙀𝙍𝙊 𝙋𝘼𝙍𝘼 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊\n\n𝙔𝙊𝙐𝙍 𝙃𝙀𝘼𝙇𝙏𝙃 💔 𝙄𝙎 𝘽𝙀𝙇𝙊𝙒 *80 *\n𝙋𝙇𝙀𝘼𝙎𝙀 𝙃𝙀𝘼𝙇 𝙁𝙄𝙍𝙎𝙏 𝙏𝙊 𝘼𝘿𝙑𝙀𝙉𝙏𝙐𝙍𝙀 𝘼𝙂𝘼𝙄𝙉`.trim(), imgr + 'MALA SALUD : BAD HEALTH', [
@@ -93,9 +93,9 @@ function reward(user = {}) {
                 )).fill(0)
             ),
             legendary: [0, 0, 0, 0, 0, 0, 0, 1, 0, 0].concat(
-                new Array(10 - (
-                    (user.dog > 8 && user.dog) || 4
-                )).fill(0)
+               // new Array(10 - (
+               //     (user.dog > 8 && user.dog) || 4
+               // )).fill(0)
             ),
             cat: [0, 1, 0, 0, 0],
             centaur: [0, 1, 0, 0, 0],

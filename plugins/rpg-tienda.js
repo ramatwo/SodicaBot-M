@@ -2,8 +2,8 @@ const xpperlimit = 300
 import fetch from 'node-fetch'
 let handler = async (m, { command, conn, usedPrefix, args }) => {
 let user = global.db.data.users[m.sender]
-let time = user.lastmiming + 1800000 //5 min
-if (new Date - user.lastmiming < 1800000) return await conn.reply(m.chat, `⏱️ Volvé en ${msToTime(time - new Date())}`, m)
+let time = user.lastmiming + 300000 //5 min
+if (new Date - user.lastmiming < 300000) return await conn.reply(m.chat, `⏱️ Volvé en ${msToTime(time - new Date())}`, m)
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
 let grupos = [nna, nn, nnn, nnnt]
@@ -223,7 +223,7 @@ user[item] += total
  await conn.reply(m.chat, `*––『 COMPRADO 』––*\n\n${conn.getName(m.sender)}\n*Compraste ${item} » ${total} ${global.rpgshop.emoticon(item)}*.\n*--------------------------------------------*\n*Gasto: ${(listItems[item][paymentMethod] * total)} ${global.rpgshop.emoticon(paymentMethod)}*\n*Ahora tenés: ${user[item]} ${global.rpgshopp.emoticon(item)}*\n${wm}`, fkontak, m)
 
 } else {
-if (user[item] < total) return await conn.reply(m.chat, `🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}\n\n*No tenés suficiente ${global.rpgshop.emoticon(item)} para vender. solo tenés ${user[item]} ${global.rpgshopp.emoticon(item)}*`, fkontak, m)
+if (user[item] < total) return await conn.reply(m.chat, `🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}\n\n*No tenés suficiente ${global.rpgshop.emoticon(item)} para vender.*`, fkontak, m)
      
 let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
 user[item] -= total

@@ -5,6 +5,5 @@ m.reply(`Listo.`)
 handler.help = ['banchat']
 handler.tags = ['owner']
 handler.command = /^banchat|bansb|banchat2$/i
-handler.botAdmin = true
-handler.admin = true 
+handler.owner = true
 export default handler

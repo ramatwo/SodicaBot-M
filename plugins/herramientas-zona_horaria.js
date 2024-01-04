@@ -25,7 +25,7 @@ await conn.sendMessage(m.chat, { text: `\`\`\`
 「 ZONA-HORARIA 🗺️ 」
 ⏱️Peru       : ${fechaper}
 ⏱️Mexico     : ${fechamex}
-⏱️Bolivia    : ${fechabol}
+⏱️Bolivia (TIENEN QUE MORIR)    : ${fechabol}
 ⏱️Chile      : ${fechachi}
 ⏱️Argentina  : ${fechaarg}
 ⏱️Colombia   : ${fechacol}

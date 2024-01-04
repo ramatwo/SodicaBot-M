@@ -1,0 +1,57 @@
+let { areJidsSameUser } = (await import(global.baileys)).default;
+let toM = a => '@' + a.split('@')[0];
+
+let handler = async (m, { conn, usedPrefix, command, text, participants, groupMetadata }) => {
+    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
+    let fkontak = {
+        "key": {
+            "participants": "0@s.whatsapp.net",
+            "remoteJid": "status@broadcast",
+            "fromMe": false,
+            "id": "Halo"
+        },
+        "message": {
+            "contactMessage": {
+                "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+            }
+        },
+        "participant": "0@s.whatsapp.net"
+    };
+    let name = await conn.getName(m.sender);
+    let toUser = `${m.sender.split("@")[0]}`;
+    let aa = toUser + '@s.whatsapp.net';
+
+    if (!text) {
+        let ps = groupMetadata.participants.map(v => v.id);
+        let a = ps.getRandom();
+        let b;
+        do b = ps.getRandom();
+        while (b === a);
+
+        if (command == 'futurarelacion') {
+            await conn.reply(m.chat, `💗 𝗙𝗨𝗧𝗨𝗥𝗔 𝗣𝗔𝗥𝗘𝗝𝗔 💗\n${toM(a)} 💞 ${toM(b)}\n\n💌 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗗𝗘 𝗔𝗠𝗢𝗥\n*_${await ktnmbk.getRandom()}_*`);
+        } else {
+            // Manejo para otros comandos si es necesario
+        }
+    } else if (isNaN(text)) {
+        var number = text.split`@`[1];
+    } else if (!isNaN(text)) {
+        var number = text;
+    }
+
+    // Resto del código...
+
+};
+
+handler.command = /^(futurarelacion|pareja|elegirpareja|serpareja|sersupareja|couple|elegirpareja)$/i;
+handler.group = true;
+
+export default handler;
+
+let ktnmbk = [
+    "Hay momentos en los que no me gusta estar solo. Pero tampoco quiero que todos me acompañen, solo te quiero a ti",
+    "Mi amor por ti es incuestionable porque este amor es sincero desde el fondo de mi corazón",
+    "Mi amor por ti es como un número del 5 al 10. No hay segundo. Quiero que seas la única mujer en mi corazón",
+    "Qué chico se atreve a lastimarte. Aquí te trataré, mientras quieras ser mi novia",
+    "Oye, ¿qué estás haciendo? Sal de la casa y mira la luna esta noche. La luz es hermosa y encantadora, pero sería aún más hermosa si yo estuviera a tu lado. ¿Qué tal si estamos juntos?"
+];
