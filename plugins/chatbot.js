@@ -1,16 +1,13 @@
-let cooldowns = {}
+/*let cooldowns = {}
 
 let handler = m => m
 handler.all = async function (m) {
     let chat = global.db.data.chats[m.chat]
     let name = conn.getName(m.sender)
-
-    // Definir el tiempo de cooldown en segundos
-    let cooldownTime = 5 // 60 segundos
-
+    let cooldownTime = 3 // 
     // Verificar si el comando tiene un cooldown activo
     if (cooldowns[m.command]) {
-        let elapsedTime = (Date.now() - cooldowns[m.command]) / 1000; // Convertir a segundos
+        let elapsedTime = (Date.now() - cooldowns[m.command]) / 1000; //conversor a seg
         if (elapsedTime < cooldownTime) {
             // El comando está en cooldown, no ejecutar y salir
             return
@@ -69,4 +66,4 @@ export default handler
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
-}
+}*/

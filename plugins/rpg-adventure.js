@@ -17,7 +17,7 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 
-let pp = 'https://google.com'
+let pp = "./media/menus/velocidad.bat"
 
 
 
@@ -51,7 +51,7 @@ ${cmenua}`
         user[rewardItem] += total * 1
         if (total) text += `\n» ${global.rpg.emoticon(rewardItem)} ${total}`
     }
-    conn.sendFile(m.chat, pp, 'SodicaBot.exe', text.trim(), fkontak)
+    conn.sendFile(m.chat, pp, 'Aventura.bat', text.trim(), fkontak)
    // await conn.reply(m.chat, `${htki} 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 ${htka}`, fkontak, imgr, m)
     /*conn.sendButton(m.chat, 
      `${htki} 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 ${htka}`, 

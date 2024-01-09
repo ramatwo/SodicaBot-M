@@ -1,12 +1,10 @@
-// creditos a https://github.com/FG98F
-let handler = async (m, { conn, isPrems}) => {
-//let hasil = Math.floor(Math.random() * 5000)
-const fkontak = {
+let handler = async (m, { conn, isPrems }) => {
+    const fkontak = {
         "key": {
-        "participants":"0@s.whatsapp.net",
+            "participants": "0@s.whatsapp.net",
             "remoteJid": "status@broadcast",
             "fromMe": false,
-            "id": "Halo"    
+            "id": "Halo"
         },
         "message": {
             "contactMessage": {
@@ -15,17 +13,14 @@ const fkontak = {
         },
         "participant": "0@s.whatsapp.net"
     }
-let pp = 'https://c4.wallpaperflare.com/wallpaper/991/456/22/sketch-artist-anime-anime-girls-arknights-swire-arknights-hd-wallpaper-preview.jpg'
-let gata = Math.floor(Math.random() * 3000)
-global.db.data.users[m.sender].exp += gata * 1  
-let time = global.db.data.users[m.sender].lastwork + 3600000
-if (new Date - global.db.data.users[m.sender].lastwork < 3600000) throw `*Eh chambeador, esperá ${msToTime(time - new Date())} antes de volver a la chamba.*`
+    let gata = Math.floor(Math.random() * 3000)
+    global.db.data.users[m.sender].exp += gata * 1
+    let time = global.db.data.users[m.sender].lastwork + 3000000
+    if (new Date - global.db.data.users[m.sender].lastwork < 3000000) throw `*Eh chambeador, esperá ${msToTime(time - new Date())} antes de volver a la chamba.*`
 
-await conn.reply(m.chat, `*${pickRandom(global.work)}* ${gata} XP`, fkontak, m)
-/*conn.sendHydrated(m.chat, wm, `${pickRandom(global.work)} ${gata} XP`, pp, md, '饾檪饾櫈饾櫓饾檭饾櫔饾櫁', null, null, [
-['饾棤 饾棙 饾棥 饾棬 鈽橈笍', `#menu`]
-], m,) */
-global.db.data.users[m.sender].lastwork = new Date * 1
+    await conn.reply(m.chat, `*${pickRandom(global.work)}* ${gata} XP`, fkontak, m)
+
+    global.db.data.users[m.sender].lastwork = new Date * 1
 }
 handler.help = ['work']
 handler.tags = ['xp']
@@ -36,42 +31,51 @@ handler.register = true
 export default handler
 
 function msToTime(duration) {
-var milliseconds = parseInt((duration % 1000) / 100),
-seconds = Math.floor((duration / 1000) % 60),
-minutes = Math.floor((duration / (1000 * 60)) % 60),
-hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
-hours = (hours < 10) ? "0" + hours : hours
-minutes = (minutes < 10) ? "0" + minutes : minutes
-seconds = (seconds < 10) ? "0" + seconds : seconds
+    var milliseconds = parseInt((duration % 1000) / 100),
+        seconds = Math.floor((duration / 1000) % 60),
+        minutes = Math.floor((duration / (1000 * 60)) % 60),
+        hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+    hours = (hours < 10) ? "0" + hours : hours
+    minutes = (minutes < 10) ? "0" + minutes : minutes
+    seconds = (seconds < 10) ? "0" + seconds : seconds
 
-return minutes + "m " + seconds + "s " 
+    return minutes + "m " + seconds + "s "
 }
-
 
 function pickRandom(list) {
-return list[Math.floor(list.length * Math.random())]
+    return list[Math.floor(list.length * Math.random())]
 }
 
-global.work = ["Trabajaste como cortador de galletas y ganas", "Trabaja para una empresa militar privada, ganando", "Organiza un evento de cata de vinos y obtiene",
+global.work = [
+ "Trabajaste como negro, y encima ganás",
+ "Trabaja para una empresa militar privada, ganando",
+ "Organiza un evento de cata de vinos y obtiene",
  "Moderaste el grupo cuando Sodica no estaba. el pago fue",
- "iba caminando por la calle y que encuentra con",
+ "iba caminando por la calle y te encontraste mil sopes. Ganaste",
  "ayudarte con el grupo mientras los admin no estaba el pago fue",
- "Te secuestran y te llevan a un coliseo subterráneo donde luchaste contra monstruos con personas que nunca antes hab脙颅as conocido. Ganas", "Limpias la chimenea y encuentras", 
-"Desarrollas juegos para ganarte la vida y ganas", 
-"驴Por que este comando se llama trabajo? Ni siquiera estas haciendo nada relacionado con el trabajo. Sin embargo, ganas", "Trabajaste en la oficina horas extras por", 
-"Trabajas como secuestrador de novias y ganas", 
-"Alguien vino y representa una obra de teatro. Por mirar te dieron", "Compraste y vendiste art脙颅culos y Ganaste", "Trabajas en el restaurante de la abuela como cocinera y ganas", 
-"Trabajas 10 minutos en un Pizza Hut local. Ganaste", 
-"Trabajas como escritor(a) de galletas de la fortuna y ganas", "Revisas tu bolso y decides vender algunos art脙颅culos in脙潞tiles que no necesitas. Resulta que toda esa basura valia", 
-"Ves a alguien luchando por subir una caja a su auto, te apresuras a ayudarlo antes de que se lastime. Despu脙漏s de ayudarlos, amablemente te dan", 
-"Desarrollas juegos para ganarte la vida y ganas", 
-"Ganas un concurso de comer chili picante. El premio es", 
-"Trabajas todo el dia en la empresa por", 
-"Ayudas a moderar el grupo de DyLux por", "Diseñaste un logo por", 
-"Moderaste el grupo cuando *FG* no estaba, el pago fue", 
-"Trabajaste lo mejor que pudo en una imprenta que estaba contratando y gana su bien merecido!", 
-"Trabajas como podador de arbustos para *FG98* y ganas", "La demanda de juegos para dispositivos moviles ha aumentado, por lo que creas un nuevo juego lleno de micro-transacciones. Con tu nuevo juego ganas un total de", 
-"Trabajas como actor de voz para Bob Esponja y te las arreglaste para ganar", 
-"Estabas cultivando y Ganaste", "Trabajas como constructor de castillos de arena y ganas", "Trabajaste y Ganaste", 
-"Trabajas como artista callejera y ganas","Hiciste trabajo social por una buena causa! por tu buena causa Recibiste"
+ "Te secuestran y te llevan a un coliseo subterráneo donde luchaste contra monstruos con personas que nunca antes habías conocido. Luchaste tanto que tuviste que matar muchos hombres y mujeres porque habia una enfermedad que convertia a zombies y tenias que matarlos porque te iban a matar a vos. Al final tuviste que matar a tus amigos porque sospechabas que estaban infectados por el virus T0M1-G0RD0-P7T0 y al final te fuiste a una isla abandonada donde no habian humanos, por lo tanto estaba limpia y pudiste vivir solo hasta el fin de tus dias. Ganaste",
+ "Te limpiaste el culo y ganaste", 
+ "Desarrollas juegos para ganarte la vida y ganas", 
+ "¿Por qué este comando se llama trabajo? Ni siquiera estas haciendo nada. Sin embargo, ganas", 
+ "Trabajaste en la oficina horas extras por", 
+ "Trabajas como secuestrador y ganás", 
+ "Alguien vino y representa una obra de teatro. Por mirar la obra donde una gorda canta por 2 horas seguidas como hace para cantar tanto dios mio que gorda insoportable aguanten las operas donde no hay mujeres con sobrepeso, alto embole escuchar y ver a una gorda cantar, que se dediquen a bajar de peso porque no llegan a los 50 años gordas llenas de grasa. En fin, te dieron", "Compraste y vendiste tus muñecos todos waskeados y ganaste",
+ "Trabajas en el restaurante y ganás", 
+ "Trabajas 10 minutos en un 'Pizzas El Dogor'. Ganaste", 
+ "Trabajas como escritor y ganas", 
+ "Revisas tu wallet de bitcoins Y no tenías nada porque sos un pobre de mierda que no sabe hacer nada, pero ganás", 
+ "Ves a alguien renegando por subir una caja a su auto, te apurás a ayudarlo antes de que se lastime. Después de ayudarlo, amablemente te dan", 
+ "Desarrollas juegos para ganarte la vida y ganás", 
+ "Ganas un concurso de ser pelotudo. El premio es", 
+ "Trabajas todo el dia en la empresa SodicaCrew™ por", 
+ "Ayudaste a moderar un grupop mientras SodicaBot estaba saturado. Ganaste", 
+ "Diseñaste un logo por", 
+ "Trabajaste como albañil por", 
+ "Trabajas como prostituta por", 
+ "La demanda de juegos para teléfonos aumentó, por lo que programaste un nuevo juego lleno de micro-transacciones. Con tu nuevo juego ganaste un total de", 
+ "Trabajas como actor de voz para Bob Esponja y te las arreglaste para ganar", 
+ "Estabas cultivando semillas como un negro esclavo de mierda y ganaste", 
+ "Trabajas como militante de Javier Milei y ganaste", "Agarraste la pala y ganaste", 
+ "Trabajas como artista saksjak re pobre. Ganaste",
+ "ARRIBA JAVIER MILEI. Por ser libertario ganaste"
 ]

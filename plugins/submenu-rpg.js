@@ -79,11 +79,11 @@ ${readMore}
 ┃⚗️➺ _${usedPrefix}lvl_
 ┃⚗️➺ _${usedPrefix}inventario_
 ┃⚗️➺ _${usedPrefix}aventura_
-┃⚗️➺ _${usedPrefix}caza_
+┃⚗️➺ _${usedPrefix}caza_ 
 ┃⚗️➺ _${usedPrefix}alimentos_
 ┃⚗️➺ _${usedPrefix}curar_
-┃⚗️➺ _${usedPrefix}buy_ (TIENDA DESHABILITADA)
-┃⚗️➺ _${usedPrefix}sell_ (TIENDA DESHABILITADA)
+┃⚗️➺ _${usedPrefix}buy_ 
+┃⚗️➺ _${usedPrefix}sell_ 
 ┃⚗️➺ _${usedPrefix}verificar_
 ┃⚗️➺ _${usedPrefix}perfil_
 ┃⚗️➺ _${usedPrefix}myns_

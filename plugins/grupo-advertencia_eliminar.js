@@ -4,7 +4,6 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     if (!db.data.chats[m.chat].antitoxic && m.isGroup) return conn.sendButton(m.chat, wm, lenguajeGB.smsAdveu1() + lenGB, null, [[lenguajeGB.smsEncender(), lenGB]], fkontak, m) 
     
     let who
-    let img = 'https://i.imgur.com/vWnsjh8.jpg'
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
     else who = m.chat
     let name = await conn.getName(m.sender)	

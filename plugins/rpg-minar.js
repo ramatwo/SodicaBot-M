@@ -27,7 +27,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 '⛏️⛏️⛏️ Obtenés'])}`
 
 
-let pp = 'https://google.com'
+
 
 let string = `${pickRandom([2, 3, 4, 5])}` * 1
 let stringpremium = `${pickRandom([5, 6, 7, 8, 9, 10])}` * 1

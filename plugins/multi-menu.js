@@ -715,7 +715,7 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}cadahora | hourly_
 ∘ _${usedPrefix}cadasemana | semanal | weekly_
 ∘ _${usedPrefix}cadames | mes | monthly_
-∘ _${usedPrefix}cofre | abrircofre | coffer_
+∘ _${usedPrefix}cofre_ (deshabilitado)
 ∘ _${usedPrefix}trabajar | work_
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)

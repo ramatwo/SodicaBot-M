@@ -32,7 +32,7 @@ let minar = `${pickRandom(['Que pro 😎 has minado',
 '👾 Gracias a que minaste, tus ingresos suman',
 'Felicidades, ahora tenés','⛏️⛏️⛏️ Obtenés'])}`
 
-let pp = 'https://google.com'
+let pp = "./media/menus/velocidad.bat"
 
 let kyubi = `${pickRandom([0, 1, 3, 1, 2])}` * 1
 let kyubipremium = `${pickRandom([2, 3, 5, 9, 10, 7])}` * 1
@@ -63,11 +63,7 @@ texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 
 let gat = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${limit} ${global.rpgshop.emoticon('limit')}*\n\n🍁 𝗕 𝗢 𝗡 𝗢\n\n${texto}\n\n🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}`
 await conn.sendFile(m.chat, pp, 'SodicaBot.exe', gat, fkontak)
-/*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${limit} ${global.rpgshop.emoticon('limit')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, 'SodicaBot', null, null, [
-['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
-['𝙈𝙞𝙣𝙖𝙧 𝘾𝙤𝙞𝙣𝙨𝙨 🐈', `.minar2`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]
-], m,)*/
+
 user.lastdiamantes = new Date * 1  
 }
 handler.help = ['minar']
