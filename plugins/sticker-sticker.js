@@ -18,11 +18,12 @@ if (new Date - user.lastmiming < 1000) return await conn.reply(m.chat, `⚠️�
       if (!img) throw `⛃➭⛔ ∫ Respondé una imagen/video/gif.*`
       let out
       try {
+        await conn.reply(m.chat, `Yendo ✈️`, m)
         stiker = await sticker(img, false, global.packname, global.author)
       } catch (e) {
         console.error(e)
       } finally {
-      await conn.reply(m.chat, `Yendo ✈️`, m)
+      //await conn.reply(m.chat, `Yendo ✈️`, m)
         if (!stiker) {
           if (/webp/g.test(mime)) out = await webp2png(img)
           else if (/image/g.test(mime)) out = await uploadImage(img)

@@ -18,7 +18,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙐
   let reis = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + text)
   let resu = await reis.json()  
   let nama = m.pushName || '1'
-  let api = await fetch("http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=" + nama + "&msg=" + resu[0][0][0])
+  let api = await fetch("http://api.brainshop.ai/get?bid=179923&key=BYvxmD7iMoJgbnP0&uid=" + nama + "&msg=" + resu[0][0][0])
   let res = await api.json()
   let reis2 = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=" + res.cnt)
   let resu2 = await reis2.json()
@@ -35,6 +35,6 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙐
 }
 handler.help = ['simsimi']
 handler.tags = ['General']
-handler.command = ['simi', 'simsimi', 'bot'] 
+handler.command = ['simi', 'simsimi'] 
 export default handler
 handler.register = true

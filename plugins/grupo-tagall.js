@@ -17,15 +17,15 @@ let handler = async (m, { isOwner, isAdmin, conn, text, participants, args, comm
     }
 
     let pesan = args.join` `
-    let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
-    let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕━⬣\n\n${oi}\n\n`
-    for (let mem of participants) {
-        teks += `┃⊹ @${mem.id.split('@')[0]}\n`
-    }
-    teks += `┃`
-    teks += `┃`
-    teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
-    conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) })
+    let oi = `*➭* Mensaje: ${pesan}`
+    let teks = `╭━〔 *🚨🚨INVOCANDO A TODOS🚨🚨* 〕━⬣\n\n${oi}\n\n`
+for (let mem of participants) {
+teks += `┃⊹ ${readMore}@${mem.id.split('@')[0]}\n`
+}
+teks += `┃`
+teks += `┃`
+teks += `╰━━━━━[ *${wm}* ]━━━━━⬣`
+conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) })
 
     // Establecer el tiempo de espera de 5 minutos (300 segundos)
     cooldowns[id] = Date.now() + 300000
@@ -37,3 +37,5 @@ handler.group = true
 handler.register = true
 
 export default handler
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)

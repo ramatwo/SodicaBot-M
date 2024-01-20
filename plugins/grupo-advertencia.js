@@ -5,7 +5,6 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     //conn.sendButton(m.chat, wm, lenguajeGB.smsAdveu1() + lenGB, null, [[lenguajeGB.smsEncender(), lenGB]], fkontak, m)
     
     let who 
-    let img = 'https://i.imgur.com/DvHoMc3.jpg'
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
     else who = m.chat
     let name = await conn.getName(m.sender)	
@@ -27,19 +26,18 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     [lenguajeGB.smsAdveu6(), lenguajeGB.lenguaje() == 'en' ? usedPrefix + 'inventory' : usedPrefix + 'inventario']], false, { mentions: [who] }) //[m.sender]*/
         
     if (user.warn >= 3) {
-    user.warn = 0
-    await m.reply(`${lenguajeGB['smsAdveu7']()}\n*@${who.split`@`[0]}* ${lenguajeGB['smsAdveu8']()}`, false, { mentions: [who] })
+    user.warn = 2
+    await m.reply(`*Se te advirtió varias veces y no hiciste caso.*\n*@${who.split`@`[0]}* *vas a ser eliminado.*`, false, { mentions: [who] })
     user.banned = true
     await conn.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
     //await this.updateBlockStatus(m.sender, 'block') 
     }	
     return !1
     } catch (e) {
-    await m.reply(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, m)   
-    //await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
-    console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-    console.log(e)	
-    }}
+      console.error(e);
+      conn.reply(m.chat, `Error: usó mal el comando.`, m);
+      console.log(e)
+  }}
     handler.help = ['addprem <@user>']
     handler.tags = ['owner']
     handler.command = /^(advertir|advertencia|Advertencias|strike|warn|warning)$/i

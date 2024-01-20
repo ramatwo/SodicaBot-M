@@ -39,11 +39,11 @@ const roles = {
       '*DIAMANTE III* 💎': 37,
        '*DIAMANTE II* 💎': 38,
         '*DIAMANTE I* 💎': 39,
-    '*PRO EN SodicaBotV* 😼': 40,
-     '*PRO EN SodicaBotIV* 😼': 41,
-      '*PRO EN SodicaBotIII* 😼': 42,
-       '*PRO EN SodicaBotII* 😼': 43,
-        '*PRO EN SodicaBotI* 😼': 44,
+    '*PRO EN SodicaBot V* 😼': 40,
+     '*PRO EN SodicaBot IV* 😼': 41,
+      '*PRO EN SodicaBot III* 😼': 42,
+       '*PRO EN SodicaBot II* 😼': 43,
+        '*PRO EN SodicaBot I* 😼': 44,
     '*SUPER PRO V* 🎩': 45,
      '*SUPER PRO IV* 🎩': 46,
       '*SUPER PRO III* 🎩': 47,
@@ -79,7 +79,7 @@ const roles = {
     '👑 *∞ ÉLITE GLOBAL III* 💎🏁': 180,
     '👑 *∞ ÉLITE GLOBAL II* 💎🏁': 250,
     '👑 *∞ ÉLITE GLOBAL I* 💎🏁': 300,
-    '👑 *∞ Owner* 💎🏁': 2028
+    '👑 *∞ Owner* 💎🏁': 1000
 }
 
 export function before(m) {

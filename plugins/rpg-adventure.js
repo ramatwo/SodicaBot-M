@@ -36,8 +36,6 @@ if (new Date - user.lastadventure <= cooldown) return await conn.reply(m.chat, `
     
     const rewards = reward(user)
     let text = `🛫 𝙀𝙎𝙏𝘼𝙎 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙉𝘿𝙊
-
-🏞️ 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 𝙁𝙄𝙉𝘼𝙇𝙄𝙕𝘼𝘿𝘼
 ${cmenua}`
     
     for (const lost in rewards.lost) if (user[lost]) {

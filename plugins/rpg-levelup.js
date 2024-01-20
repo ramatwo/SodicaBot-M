@@ -131,7 +131,7 @@ let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dir
 handler.help = ['levelup'];
 handler.tags = ['xp'];
 
-handler.command = ['nivel', 'lvl', 'levelup', 'level'];
+handler.command = ['nivel', 'lvl', 'levelup', 'level', 'xp'];
 handler.exp = 0;
 handler.register = true
 export default handler;

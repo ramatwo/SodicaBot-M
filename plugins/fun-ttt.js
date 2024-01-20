@@ -1,4 +1,4 @@
-import TicTacToe from '../lib/tictactoe.js' 
+/*import TicTacToe from '../lib/tictactoe.js' 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 const fkontak = { 
 	"key": {
@@ -79,4 +79,4 @@ conn.game[room.id] = room
 }}
 handler.command = /^(tictactoe|ttc|ttt|tateti|xo)$/i
 handler.register = true
-export default handler
+export default handler*/

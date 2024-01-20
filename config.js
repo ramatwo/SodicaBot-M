@@ -200,8 +200,8 @@ global.imagen13 = fs.readFileSync('./media/menus/img12.jpg')
 global.img = "./media/menus/velocidad.bat"
 global.img2 = "./media/menus/velocidad.bat"
 
-global.img3 = 'https://i.imgur.com/N40ekYN.jpg' //prem
-global.img4 = 'https://i.imgur.com/N40ekYN.jpg' //prem
+global.img3 = "./media/menus/velocidad.bat" //prem
+global.img4 = "./media/menus/velocidad.bat" //prem
 
 global.img5 = "./media/menus/velocidad.bat"
 global.img6 = "./media/menus/velocidad.bat"
@@ -216,7 +216,7 @@ global.img13 = "./media/menus/velocidad.bat"
 global.img14 = "./media/menus/velocidad.bat"
 global.img15 = "./media/menus/velocidad.bat"
 
-global.img16 = 'https://i.imgur.com/0qAOczG.jpg' //+18
+global.img16 = "./media/menus/velocidad.bat" //+18
 
 global.img17 = "./media/menus/velocidad.bat"
 global.img18 = "./media/menus/velocidad.bat"
@@ -458,7 +458,7 @@ global.rpgshopp = { //Tienda
   emoticon(string) {
     string = string.toLowerCase()
     let emotttt = {
-      exp: '⚡', limit: '💎', diamond: '💎+', joincount: '🪙',
+      exp: '⚡', limit: '💎', diamond: '💎+', joincount: '💳',
       emerald: '💚', berlian: '♦️', kyubi: '🌀', gold: '👑',
       money: '🪙', tiketcoin: '🎫', stamina: '✨',
             

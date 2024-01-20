@@ -1,7 +1,7 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 export function before(m, { conn }) {
-//if (!db.data.chats[m.chat].autonivel && m.isGroup) throw
+
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
@@ -21,15 +21,6 @@ while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 *┃ ${lenguajeGB.smsAutoLv4()}* ${user.role}
 *┃ ${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*
 *╰━⊰ ${lenguajeGB.smsAutoLv1()} ⊱━━დ*`, fkontak, m)  		  	 
-/*conn.sendButton(m.chat, '🐈 ' + wm, `*╭━⊰ ${username} ⊱━დ*
-*┃ ${lenguajeGB.smsAutoLv2()} ${before}*
-*┃ ${lenguajeGB.smsAutoLv3()} ${user.level}*
-*┃ ${lenguajeGB.smsAutoLv4()}* ${user.role}
-*┃ ${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*
-*╰━⊰ ${lenguajeGB.smsAutoLv1()} ⊱━━დ*
-
-*_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)*/
-
 
 let especial = ['limit', 'diamond', 'joincount', 'emerald', 'berlian', 'kyubi', 'gold', 'money', 'tiketcoin', 'stamina'].getRandom()
 let especial2 = ['potion', 'aqua', 'trash', 'wood', 'rock', 'batu', 'string', 'iron', 'coal', 'botol', 'kaleng', 'kardus'].getRandom()
@@ -274,4 +265,3 @@ user[especial4] += especialCant4 * 10
 }
 	 
 }}		
-//export const disabled = false 

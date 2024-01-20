@@ -7,16 +7,17 @@ handler.all = async function (m) {
     
     // Configuración de cooldown por comando
     let commandCooldowns = {
-        callate: 5, // Establece el cooldown para el comando "callate" en segundos
+        callate: 20, // Establece el cooldown para el comando "callate" en segundos
         que: 5,      // Establece el cooldown para el comando "que" en segundos
-        macaco: 5,
-        mexicano: 5,
-        mono: 5,
-        mejicano: 5,
+        macaco: 50,
+        mexicano: 50,
+        mono: 50,
+        mejicano: 50,
         rra: 5,
-        13: 5,
-        trece: 5,
-        erizo: 5,
+        13: 50,
+        trece: 50,
+        erizo: 50,
+        erizos: 50,
     }
 
     let command = m.text.toLowerCase().split(' ')[0].replace(/[^a-zA-Z0-9]/g, '') // Obtener el primer segmento de texto como el comando

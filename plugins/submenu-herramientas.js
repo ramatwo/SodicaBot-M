@@ -66,7 +66,8 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let menu = `*tocá en leer más 👇👇*
 ${readMore}
 *╭━━[ HERRAMIENTAS 🛠️ ]━━⬣*
-┃🛠️ _${usedPrefix}afk *motivo*_ (DESHABILITADO)
+┃🛠️ _${usedPrefix}edad_
+┃🛠️ _${usedPrefix}afk *motivo*_ (VIP)
 ┃🛠️ _${usedPrefix}acortar *url*_
 ┃🛠️ _${usedPrefix}calc *operacion math*_
 ┃🛠️ _${usedPrefix}del *responder mensaje*_

@@ -363,13 +363,13 @@ conn.sendFile(m.chat, imgr, 'Inventario', caption, fkontak, m, { mentions: conn.
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ ⛰️ Aventura » ${new Date - user.lastadventure < 86400000 ? '❌' : '✅'}* 
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 🕐 Cada hora » ${new Date - user.lasthourly < 3600000 ? '❌' : '✅'}* 
+*│ 🕐 Hourly » ${new Date - user.lasthourly < 3600000 ? '❌' : '✅'}* 
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 📦 Diario » ${new Date - user.lastclaim < 86400000 ? '❌' : '✅'}* 
+*│ 📦 Daily » ${new Date - user.lastclaim < 86400000 ? '❌' : '✅'}* 
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 🎁 Semanal ${new Date - user.lastweekly < 259200000 ? '❌' : '✅'}* 
+*│ 🎁 Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : '✅'}* 
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 📮 Mensual ${new Date - user.lastmonthly < 432000000 ? '❌' : '✅'}* 
+*│ 📮 Monthly ${new Date - user.lastmonthly < 2 * 60 * 60 * 1000 + 30 * 24 * 60 * 60 * 1000 ? '❌' : '✅'}* 
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*`.trim()
 
 const fkontak = {

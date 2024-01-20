@@ -65,29 +65,6 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 
 let menu = `*tocá en leer más 👇👇*
 ${readMore}
-*╭━━━[ AJUSTES - CHATS ]━━━⬣*
-┃ *Configurá con on y off*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
-┃⚙️ _${usedPrefix}on *:* off *avisos | detect*_
-┃⚙️ _${usedPrefix}on *:* off *autonivel | autolevelup*_
-┃⚙️ _${usedPrefix}on *:* off *stickers*_
-┃⚙️ _${usedPrefix}on *:* off *autosticker*_
-┃⚙️ _${usedPrefix}on *:* off *reacciones | reaction*_
-┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
-┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
-┃⚙️ _${usedPrefix}on *:* off *antinternacional | antifake*_
-┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
-┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
-┃⚙️ _${usedPrefix}on *:* off *antitiktok | antitk*_
-┃⚙️ _${usedPrefix}on *:* off *antiyoutube | antiyt*_
-┃⚙️ _${usedPrefix}on *:* off *antitelegram | antitel*_
-┃⚙️ _${usedPrefix}on *:* off *antifacebook | antifb*_
-┃⚙️ _${usedPrefix}on *:* off *antinstagram | antig*_
-┃⚙️ _${usedPrefix}on *:* off *antitwitter | antitw*_
-*╰━━━━━━━━━━━━⬣*
-*tocá en leer más 👇👇*
-${readMore}
 *╭━[ CONFIGURACIÓN - GRUPOS ]━⬣*
 ┃ *Mejorá tú Grupo con SodicaBot*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -111,6 +88,30 @@ ${readMore}
 ┃🌐➺ _${usedPrefix}on *caracteristica*_
 ┃🌐➺ _${usedPrefix}off *caracteristica*_
 *╰━━━━━━━━━━━━⬣*
+${readMore}
+*╭━━━[ AJUSTES - CHATS ]━━━⬣*
+┃ *Configurá con on y off*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
+┃⚙️ _${usedPrefix}on *:* off *avisos | detect*_
+┃⚙️ _${usedPrefix}on *:* off *autonivel | autolevelup*_
+┃⚙️ _${usedPrefix}on *:* off *stickers*_
+┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+┃⚙️ _${usedPrefix}on *:* off *reacciones | reaction*_
+┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
+┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
+┃⚙️ _${usedPrefix}on *:* off *antinternacional | antifake*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
+┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
+┃⚙️ _${usedPrefix}on *:* off *antitiktok | antitk*_
+┃⚙️ _${usedPrefix}on *:* off *antiyoutube | antiyt*_
+┃⚙️ _${usedPrefix}on *:* off *antitelegram | antitel*_
+┃⚙️ _${usedPrefix}on *:* off *antifacebook | antifb*_
+┃⚙️ _${usedPrefix}on *:* off *antinstagram | antig*_
+┃⚙️ _${usedPrefix}on *:* off *antitwitter | antitw*_
+*╰━━━━━━━━━━━━⬣*
+*tocá en leer más 👇👇*
+
 `.trim()
 await conn.sendFile(m.chat, gataVidMenu, 'Menú de ajustes', menu, fkontak)
 	
