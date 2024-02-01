@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text }) => {
-    if (!text) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙋𝘼𝙍𝘼 𝘼𝘾𝙊𝙍𝙏𝘼𝙍\n\n𝙀𝙉𝙏𝙀𝙍 𝘼 𝙇𝙄𝙉𝙆 𝙏𝙊 𝙎𝙃𝙊𝙍𝙏𝙀𝙉`;
+    if (!text) throw `*❌ ∫ Error:* Ingrese un enlace válido.`;
 
     // Acortar usando Bitly
     let bitlyResponse = await fetch('https://api-ssl.bitly.com/v4/shorten', {
@@ -14,7 +14,7 @@ let handler = async (m, { conn, text }) => {
     });
     let bitlyJson = await bitlyResponse.json();
 
-    let hasil = `✅ 𝙎𝙀 𝙍𝙀𝘼𝙇𝙄𝙕𝙊 𝘾𝙊𝙉 𝙀𝙓𝙄𝙏𝙊\n\n𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝘼𝙉𝙏𝙀𝙎\n*${text}*\n\n𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝘽𝙄𝙏𝙇𝙔\n*${bitlyJson.id}*`.trim();
+    let hasil = `*✅ ∫ Link acortado exitosamente:*\n*https://${bitlyJson.id}*`.trim();
     m.reply(hasil);
 };
 
@@ -22,6 +22,5 @@ handler.help = ['bitly', 'acortar'].map(v => v + ' <link>');
 handler.tags = ['tools'];
 handler.command = /^(bitly|acortar)$/i;
 handler.fail = null;
-
 export default handler;
 handler.register = true

@@ -188,10 +188,10 @@ global.chatgpt.data.users[m.sender] = [];
               if (!isNumber(user.exp)) user.exp = 0
               if (!isNumber(user.expg)) user.expg = 0
               if (!isNumber(user.exphero)) user.exphero = 0
-	      if (!isNumber(user.eleksirb)) user.eleksirb = 0
-	      if (!isNumber(user.emasbatang)) user.emasbatang = 0
-	      if (!isNumber(user.emasbiasa)) user.emasbiasa = 0
-	      if (!isNumber(user.fideos)) user.fideos = 0    
+	          if (!isNumber(user.eleksirb)) user.eleksirb = 0
+	          if (!isNumber(user.emasbatang)) user.emasbatang = 0
+	          if (!isNumber(user.emasbiasa)) user.emasbiasa = 0
+	          if (!isNumber(user.fideos)) user.fideos = 0    
               if (!isNumber(user.fishingrod)) user.fishingrod = 0
               if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0
               if (!isNumber(user.fortress)) user.fortress = 0
@@ -202,6 +202,9 @@ global.chatgpt.data.users[m.sender] = [];
               if (!isNumber(user.gadodado)) user.gadodado = 0
               if (!isNumber(user.gajah)) user.gajah = 0
               if (!isNumber(user.gamemines)) user.gamemines = false
+              if (!isNumber(user.fantasy_character)) user.fantasy_character = 0
+              if (!isNumber(user.fantasy_character2)) user.fantasy_character2 = 0
+              if (!isNumber(user.fantasy_character3)) user.fantasy_character3 = 0
               if (!isNumber(user.ganja)) user.ganja = 0
               if (!isNumber(user.gardenboxs)) user.gardenboxs = 0
               if (!isNumber(user.gems)) user.gems = 0
@@ -1501,34 +1504,11 @@ export async function callUpdate(callUpdate) {
     if (nk.isGroup == false) {
     if (nk.status == "offer") {
     let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} ${lenguajeGB['smsCont18']()}`, false, { mentions: [nk.from] })
-    //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
-    //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
     await this.updateBlockStatus(nk.from, 'block')
     }}}}
 
 export async function deleteUpdate(message) {
- //   export async function deleteUpdate(message) {
-//        try {
-//            const { fromMe, id, participant } = message
-//            if (fromMe)
-//                return
-  //          let msg = this.serializeM(this.loadMessage(id))
-    //        if (!msg)
-      //          return
-        //    let chat = global.db.data.chats[msg.chat] || {}
-//  mensajes eliminados        //  if (chat.delete)
-            //    return
-           // await this.reply(msg.chat, `⚠️ | Mensaje eliminado detectado. Extrayendo información...
-//    Nombre: @${participant.split`@`[0]}
- //   Enviando el mensaje...
-//    `.trim(), msg, {
- //               mentions: [participant]
- //           })
-  //          this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-  //      } catch (e) {
- //           console.error(e)
- //       }
-  //  }
+
 }
 
 global.dfail = (type, m, conn) => {

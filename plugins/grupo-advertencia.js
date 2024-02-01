@@ -28,7 +28,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
     if (user.warn >= 3) {
     user.warn = 2
     await m.reply(`*Se te advirtió varias veces y no hiciste caso.*\n*@${who.split`@`[0]}* *vas a ser eliminado.*`, false, { mentions: [who] })
-    user.banned = true
+    //user.banned = true
     await conn.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
     //await this.updateBlockStatus(m.sender, 'block') 
     }	

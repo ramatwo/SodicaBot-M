@@ -140,7 +140,7 @@ global.asistencia = 'Wa.me/5491125172076' //Dudas? escríbeme...
 global.rg = '*✅ ∫ Resultado*\n\n'
 global.resultado = rg
 
-global.ag = '*⚠️ ∫ Advertencia*\n\n'
+global.ag = '⚠️ ∫ Aviso\n\n'
 global.advertencia = ag
 
 global.iig = '*❕∫ Información*\n\n'

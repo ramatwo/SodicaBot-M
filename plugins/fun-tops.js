@@ -1,10 +1,16 @@
 import util from 'util'
 import path from 'path' 
-
+let lastUsed = {};
 
 function handler(m, { groupMetadata, command, usedPrefix, conn }) {
    let user = a => '@' + a.split('@')[0] //'@' + a.split('@')[0]
    
+   if (!lastUsed[command]) lastUsed[command] = 0;
+   if (new Date() - lastUsed[command] < 10000) { // Verificar si ha pasado menos de 30 segundos desde el último uso
+      let remainingTime = (10000 - (new Date() - lastUsed[command])) / 1000;
+      return m.reply(`Debes esperar ${remainingTime.toFixed(1)} segundos antes de usar este comando nuevamente.`);
+  }
+  lastUsed[command] = new Date();
 let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
 let b = ps.getRandom()

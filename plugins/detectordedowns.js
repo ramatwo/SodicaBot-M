@@ -29,7 +29,7 @@ handler.all = async function (m) {
 
     if (/d(\s*|\d*|\W*)o(\s*|\d*|\W*)w(\s*|\d*|\W*)n/i.test(m.text)) {
         let teks = `
-    ${pickRandom([`⚠️⚠️⚠️⚠️⛔⛔⛔⛔⛔DWORD DETECTADA⛔⛔⛔⛔⛔⚠️⚠️⚠️⚠️`])}
+    ${pickRandom([`⚠️⚠️⚠️⛔⛔⛔D WORD DETECTADA⛔⛔⛔⚠️⚠️⚠️`])}
     `.trim();
         conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }});
     }
