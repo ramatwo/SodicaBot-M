@@ -13,6 +13,77 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
+
+//iniciar pagina para hacer ping *--------------------------*
+const http = require('http');
+
+// Crear un servidor HTTP que escuche en el puerto 5656
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('sodicabot en linea.\n');
+});
+
+server.listen(5657, '127.0.0.1', () => {
+  console.log('El servidor está corriendo en http://127.0.0.1:5656/');
+});
+
+// Mantener el proceso principal en ejecución para mantener el servidor activo
+process.stdin.resume();
+
+
+
+
+
+
+
+//*--------------------------**--------------------------*
+
+
+
+
+
+const { exec } = require('child_process');
+
+// Ruta completa al ejecutable de ngrok
+const ngrokPath = 'C:/xampp/ngrok.exe';
+
+// Comandos a ejecutar en CMD
+const commands = [
+  'cd C:\\xampp',
+  `${ngrokPath} config add-authtoken 2bvHiBG6YpjgXkzyU8qacryaSfi_8a5EeDupCCKryrYGz97Xg`,
+  `${ngrokPath} http --domain=pigeon-steady-quail.ngrok-free.app 5657`
+];
+
+// Ejecutar los comandos uno por uno
+commands.forEach(command => {
+  exec(command, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error al ejecutar el comando: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.error(`Error en la salida estándar: ${stderr}`);
+      return;
+    }
+    console.log(`Resultado del comando: ${stdout}`);
+  });
+});
+
+
+
+
+
+//*--------------------------**--------------------------**--------------------------*
+
+
+
+
+
+
+
+
+
 say('Sodica\nBot', {
 font: 'chrome',
 align: 'center',

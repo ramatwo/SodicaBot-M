@@ -37,10 +37,6 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
     if (now < user.premiumTime) user.premiumTime += tiempo
     else user.premiumTime = now + tiempo
     user.premium = true
-    const imgpre = [ 
-    'https://logowiki.net/wp-content/uploads/imgp/Premium-Logo-1-5365.jpg', 
-    'https://i.imgur.com/oUAGYc2.jpg',
-    'https://i.imgur.com/i0pccuo.jpg'];
     //let imgpre = 'https://logowiki.net/wp-content/uploads/imgp/Premium-Logo-1-5365.jpg' 
     
     await conn.reply(m.chat, `*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╮*
@@ -71,12 +67,9 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
     if (now < user.premiumTime) user.premiumTime += tiempo
     else user.premiumTime = now + tiempo
     user.premium = true
-    const imgpre = [ 
-    'https://logowiki.net/wp-content/uploads/imgp/Premium-Logo-1-5365.jpg', 
-    'https://i.imgur.com/oUAGYc2.jpg',
-    'https://i.imgur.com/i0pccuo.jpg'];
     
-    await conn.reply(m.chat, `*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╮*
+    await conn.reply(m.chat,
+`*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╮*
 *┃🎟️ Adquiriste un ticket VIP*
 *┃*
 *┃👤 Usuario » ${user.name}*
@@ -105,12 +98,9 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
     if (now < user.premiumTime) user.premiumTime += tiempo
     else user.premiumTime = now + tiempo
     user.premium = true
-    const imgpre = [ 
-    'https://logowiki.net/wp-content/uploads/imgp/Premium-Logo-1-5365.jpg', 
-    'https://i.imgur.com/oUAGYc2.jpg',
-    'https://i.imgur.com/i0pccuo.jpg'];
     
-    await conn.reply(m.chat, `*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╮*
+    await conn.reply(m.chat,
+ `*╭┈┈┈┈┈◈ 🌟 ◈┈┈┈┈┈╮*
 *┃🎟️ Adquiriste un ticket VIP*
 *┃*
 *┃👤 Usuario » ${user.name}*

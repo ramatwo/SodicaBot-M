@@ -26,8 +26,5 @@ delete conn.vote[id]
 handler.help = ['hapusvote']
 handler.tags = ['vote']
 handler.command = /^(del|delete|hapus|-)voto$/i
-handler.group = true
-handler.botAdmin = true
-handler.admin = true
-handler.register = true
+handler.rwoner = true
 export default handler

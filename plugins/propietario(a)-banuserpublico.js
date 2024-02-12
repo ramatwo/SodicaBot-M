@@ -44,8 +44,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         users[user].banned = true;
         usr = m.sender.split('@')[0];
 
-        let msj1 = "```⛃➭⛔ ∫ Enviando solicitud de bloqueo a la base de datos...```";
-        let msj2 = "```⛃➭✅ ∫ Solicitud recibida y aceptada...```";
+        let msj1 = "```⫹⫺ ➭⛔ ∫ Enviando solicitud de bloqueo a la base de datos...```";
+        let msj2 = "```⫹⫺ ➭✅ ∫ Solicitud recibida y aceptada...```";
         let msj3 = "```👤➭⛔ ∫ Usuario baneado correctamente.```";
 
         await conn.reply(m.chat, msj1, null, { mentions: [user] });

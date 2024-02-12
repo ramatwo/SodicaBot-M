@@ -11,7 +11,7 @@ let handler = async (m, { conn, groupMetadata, text, command }) => {
         }
     }
 
-    if (!m.mentionedJid[0] && !m.quoted) throw '⛃➭⛔ ∫ Respondé el mensaje de alguien para hacerle alguna acción.'
+    if (!m.mentionedJid[0] && !m.quoted) throw '⫹⫺ ➭⛔ ∫ Respondé el mensaje de alguien para hacerle alguna acción.'
     let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
     let participants = groupMetadata.participants
     conn.reply(m.chat, `Le acabás de ${command} ${text} a *@${user.split('@')[0]}* 😳`, null, { mentions: [user] })

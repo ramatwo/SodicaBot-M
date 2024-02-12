@@ -13,9 +13,9 @@ if (new Date - user.lastmiming < 1000) return await conn.reply(m.chat, `⚠️�
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
     if (/webp|image|video/g.test(mime)) {
-      if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('⛃➭⛔ ∫ El video no puede durar mas de 10 segundos.')
+      if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply('⫹⫺ ➭⛔ ∫ El video no puede durar mas de 10 segundos.')
       let img = await q.download?.()
-      if (!img) throw `⛃➭⛔ ∫ Respondé una imagen/video/gif.*`
+      if (!img) throw `⫹⫺ ➭⛔ ∫ Respondé una imagen/video/gif.*`
       let out
       try {
         await conn.reply(m.chat, `Yendo ✈️`, m)

@@ -1,0 +1,32 @@
+[
+  {
+    "5491125172076@s.whatsapp.net": {
+      "fantasy": [
+        {
+          "id": "U6L&02^D$R",
+          "name": "Light Yagami",
+          "status": true
+        },
+        {
+          "id": "q@$3Vw8W1$",
+          "name": "Satoru Gojo",
+          "status": true
+        }
+      ],
+      "record": [
+        {
+          "total_character_transfer": 0,
+          "total_change_character": 0,
+          "total_vote": 0,
+          "total_like": 0,
+          "total_dislike": 0,
+          "total_superlike": 0,
+          "total_rewards": 0,
+          "total_resell": 0,
+          "total_purchased": 1,
+          "total_spent_coins": 0
+        }
+      ]
+    }
+  }
+]

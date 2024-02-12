@@ -26,7 +26,7 @@ const handler = async (m, { text, usedPrefix, command }) => {
     } catch (apiError) {
       console.error('Error en Lolhuman API:', apiError);
       // Manejar otros errores o enviar un mensaje genérico de error
-      m.reply('Se produjo un error al procesar la solicitud.');
+      m.reply('API caída.');
     }
   }
 };
@@ -34,4 +34,3 @@ const handler = async (m, { text, usedPrefix, command }) => {
 handler.command = ['openai', 'chatgpt', 'ia', 'bot'];
 export default handler;
 handler.register = true;
-handler.premium = true

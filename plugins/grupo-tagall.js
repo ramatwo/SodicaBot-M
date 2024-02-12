@@ -6,7 +6,7 @@ let handler = async (m, { isOwner, isAdmin, conn, text, participants, args, comm
     if (id in cooldowns) {
         const timeLeft = (cooldowns[id] - Date.now()) / 1000
         if (timeLeft > 0) {
-            conn.reply(m.chat, `*⛃➭⛔ ∫ Espera ${timeLeft.toFixed(1)} segundos antes de volver a usar el comando*`, m)
+            conn.reply(m.chat, `*⫹⫺ ➭⛔ ∫ Espera ${timeLeft.toFixed(1)} segundos antes de volver a usar el comando*`, m)
             return
         }
     }

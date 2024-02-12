@@ -30,7 +30,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     }
 };
 
-handler.command = ['agedetect', 'detectaredad', 'edad'];
+handler.command = ['agedetect', 'detectaredad'];
 handler.tags = ['tools'];
 handler.help = ['agedetect'];
 handler.premium = true

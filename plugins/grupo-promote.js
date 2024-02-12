@@ -23,7 +23,7 @@ let handler = async (m, { conn,usedPrefix, command, text }) => {
     } } catch (e) {
     } finally {
     conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-    conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + lenguajeGB['smsDemott2'](), fkontak, m)
+    conn.reply(m.chat, 'Haciendo administrador del grupo...', fkontak, m)
     }}
     handler.command = /^(promote|daradmin|darpoder)$/i
     handler.group = true

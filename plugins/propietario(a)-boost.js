@@ -2,7 +2,7 @@ import { performance } from 'perf_hooks';
 import v8 from 'v8';
 
 let handler = async (m, { conn }) => {
-  let start = `*🔄➭⛃ ∫ Acelerando, esperá...*`;
+  let start = `*🔄➭⫹⫺  ∫ Acelerando, esperá...*`;
   const { key } = await conn.sendMessage(m.chat, { text: start }, { quoted: m });
 
   // Liberar memoria RAM en Node.js

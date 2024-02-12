@@ -17,11 +17,11 @@ for (let i = 0; i < groups2.length; i++) {
 const group = groups2[i];
 const delay = i * 4000; // 4 seg
 setTimeout(async () => {
-await conn.reply(group, `${lenguajeGB.smsBCbot7()}\n\n` + teks4, { mentions: usersTag2 }, { quoted: fkontak });
+await conn.reply(group, `✅ *COMUNICADO OFICIAL* ✅\n\n` + teks4, { mentions: usersTag2 }, { quoted: fkontak });
 }, delay)}
 for (let user of chats2) {
 await new Promise(resolve => setTimeout(resolve, 2000)) // 2 segundos
-await conn.reply(user, `${lenguajeGB.smsBCbot7()}\n\n` + teks4, fkontak, null)
+//await conn.reply(user, `✅ *COMUNICADO OFICIAL* ✅\n\n` + teks4, fkontak, null)
 totalPri2++
 if (totalPri2 >= 500000) { 
 break
@@ -38,10 +38,10 @@ time2 = `${minutes} minutos y ${seconds} segundos`
 } else {
 time2 = `${time2} segundos`
 } 
-await m.reply(`${lenguajeGB.smsBCbot1()}
-\`\`\`${lenguajeGB.smsBCbot2()} >> ${totalPrivate2}\`\`\`
-\`\`\`${lenguajeGB.smsBCbot3()} >>   ${totalGroups2}\`\`\`
-\`\`\`${lenguajeGB.smsBCbot4()} >>   ${total2}\`\`\`\n\n*${lenguajeGB.smsBCbot5()} ${time2}*\n${totalPri2 >= 500000 ? `\n*${lenguajeGB.smsBCbot6()}*` : ''}`)        
+await m.reply(`✅ *MENSAJE ENVIADO:*
+\`\`\`PRIVADO >> ${totalPrivate2}\`\`\`
+\`\`\`GRUPO >>   ${totalGroups2}\`\`\`
+\`\`\`TOTAL >>   ${total2}\`\`\`\n\n*TIEMPO TOTAL DE ENVÍO: ${time2}*\n${totalPri2 >= 500000 ? `\n*NO SE ENVIARON A TODOS LOS CHATS PRIVADOS PARA EVITAR SATURACIÓN*` : ''}`)        
 }
 handler.help = ['broadcast', 'bc'].map(v => v + ' <teks>')
 handler.tags = ['owner']

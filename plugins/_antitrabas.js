@@ -15,8 +15,8 @@ export async function before(m, { conn, isAdmin, isBotAdmin, usedPrefix }) {
   let name = await conn.getName(m.sender)
   let fakemek = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616969743@g.us","inviteCode": "m","groupName": "P", "caption": 'SodicaBot', 'jpegThumbnail': null}}}
    if (chat.antiTraba && m.text.length > 4000) { //Cantidad máxima de caracteres aceptados en un mensaje//
-    if (isAdmin) return conn.sendMessage(m.chat, { text: `${lenguajeGB['smsEnlaceWat']()}El administrador @${m.sender.split("@")[0]} acaba de enviar un texto que contiene muchos caracteres.`, mentions: [m.sender] }, { quoted: fakemek })
-    conn.sendMessage(m.chat, `*Se detectó un mensaje que contiene muchos caracteres.*\n`, `${isBotAdmin ? '' : 'No soy administrador, no puedo hacer nada.'}`, m)
+    if (isAdmin) return conn.sendMessage(m.chat, { text: `El administrador @${m.sender.split("@")[0]} acaba de enviar un texto que contiene muchos caracteres.`, mentions: [m.sender] }, { quoted: fakemek })
+    conn.sendMessage(m.chat, `*Se detectó un mensaje que contiene muchos caracteres. Esto puede causar lag en algunos dispositivos.*\n`, `${isBotAdmin ? '' : 'No soy administrador, no puedo hacer nada.'}`, m)
     
         if (isBotAdmin) {
         conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})

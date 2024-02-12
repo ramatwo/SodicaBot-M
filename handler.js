@@ -362,7 +362,7 @@ global.chatgpt.data.users[m.sender] = [];
               if (!isNumber(user.leleb)) user.leleb = 0
               if (!isNumber(user.lelebakar)) user.lelebakar = 0
               if (!isNumber(user.leleg)) user.leleg = 0
-              if (!isNumber(user.level)) user.level = 10
+              if (!isNumber(user.level)) user.level = 1
               if (!isNumber(user.limit)) user.limit = 0
               if (!isNumber(user.limitjoinfree)) user.limitjoinfree = 1
               if (!isNumber(user.lion)) user.lion = 0
@@ -773,7 +773,7 @@ global.chatgpt.data.users[m.sender] = [];
                     leleb: 0,
                     lelebakar: 0,
                     leleg: 0,
-                    level: 10,
+                    level: 1,
                     limit: 0,
                     limitjoinfree: 1,
                     lion: 0,
@@ -1276,13 +1276,13 @@ if (botSpam.antispam2 && m.text && user && user.lastCommandTime && (Date.now() -
                     m.reply('Exp limit') // Hehehe
                 else               
                 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-                    this.reply(m.chat, `*🚫 | No tiene monedas suficientes.*`, m)
+                    this.reply(m.chat, `*🚫 | No tenés monedas suficientes.*`, m)
                     continue     
 		}
 			
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `*🚫 | No tiene diamantes suficientes.*`, m)
+                    this.reply(m.chat, `*🚫 | No tenés diamantes suficientes.*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {

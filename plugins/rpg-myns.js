@@ -4,8 +4,8 @@ let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)
 await m.reply(`⬇️ *ESE ES SU NUMERO DE SERIE* ⬇️`.trim())
 await m.reply(`${sn}`.trim())
 }
-handler.help = ['myns']
+handler.help = ['miserial']
 handler.tags = ['xp']
-handler.command = /^(myns|ceksn)$/i
+handler.command = /miserial/i
 handler.register = true
 export default handler

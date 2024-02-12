@@ -21,7 +21,7 @@ var user = number + '@s.whatsapp.net'
 }} catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'demote')
-conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + lenguajeGB['smsDemott3'](), fkontak, m)
+conn.reply(m.chat, "Quitando permisos de administrador...", fkontak, m)
 }}
 handler.command = /^(demote|quitarpoder|quitaradmin)$/i
 handler.group = true
