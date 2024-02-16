@@ -27,13 +27,11 @@ let handler = async (m, { text }) => {
     // Si el código es válido, otorgar premium al usuario y eliminar el código del archivo
     if (isValid) {
         let user = global.db.data.users[m.sender];
-        let now = Date.now();
+        var now = new Date() * 1
 
-        // Otorgar premium al usuario con la duración especificada en milisegundos
-        if (now < user.premiumTime) user.premiumTime += duration;
-        else user.premiumTime = now + duration;
-        user.premium = true;
-
+        if (now < user.premiumTime) user.premiumTime += duration
+        else user.premiumTime = now + duration
+        user.premium = true
         // Eliminar el código del archivo
         removeCode(code);
 

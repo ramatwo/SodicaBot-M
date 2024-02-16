@@ -6,26 +6,26 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let user = global.db.data.users[m.sender]
 let premium = user.premium
 
-let exp = `${pickRandom([1000, 1800, 2500, 3000, 3700, 4400, 5000, 5500, 6000, 6500])}` * 1
-let exppremium = `${pickRandom([3000, 4500, 6600, 8500, 9999, 10500, 11600, 12650, 13479, 15000])}` * 1
+let exp = `${pickRandom([10000, 18000, 25000, 30000, 37000, 44000, 50000, 55000, 60000, 65000])}` * 1
+let exppremium = `${pickRandom([85000, 99099, 100500, 116000, 120650, 134079, 150000])}` * 1
 
-let diamond = `${pickRandom([3, 5, 8, 9, 11, 13, 16, 18, 19, 20])}` * 1
-let diamondpremium = `${pickRandom([8, 14, 18, 22, 27, 29, 33, 36, 38, 40])}` * 1
+let diamond = `${pickRandom([1])}` * 1
+let diamondpremium = `${pickRandom([5])}` * 1
 
-let kyubi = `${pickRandom([5, 8, 15, 16, 25, 28, 30])}` * 1
-let kyubipremium = `${pickRandom([12, 19, 25, 34, 44, 50])}` * 1
+let kyubi = `${pickRandom([5, 8])}` * 1
+let kyubipremium = `${pickRandom([12, 19])}` * 1
 
-let sampah = `${pickRandom([3, 3, 5, 7, 9, 14, 15])}` * 1
-let sampahpremium = `${pickRandom([5, 8, 16, 21, 25, 30])}` * 1
+let sampah = `${pickRandom([3])}` * 1
+let sampahpremium = `${pickRandom([5, 8, 16])}` * 1
 
-let sword = `${pickRandom([1, 1, 2, 2, 1])}` * 1
+let sword = `${pickRandom([1])}` * 1
 let swordpremium = `${pickRandom([2, 3, 3, 5, 8])}` * 1
 
 let uncoommon = `${pickRandom([2, 2, 2, 3, 3, 3, 4, 4, 4, 5])}` * 1
-let uncoommonpremium = `${pickRandom([5, 5, 5, 5, 5, 7, 7, 9, 9, 10])}` * 1
+let uncoommonpremium = `${pickRandom([5, 5, 5, 10, 5, 7, 7, 9, 9, 10])}` * 1
 
-let mythic = `${pickRandom([2, 2, 2, 1, 2, 1, 1, 2, 1, 3])}` * 1
-let mythicpremium = `${pickRandom([2, 2, 3, 3, 3, 3, 4, 4, 4, 3])}` * 1
+let mythic = `${pickRandom([1])}` * 1
+let mythicpremium = `${pickRandom([3, 3, 3, 4, 4, 4, 3])}` * 1
  
 const recompensas = {
   exp: premium ? exppremium : exp,
@@ -39,26 +39,27 @@ const recompensas = {
 
 let time = user.lastweekly + 2 * 60 * 60 * 1000 + 7 * 24 * 60 * 60 * 1000 //7 dias
 if (new Date - user.lastweekly < 2 * 60 * 60 * 1000 + 7 * 24 * 60 * 60 * 1000) return await conn.reply(m.chat, `𝙔𝘼 𝙍𝙀𝘾𝙄𝘽𝙄𝙎𝙏𝙀 𝙏𝙐 𝙍𝙀𝘾𝙊𝙈𝙋𝙀𝙉𝙎𝘼 𝙎𝙀𝙈𝘼𝙉𝘼𝙇 ⛅\n\n𝙔𝙊𝙐 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙍𝙀𝘾𝙀𝙄𝙑𝙀𝘿 𝙔𝙊𝙐𝙍 𝙒𝙀𝙀𝙆𝙇𝙔 𝙍𝙀𝙒𝘼𝙍𝘿 ⛅\n\n𝙑𝙐𝙀𝙇𝙑𝙀 𝙀𝙉 : 𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉\n${clockString(time - new Date() * 1)}`, fkontak,  m)
-//await conn.sendButton(m.chat, `𝙔𝘼 𝙍𝙀𝘾𝙄𝘽𝙄𝙎𝙏𝙀 𝙏𝙐 𝙍𝙀𝘾𝙊𝙈𝙋𝙀𝙉𝙎𝘼 𝙎𝙀𝙈𝘼𝙉𝘼𝙇 ⛅\n\n𝙔𝙊𝙐 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙍𝙀𝘾𝙀𝙄𝙑𝙀𝘿 𝙔𝙊𝙐𝙍 𝙒𝙀𝙀𝙆𝙇𝙔 𝙍𝙀𝙒𝘼𝙍𝘿 ⛅`, wm + `\n\n𝙑𝙐𝙀𝙇𝙑𝙀 𝙀𝙉 : 𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉\n${clockString(time - new Date() * 1)}`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
+
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
     if (!(reward in user)) continue
     user[reward] += recompensas[reward]
 texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n┃ `}
 let text = `╭━━⛅━☃️━⛈️━━⬣
-┃ ☀️ 𝙍𝙀𝘾𝙊𝙈𝙋𝙀𝙉𝙎𝘼 𝙎𝙀𝙈𝘼𝙉𝘼𝙇 
-┃ *${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*
-┃ ${texto}
-╰━━💫━🌈━🌛━━⬣\n\n🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}`
-let pp = "./media/menus/velocidad.bat"
-conn.sendFile(m.chat,text ,pp, "Cada Mes.bat", fkontak);
-//await conn.sendButton(m.chat, text, texto + `\n\n🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}`, gata.getRandom(), [['🌅 𝙀𝙉𝙏𝙍𝙀𝙂𝘼 𝘿𝙀𝙇 𝙈𝙀𝙎 | 𝙈𝙊𝙉𝙏𝙃 🌠', '/monthly'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace)  
-user.lastweekly = new Date * 1
+┃ ☀️ *RECOMPENSA SEMANAL*
+┃ 🎟️ VIP ⇢ ${premium ? '✅' : '❌'}
+┃ *${premium ? '🎟️ Recompensa VIP' : '🆓 Recompensa regular'}*
+┃ ${texto} ${premium ? '*GRACIAS POR SER VIP*' : '*PAGA EL VIP LAUCHA*'}
+╰━━💫━🌈━🌛━━⬣`
+let img = "./media/menus/velocidad.bat"
+await conn.sendFile(m.chat, img, 'Weekly', text, fkontak)
+
 }
 handler.command = ['weekly', 'semana', 'semanal', 'cadasemana', 'entregasemanal'] 
 handler.level = 7
 export default handler
 handler.register = true
+handler.rowner = true
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]}
 

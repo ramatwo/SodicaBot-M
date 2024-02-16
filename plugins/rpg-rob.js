@@ -8,7 +8,7 @@ else who = m.chat
 if (!who) throw `*⫹⫺ ➭⛔ ∫ Etiquetá a alguien para robar.*`
 if (!(who in global.db.data.users)) throw `*⫹⫺ ➭⛔ ∫ Este usuario no está en la base de datos.*`
 let users = global.db.data.users[who]
-let rob = Math.floor(Math.random() * ro * 2)
+let rob = Math.floor(Math.random() * ro * 10)
 if (users.exp < rob) return m.reply(`*⫹⫺ ➭⛔ ∫ @${who.split`@`[0]} tiene menos de ${ro} xp*`, null, { mentions: [who] })    
 global.db.data.users[m.sender].exp += rob
 global.db.data.users[who].exp -= rob 

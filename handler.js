@@ -1329,7 +1329,7 @@ if (botSpam.antispam2 && m.text && user && user.lastCommandTime && (Date.now() -
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
+                                    m.reply(`*🔴 𝗖𝗢𝗠𝗔𝗡𝗗𝗢 𝗙𝗔𝗟𝗟𝗔𝗡𝗗𝗢 🔴*\n\n*⚠️ 𝗣𝗟𝗨𝗚𝗜𝗡:*\n*_${name}_*\n\n*⚠️ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢:*\n*_${m.sender}_*\n\n*⚠️ 𝗖𝗢𝗠𝗔𝗡𝗗𝗢:*\n*_${m.text}_*\n\n*⚠️ 𝗘𝗥𝗥𝗢𝗥:*\n\`\`\`${format(e)}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -1409,7 +1409,7 @@ if (botSpam.antispam2 && m.text && user && user.lastCommandTime && (Date.now() -
 	    
         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(ata|des|able|izo|ido|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|a|e|i|o|u|v':|:'v)/gi)) {
-        let emot = pickRandom(["😦", "🐺", "✈️", "😐", "🖼️", "🤑", "⭐", "😘", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🌐", "🙄", "🎨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
+            let emot = pickRandom(["😦", "🐺", "✈️", "😐", "🖼️", "🤑", "⭐", "😘", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🌐", "🙄", "🎨", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦", "😋", "😇", "🥳", "😴", "🤓", "😷", "🥺", "😇", "😈", "😅", "🤔", "😲", "😵", "🤐", "🤥", "🤓", "🤫", "😯", "😦", "🤔", "😧", "😩", "🥺", "🤠", "😛", "😜", "😝", "🥳", "😷", "😓", "🤕", "🤒", "🤢", "🤮", "🤧", "🥶", "😵", "🥴", "🤯", "🤬", "😡", "😠", "🤫", "🤥", "😶", "😐", "😑", "😬", "🙄", "😳", "😞", "😔", "😟", "😕", "🙁", "☹️", "😣", "😖", "😫", "😩", "😤", "😠", "😡", "😶‍🌫️", "😐‍", "😑‍", "😒", "🤐", "🙄", "😏", "😣", "😒", "😥", "😪", "😌", "😜", "😝", "😞", "😢", "😭", "😤", "😯", "😱", "😰", "😨", "😔", "😪", "🤯", "😓", "🤔", "🤫", "🤭", "🥱", "😴", "🤤", "😈", "👿", "👹", "👺", "💀", "☠️", "💩", "🤡", "👻", "👽", "👾", "🤖", "😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 		
@@ -1503,7 +1503,7 @@ export async function callUpdate(callUpdate) {
     for (let nk of callUpdate) { 
     if (nk.isGroup == false) {
     if (nk.status == "offer") {
-    let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} ${lenguajeGB['smsCont18']()}`, false, { mentions: [nk.from] })
+    let callmsg = await this.reply(nk.from, `𝙃𝙊𝙇𝘼 *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} 𝙉𝙊 𝙀𝙎𝙏𝘼𝙉 𝘼𝙐𝙏𝙊𝙍𝙄𝙕𝘼𝘿𝘼𝙎 𝙋𝙊𝙍 𝙇𝙊 𝙌𝙐𝙀 𝙏𝙀𝙉𝘿𝙍𝙀 𝙌𝙐𝙀 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝙍𝙏𝙀.*`, false, { mentions: [nk.from] })
     await this.updateBlockStatus(nk.from, 'block')
     }}}}
 
@@ -1526,7 +1526,7 @@ let msg = {
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, 'SodicaBot+' + gt + ' ⭐', '🌟 https://instagram.com/sodica.crew'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, nn, nnn, nnnt, nnnttt4, yt, ig, paypal, fb].getRandom() }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: "UNITE A LA COMUNIDAD", body: [wm, 'SodicaBot+' + gt + ' ⭐', '🌟 CLICK AQUÍ'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [nna, nn, nnn].getRandom() }}}}, tg) //FKONTAK DE COMANDO DESHABILITADO Y ESO
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 

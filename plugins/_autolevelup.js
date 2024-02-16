@@ -27,9 +27,9 @@ let especial2 = ['potion', 'aqua', 'trash', 'wood', 'rock', 'batu', 'string', 'i
 let especial3 = ['eleksirb', 'emasbatang', 'emasbiasa', 'rubah', 'sampah', 'serigala', 'kayu', 'sword', 'umpan', 'healtmonster', 'emas', 'pancingan', 'pancing'].getRandom()
 let especial4 = ['common', 'uncoommon', 'mythic', 'pet', 'gardenboxs', 'legendary'].getRandom()
 
-let especialCant = [6, 7, 6, 7, 6, 6, 6, 7, 8, 9, 8, 3, 9, 7, 9].getRandom()
-let especialCant2 = [6, 7, 6, 7, 6, 6, 6, 7, 8, 9, 10, 3, 11, 7, 9].getRandom()
-let especialCant3 = [6, 7, 6, 7, 6, 6, 6, 7, 8, 9, 10, 3, 11, 7, 9].getRandom()
+let especialCant = [6, 7, 6, 7, 6, 6, 6, 7, 8].getRandom()
+let especialCant2 = [6, 7, 6, 7, 6, 6, 6, 7, 9].getRandom()
+let especialCant3 = [6, 7, 6, 7, 6, 6, 6, 7, 8, 7, 9].getRandom()
 let especialCant4 = [2, 2, 2, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 2, 2].getRandom()
 
 let normal = ['potion', 'aqua', 'trash', 'wood', 'rock', 'batu', 'string', 'iron', 'coal', 'botol', 'kaleng', 'kardus'].getRandom()

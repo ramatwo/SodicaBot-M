@@ -19,7 +19,7 @@ let handler = async (m, { isPrems, conn }) => {
   ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈
   ┃⚗️ *${dia} Diamantes* 💎
   ┃⚗️ *${tok} Tokens* 🪙
-  ┃⚗️ *${gata} SodicaCoins* 🪙
+  ┃⚗️ *${gata} Moneditas* 🪙
   ┃⚗️ *${expp} Exp* ⚡
   ╰━━〔 𓃠 *${vs}* 〕━━⬣`
   

@@ -13,12 +13,28 @@ let handler = async (m, { conn, isPrems }) => {
         },
         "participant": "0@s.whatsapp.net"
     }
-    let gata = Math.floor(Math.random() * 3000)
-    global.db.data.users[m.sender].exp += gata * 1
     let time = global.db.data.users[m.sender].lastwork + 3000000
     if (new Date - global.db.data.users[m.sender].lastwork < 3000000) throw `*Eh chambeador, esperá ${msToTime(time - new Date())} antes de volver a la chamba.*`
+    let user = global.db.data.users[m.sender]
+    let premium = user.premium
+    
+    let exp = `${pickRandom([10000, 18000, 25000, 30000, 37000, 44000, 50000, 55000, 60000, 65000])}` * 1
+    let exppremium = `${pickRandom([85000, 99099, 100500, 116000, 120650, 134079, 150000])}` * 1
 
-    await conn.reply(m.chat, `*${pickRandom(global.work)}* ${gata} XP`, fkontak, m)
+    const recompensas = {
+        exp: premium ? exppremium : exp
+      }
+    let texto = ''
+    for (let reward of Object.keys(recompensas)) {
+        if (!(reward in user)) continue
+        user[reward] += recompensas[reward]
+        texto += `_${recompensas[reward]}_`
+    }
+
+    global.db.data.users[m.sender].exp += exp * 1
+
+
+    await conn.reply(m.chat, `*${pickRandom(global.work)}* ${texto} *EXP*⚡`, fkontak, m)
 
     global.db.data.users[m.sender].lastwork = new Date * 1
 }
@@ -28,6 +44,7 @@ handler.command = ['work', 'trabajar', 'chambear']
 handler.fail = null
 handler.exp = 0
 handler.register = true
+handler.rowner = false
 export default handler
 
 function msToTime(duration) {
@@ -47,7 +64,7 @@ function pickRandom(list) {
 }
 
 global.work = [
- "Trabajaste como negro, y encima ganás",
+    "Trabajaste como negro, y encima ganás",
  "Trabaja para una empresa militar privada, ganando",
  "Organiza un evento de cata de vinos y obtiene",
  "Moderaste el grupo cuando Sodica no estaba. el pago fue",
@@ -68,7 +85,7 @@ global.work = [
  "Desarrollas juegos para ganarte la vida y ganás", 
  "Ganas un concurso de ser pelotudo. El premio es", 
  "Trabajas todo el dia en la empresa SodicaCrew™ por", 
- "Ayudaste a moderar un grupop mientras SodicaBot estaba saturado. Ganaste", 
+ "Ayudaste a moderar un grupo mientras SodicaBot estaba saturado. Ganaste", 
  "Diseñaste un logo por", 
  "Trabajaste como albañil por", 
  "Trabajas como prostituta por", 

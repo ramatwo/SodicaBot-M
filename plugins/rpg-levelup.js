@@ -85,16 +85,13 @@ let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dir
         let { min, xp, max } = xpRange(user.level, global.multiplier);
         throw `
 ╭━━━[ *NIVEL* ]━━━━⬣
-┃ *USUARIO*
-┃ ${name}
+┃ *USUARIO:* ${name}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *NIVEL:* *${user.level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *RANGO:* ${user.role}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *EXP:* *${user.exp - min}/${xp}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
-
+*Usá .wallet para ver tu exp*
 *Te falta ${max - user.exp} de XP para subir de nivel*
 `.trim();
     }

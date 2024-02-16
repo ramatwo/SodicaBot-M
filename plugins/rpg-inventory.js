@@ -2,10 +2,10 @@ import daily from './rpg-daily.js'
 import weekly from './rpg-weekly.js'
 import monthly from './rpg-monthly.js'
 import adventure from './rpg-adventure.js'
-import { xpRange } from '../lib/levelling.js'
+//import { xpRange } from '../lib/levelling.js'
 
-import moment from 'moment-timezone'
-import fs from 'fs'
+//import moment from 'moment-timezone'
+//import fs from 'fs'
 
 const inventory = {
 	
@@ -154,66 +154,92 @@ if (typeof global.db.data.users[who] == "Sin Datos") {
      
 if (!args[0]) {
 
-let bottime = `${name} 𝗧𝗜𝗠𝗘: ${moment.tz('America/Buenos_Aires').format('HH:mm:ss')}`//America/Los_Angeles
-let ftroli = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 99, status: 1, surface: 1, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }
-let fgif = {
-            key: {
-                 participant : '0@s.whatsapp.net'},
-            message: { 
-                        "videoMessage": { 
-                        "title": wm,
-                        "h": `Hmm`,
-                        'seconds': '999999999', 
-                        'gifPlayback': 'true', 
-                        'caption': bottime,
-                        'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')
-                               }
-                              }
-                             }
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-}
-await conn.reply(m.chat, `ℹ️ *∫ Información de tu inventario*\n\n*➭ Inventario de ítems:*\n${usedPrefix + command} 1\n*➭ Inventario de combate:*\n${usedPrefix + command} 2\n*➭ Inventario de misiones:*\n${usedPrefix + command} 3`, m)
+
+await conn.reply(m.chat, `ℹ️ *∫ Información de tu inventario*\n\n*➭ Inventario de ítems:*\n${usedPrefix + command} 1\n*➭ Inventario de misiones:*\n${usedPrefix + command} 2`, m)
 //await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 }
 
 if (args[0] == '1') { // Inventario 1
 	
 let member = global.db.data.users[m.sender]
-
-
-
-
-let warn = member.warn
+let user = global.db.data.users[m.sender]
+let healt = user.health
 let money = member.money
 let exp = member.exp
 let token = member.joincount
 let dia = member.limit
+ //nuevos let
+ let ayam = user.ayam
+let kambing = user.kambing
+let sapi = user.sapi
+let kerbau = user.kerbau
+let babi = user.babi
+let harimau = user.harimau
+let banteng = user.banteng
+let monyet = user.monyet
+let babihutan = user.babihutan
+let panda = user.panda
+let gajah = user.gajah
+let buaya = user.buaya
 
 
 
+
+let paus = user.paus 
+let kepiting = user.kepiting
+let gurita = user.gurita 
+let cumi = user.cumi 
+let buntal = user.buntal 
+let dory = user.dory 
+let lumba = user.lumba 
+let lobster = user.lobster 
+let hiu = user.hiu 
+let udang = user.udang
+let ikan = user.ikan 
+let orca = user.orca 
+let pancingan = user.pancingan
+let _pancingan = user.anakpancingan 
+	 
+
+let ayamb = user.ayamb
+let ayamg = user.ayamg
+let sapir = user.sapir
+let ssapi = user.ssapi
+
+let makananpet = user.makananpet
+let makanannaga = user.makanannaga                                         
+let makananphonix = user.makananphonix                                     
+let makanangriffin = user.makanangriffin
+let makanankyubi = user.makanankyubi                                       
+let makanancentaur = user.makanancentaur
+
+let mangga = user.mangga
+let anggur = user.anggur
+let pisang = user.pisang
+let jeruk = user.jeruk
+let apel = user.apel
+
+let bibitanggur = user.bibitanggur                            
+let bibitjeruk = user.bibitjeruk                              
+let bibitapel = user.bibitapel
+let bibitmangga = user.bibitmangga                            
+let bibitpisang = user.bibitpisang
+//nuevos let fin
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
 	
 let str = `
 🏷️ *INVENTARIO* 
-👤» *${name}* ( @${who.split("@")[0]} )\n
+👤» *${name}* +${who.split("@")[0]}\n${readMore}\n
 ╭━━━━━━━━━⬣
-┃ *𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 𝗗𝗘 ÍTEMS* 
+┃ *𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢* 
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
-┃ 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗦 𝗩𝗔𝗟𝗜𝗢𝗦𝗢𝗦
+┃ *𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗦*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
+┃ *${rpg.emoticon('health')}* *» ${healt}*
 ┃ ${rpgg.emoticon('exp')} *Exp » ${exp}*
 ┃ ${rpgg.emoticon('limit')} *Diamante » ${dia}*
 ┃ ${rpgg.emoticon('money')} *Moneditas: » ${money}*
@@ -224,12 +250,9 @@ let str = `
 ┃ *${rpgshop.emoticon('kyubi')} » ${member.kyubi}*
 ┃ *${rpgshop.emoticon('diamond')} » ${member.diamond}*
 ┃ *${rpgshop.emoticon('gold')} » ${member.gold}*
-┃ *${rpgshop.emoticon('stamina')} » ${member.stamina}%*
-┃ 🎟️ *Cupón » ${member.cupon}*
-┃ 📉 *Gastos » ${member.expg}*
-┃
+┃${readMore}
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
-┃ 𝗦𝗨𝗣𝗘𝗥𝗩𝗜𝗩𝗘𝗡𝗖𝗜𝗔
+┃ *𝗦𝗨𝗣𝗘𝗥𝗩𝗜𝗩𝗘𝗡𝗖𝗜𝗔*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('potion')} » ${member.potion}*
 ┃ *${rpgshop.emoticon('aqua')} » ${member.aqua}*
@@ -243,101 +266,110 @@ let str = `
 ┃ *${rpgshop.emoticon('botol')} » ${member.botol}*
 ┃ *${rpgshop.emoticon('kaleng')} » ${member.kaleng}*
 ┃ *${rpgshop.emoticon('kardus')} » ${member.kardus}*
-┃
+┃${readMore}
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
-┃ 𝗢𝗕𝗝𝗘𝗧𝗢𝗦 𝗠𝗜𝗦𝗧𝗘𝗥𝗜𝗢𝗦𝗢𝗦
+┃ *𝗢𝗕𝗝𝗘𝗧𝗢𝗦 𝗠𝗜𝗦𝗧𝗘𝗥𝗜𝗢𝗦𝗢𝗦*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('eleksirb')} » ${member.eleksirb}*
-┃ *${rpgshop.emoticon('emasbatang')} » ${member.emasbatang}*
-┃ *${rpgshop.emoticon('emasbiasa')} » ${member.emasbiasa}*
-┃ *${rpgshop.emoticon('rubah')} » ${member.rubah}*
 ┃ *${rpgshop.emoticon('emas')} » ${member.emas}*
 ┃ *${rpgshop.emoticon('sampah')} » ${member.sampah}*
 ┃ *${rpgshop.emoticon('serigala')} » ${member.serigala}*
-┃ *${rpgshop.emoticon('kayu')} » ${member.kayu}*
 ┃ *${rpgshop.emoticon('sword')} » ${member.sword}*
 ┃ *${rpgshop.emoticon('umpan')} » ${member.umpan}*
 ┃ *${rpgshop.emoticon('healtmonster')} » ${member.healtmonster}*
 ┃ *${rpgshop.emoticon('pancingan')} » ${member.pancingan}*
-┃ *${rpg.emoticon('ramuan')} » ${member.ramuan}*
-┃ *🧭 Reloj » ${member.arlok}*
-╰━━━━━━━━━⬣`.trim()
+┃${readMore}
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
+┃ *𝗖𝗔𝗝𝗔𝗦 𝗘𝗡𝗖𝗢𝗡𝗧𝗥𝗔𝗗𝗔𝗦*
+┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
+┃ *${rpgshop.emoticon('common')}* *» ${user.common}*
+┃ *${rpgshop.emoticon('uncoommon')}* *» ${user.uncoommon}*
+┃ *${rpgshop.emoticon('mythic')}* *» ${user.mythic}*
+┃ *${rpgshop.emoticon('pet')}* *» ${user.pet}*
+┃ *${rpgshop.emoticon('petFood')}* *» ${user.petFood}*
+┃ *${rpgshop.emoticon('gardenboxs')}* *» ${user.gardenboxs}*
+*FIN DEL INVENTARIO*
+${readMore}${readMore}${readMore}${readMore}${readMore}${readMore}${readMore}${readMore}
+--------------- *ZONA DE PRUEBAS* --------------------------------------------
 
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-}
+*╭──━• 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦 𝗘𝗡 𝗥𝗘𝗦𝗘𝗥𝗩𝗔*
+*│${rpg.emoticon('bull')} ➡️ ${banteng}*
+*│${rpg.emoticon('tiger')} ➡️ ${harimau}*
+*│${rpg.emoticon('elephant')} ➡️ ${gajah}*
+*│${rpg.emoticon('kambing')} ➡️ ${kambing}*
+*│${rpg.emoticon('panda')} ➡️ ${panda}*
+*│${rpg.emoticon('buaya')} ➡️ ${buaya}*
+*│${rpg.emoticon('kerbau')} ➡️ ${kerbau}*
+*│${rpg.emoticon('cow')} ➡️ ${sapi}*
+*│${rpg.emoticon('monyet')} ➡️ ${monyet}*
+*│${rpg.emoticon('Jabali')} ➡️ ${babihutan}*
+*│${rpg.emoticon('babi')} ➡️ ${babi}*
+*│${rpg.emoticon('ayam')} ➡️ ${ayam}*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
+*╭────━• 𝗖𝗢𝗠𝗜𝗗𝗔*
+*│🥓 Comida de Mascota : Food Pet » ${makananpet}*
+*│🍖 Pollo a la Parrilla : Grilled Chicken » ${ayamb}*
+*│🍗 Pollo frito : Fried Chicken » ${ayamg}*
+*│🥘 Alimento de Carne : Meat Food » ${sapir}*
+*│🥩 Bistec de Carne : Beef Steak » ${ssapi}*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
+
+*╭──━• 𝗙𝗥𝗨𝗧𝗔𝗦 𝗬 𝗦𝗘𝗠𝗜𝗟𝗟𝗔𝗦*
+*│🥭 Mango » ${mangga}*
+*│🍇 Uva » ${anggur}*
+*│🍌 Platano » ${pisang}*
+*│🍊 Naranja » ${jeruk}*
+*│🍎 Manzana » ${apel}*
+*│*
+*│🌾 Semillas de Mango*
+*│» ${bibitmangga}*
+*│🌾 Semillas de uva*
+*│» ${bibitanggur}*                                   
+*│🌾 Semillas de plátano *
+*│» ${bibitpisang}*
+*│🌾 Semillas de naranja*
+*│» ${bibitjeruk}*
+*│🌾 Semillas de manzana*
+*│» ${bibitapel}*
+*╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
+
+╭━━━━━━━━━⬣ 
+┃ 🍱 *Alimentos para mascotas*
+┃ » *${makananpet}*
+┃ 🕊️ *Comida para Fénix*
+┃ » *${makananphonix}*
+┃ 🐉 *Comida para Dragón*
+┃ » *${makanannaga}*
+┃ 🦅 *Comida para Ave
+┃ » *${makanangriffin}*
+┃ 🌀 *Comida Mágica*
+┃ » *${makanankyubi}*
+┃ 🐐 *Comida para Centauro*
+┃ » *${makanancentaur}*
+╰━━━━━━━━━⬣
+
+╭━━━━━━━━━⬣ 
+┃ *𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦*
+┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
+┃ 🦈 *Tiburón » ${hiu}*
+┃ 🐟 *Pez » ${ikan}*
+┃ 🐠 *Dory » ${dory}*
+┃ 🐋 *Orca » ${orca}*
+┃ 🐳 *Ballena » ${paus}*
+┃ 🦑 *Calamar » ${cumi}*
+┃ 🐙 *Pulpo » ${gurita}*
+┃ 🐡 *Pez Globo » ${buntal}*
+┃ 🦐 *Camarón » ${udang}*
+┃ 🐬 *Delfín » ${lumba}*
+┃ 🦞 *Langosta  » ${lobster}*
+┃ 🦀 *Cangrejo » ${kepiting}*
+╰━━━━━━━━━⬣
+`.trim()
+
 conn.reply(m.chat, str, m)
 //await conn.sendButton(m.chat, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${member.premium ? "✅": "❌"}*\n${wm}`, str, imgr + `Inventario : Inventory`, [[`🤺 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 𝙙𝙚 𝘾𝙤𝙢𝙗𝙖𝙩𝙚`, `${usedPrefix}inventario 2`],[`🏕️ 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚`, `${usedPrefix}adventure`],['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(str) })
 	
 } else if (args[0] == '2') { // Inventario 2
-
-let user = global.db.data.users[m.sender]
-let healt = user.health
- const caption = `
-👤» *${name}* ( @${who.split("@")[0]} )\n
-
-╭━━━━━━━━━⬣
-┃ *𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘*
-┃
-┃ *${rpg.emoticon('health')}* 
-┃ *» ${healt}*
-╰━━━━━━━━━⬣
-
-╭━━━━━━━━━⬣
-┃ *𝗖𝗔𝗝𝗔𝗦 𝗘𝗡𝗖𝗢𝗡𝗧𝗥𝗔𝗗𝗔𝗦*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('common')}*
-┃ *» ${user.common}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('uncoommon')}*
-┃ *» ${user.uncoommon}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('mythic')}*
-┃ *» ${user.mythic}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('pet')}*
-┃ *» ${user.pet}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('legendary')}*
-┃ *» ${user.legendary}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('petFood')}*
-┃ *» ${user.petFood}*
-┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ *${rpgshop.emoticon('gardenboxs')}*
-┃ *» ${user.gardenboxs}*
-╰━━━━━━━━━⬣
-`.trim()
-
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-}
-conn.sendFile(m.chat, imgr, 'Inventario', caption, fkontak, m, { mentions: conn.parseMention(caption) })
-//await conn.sendButton(m.chat, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium ? "✅": "❌"}*\n${wm}`, caption, imgr + 'Inventario : Inventory', [[`⚜️ 𝙇𝙞𝙨𝙩𝙖 𝙙𝙚 𝙈𝙞𝙨𝙞𝙤𝙣𝙚𝙨 | 𝙈𝙞𝙨𝙨𝙞𝙤𝙣𝙨`, `${usedPrefix}inventario 3`],	[`🏕️ 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚`, `${usedPrefix}adventure`],['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(caption) })
-	
-} else if (args[0] == '3') { // Inventario 3
 
     let user = global.db.data.users[m.sender]
     let name = m.sender
@@ -561,7 +593,7 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 }
-conn.sendFile(m.chat, imgr, 'Inventario', aineh, fkontak, m)}
+conn.reply(m.chat, aineh, m)}
 }
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']

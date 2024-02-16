@@ -59,10 +59,11 @@ for (let reward of Object.keys(recompensas)) {
 texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n┃ `}
 let text = `╭━━🏄‍♂️━⛷️━🤾‍♀️━━⬣
 ┃ 🏅 𝙍𝙀𝘾𝙊𝙈𝙋𝙀𝙉𝙎𝘼 𝙈𝙀𝙉𝙎𝙐𝘼𝙇
-┃ *${premium ? '🎟️ Recompensa VIP' : '🆓 Recompensa Gratis'}*
-┃ ${texto}
+┃ ${premium ? '🎟️ Recompensa VIP' : '🆓 Recompensa regular'}*
+┃ ${texto} ${premium ? '*GRACIAS POR SER VIP*' : '*PAGA EL VIP LAUCHA*'}
 ╰━━🧘‍♂️━🤺━🚴‍♀️━━⬣\n\n🎟️ VIP ⇢ ${premium ? '✅' : '❌'}\n${wm}`
-conn.sendFile(m.chat,text, "Cada Mes.bat", fkontak);
+let img = "./media/menus/velocidad.bat"
+await conn.sendFile(m.chat, img, 'Mensual', text, fkontak)
 
 user.lastmonthly = new Date * 1
 }
