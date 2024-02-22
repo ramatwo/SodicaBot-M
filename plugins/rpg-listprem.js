@@ -12,34 +12,18 @@ let handler = async (m, { conn, args }) => {
   let waktu = clockString(`${premTime - new Date() * 1} `)
   let sortedP = user.map(toNumber('premiumTime')).sort(sort('premiumTime'))
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedP.length)
-  await conn.reply(m.chat, `${htki} *🎟️ PREMIUM 🎟️* ${htka}
-  
-*╭ ༻✦༺ 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙄𝙉𝙁𝙊 ༻✦༺*\n*┃✢ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍*\n*┃✢* @${toUser}
-${prem ? `✅ ${clockString (usuario - new Date() * 1)}\n┃𝘿𝙄𝙎𝙁𝙍𝙐𝙏𝘼𝙍 𝙋𝙍𝙀𝙈𝙄𝙐𝙈` : '┃✢ *𝙏𝙄𝙀𝙈𝙋𝙊 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 | 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙏𝙄𝙈𝙀*\n┃🚫 𝘾𝘼𝘿𝙐𝘾𝘼𝘿𝙊 : 𝙏𝙄𝙈𝙀𝘿 𝙊𝙐𝙏\n┃✢ 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝘼𝙎𝙀 𝙋𝙍𝙀𝙈𝙄𝙐𝙈:\n┃(#pase premium)'}
+  await conn.reply(m.chat, `*╭ ༻✦༺ INFO PREMIUM ༻✦༺*\n*┃✢ *Usuario*\n*┃✢* @${toUser}
+${prem ? `${clockString (usuario - new Date() * 1)}\n┃ *Disfrutá el VIP 😜😜*` : '┃✢ *Tiempo premium*\n┃🚫 𝘾𝘼𝘿𝙐𝘾𝘼𝘿𝙊 : 𝙏𝙄𝙈𝙀𝘿 𝙊𝙐𝙏\n┃✢ 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝘼𝙎𝙀 𝙋𝙍𝙀𝙈𝙄𝙐𝙈:\n┃(#pase premium)'}
 *╰•·–––––––––––––––·•*
+`, fkon, { mentions: [aa,] })
 
-╭•·–––––––––––––––·•
-🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈
-╰•·–––––––––––––––·•${sortedP.slice(0, len).map(({ jid, name, premiumTime, prem, registered }, i) => `\n\n╭–✦ ${registered ? name : conn.getName(jid)}\n┃• wa.me/${jid.split`@`[0]}\n${premiumTime > 0 ? `${clockString (premiumTime - new Date() * 1)}` : '┃🚫 𝘾𝘼𝘿𝙐𝘾𝘼𝘿𝙊 : 𝙏𝙄𝙈𝙀𝘿 𝙊𝙐𝙏'}`).join`\n╰–––––––––––·•`}
-╰–––––––––––·•\n\n${wm}`, fkon, { mentions: [aa,] })
-/*  await conn.sendButton(m.chat, `${htki} *🎟️ PREMIUM 🎟️* ${htka}
-  
-*╭ ༻✦༺ 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙄𝙉𝙁𝙊 ༻✦༺*
-*┃✢ 𝙉𝙊𝙈𝘽𝙍𝙀 : 𝙐𝙎𝙀𝙍*\n*┃✢* ${conn.getName(m.sender)}
-${prem ? `${clockString (usuario - new Date() * 1)}` : '┃✢ *𝙏𝙄𝙀𝙈𝙋𝙊 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 | 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙏𝙄𝙈𝙀*\n┃🚫 𝘾𝘼𝘿𝙐𝘾𝘼𝘿𝙊 : 𝙏𝙄𝙈𝙀𝘿 𝙊𝙐𝙏 '}
-*╰•·–––––––––––––––·•*
-
-╭•·–––––––––––––––·•
-🌟 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈
-╰•·–––––––––––––––·•${sortedP.slice(0, len).map(({ jid, name, premiumTime, prem, registered }, i) => `\n\n╭–✦ ${registered ? name : conn.getName(jid)}\n┃• wa.me/${jid.split`@`[0]}\n${premiumTime > 0 ? `${clockString (premiumTime - new Date() * 1)}` : '┃🚫 𝘾𝘼𝘿𝙐𝘾𝘼𝘿𝙊 : 𝙏𝙄𝙈𝙀𝘿 𝙊𝙐𝙏'}`).join`\n╰–––––––––––·•`}
-╰–––––––––––·•`.trim(), `🎟️ VIP ⇢ ${prem ? '✅' : '❌'}\n${wm}`, null, [[`${prem ? '✦ 𝘿𝙄𝙎𝙁𝙍𝙐𝙏𝘼𝙍 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ✦': '✦ 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝙋𝘼𝙎𝙀 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ✦'}`, `${prem ? '.allmenu': '.pase premium'}`]]) *///${premiumTime > 0 ?
 setTimeout(() => {
     if (global.db.data.chats[m.chat].deletemedia) conn.deleteMessage(m.chat, key)
   }, global.db.data.chats[m.chat].deletemediaTime)
 }
 handler.help = ['premlist [angka]']
 handler.tags = ['info']
-handler.command = /^(listprem|premlist|listavip|viplista)$/i
+handler.command = /^(tiempovip|listavip)$/i
 //handler.command = /^(vip|prem|premium|lista|list)vip|prem|premium|lista|list$/i
 handler.register = true
 export default handler
@@ -51,7 +35,7 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return ['┃ ', ye, ' *🗓️ Años : Year*\n', '┃ ', mo, ' *⛅ Mes : Month*\n', '┃ ', d, ' *☀️ Días*\n', '┃ ', h, ' *⏰ Horas*\n', '┃ ', m, ' *🕐 Minutos : Minutes*\n', '┃ ', s, ' *⏱️ Segundoss*'].map(v => v.toString().padStart(2, 0)).join('')
+  return ['┃ ', ye, ' *🗓️ Años*\n', '┃ ', mo, ' *⛅ Meses*\n', '┃ ', d, ' *☀️ Días*\n', '┃ ', h, ' *⏰ Horas*\n', '┃ ', m, ' *🕐 Minutos*\n', '┃ ', s, ' *⏱️ Segundos*'].map(v => v.toString().padStart(2, 0)).join('')
 }
 
 function sort(property, ascending = true) {

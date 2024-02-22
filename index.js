@@ -17,7 +17,7 @@ const rl = createInterface(process.stdin, process.stdout)
 //iniciar pagina para hacer ping *--------------------------*
 const http = require('http');
 
-// Crear un servidor HTTP que escuche en el puerto 5656
+// Crear un servidor HTTP que escuche en el puerto 5657
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(5657, '127.0.0.1', () => {
-  console.log('El servidor está corriendo en http://127.0.0.1:5656/');
+  console.log('El servidor está corriendo en http://127.0.0.1:5657/');
 });
 
 // Mantener el proceso principal en ejecución para mantener el servidor activo

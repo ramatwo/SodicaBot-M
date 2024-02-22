@@ -18,8 +18,8 @@ let handler = async (m, { conn, isPrems }) => {
     let user = global.db.data.users[m.sender]
     let premium = user.premium
     
-    let exp = `${pickRandom([10000, 18000, 25000, 30000, 37000, 44000, 50000, 55000, 60000, 65000])}` * 1
-    let exppremium = `${pickRandom([85000, 99099, 100500, 116000, 120650, 134079, 150000])}` * 1
+    let exp = `${pickRandom([10000, 18000, 25000])}` * 1
+    let exppremium = `${pickRandom([85000, 99099, 100500])}` * 1
 
     const recompensas = {
         exp: premium ? exppremium : exp

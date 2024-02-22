@@ -31,3 +31,4 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 handler.command = ['dall-e', 'dalle', 'ia2', 'cimg', 'openai3', 'a-img', 'aimg', 'imagine'];
 export default handler;
 handler.register = true
+handler.premium = true

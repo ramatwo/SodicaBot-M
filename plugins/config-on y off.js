@@ -76,7 +76,7 @@ let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 
 switch (type) {
-case 'welcome': case 'bienvenida':
+/*case 'welcome': case 'bienvenida':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -87,7 +87,7 @@ global.dfail('admin', m, conn)
 throw false
 }
 chat.welcome = isEnable
-break
+break*/
     
 case 'detect': case 'avisos':
 if (!m.isGroup) {
@@ -408,7 +408,7 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 ✦ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '✅' : '❌' : lenguajeGB.smsNoGg()}
-✦ ${usedPrefix + command} welcome
+✦ ${usedPrefix + command} welcome *DESHABILITADO*
 ✦ ${lenguajeGB.smsWel2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
