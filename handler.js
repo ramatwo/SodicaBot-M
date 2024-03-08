@@ -1191,15 +1191,14 @@ if (m.text && user.banned && !isROwner) {
   
   if (user.bannedMessageCount < 3) {
     const messageNumber = user.bannedMessageCount + 1;
-    const messageText = `⛔ | Estás baneado/a.\nAviso (${messageNumber}/3)${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
-*👉 Podés contactar con el propietario del bot si creés que se trata de un error:
+    const messageText = `⛔ | Estás baneado del bot.\nAviso (${messageNumber}/3)${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
+*👉 Podés contactar cmi propietario si se trata de un error:
+recordá enviar una captura de pantalla de cuando fuiste baneado si es que fue público.
 
-👉 ${global.asistencia}
 👉 wa.me/5491125172076
-👉 ${global.ig}
 `.trim();
     
-    //m.reply(messageText);
+    m.reply(messageText);
     user.bannedMessageCount++;
     
   } else if (user.bannedMessageCount === 3) {
