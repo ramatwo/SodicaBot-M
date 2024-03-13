@@ -1,4 +1,4 @@
-//CÓDIGO CREADO POR elrebelde21 : https://github.com/elrebelde21
+/*//CÓDIGO CREADO POR elrebelde21 : https://github.com/elrebelde21
 const handler = async (m, {conn, text, isPrems}) => {
 
     const date = global.db.data.users[m.sender].juegos + 3600000; //una hora
@@ -42,4 +42,4 @@ const handler = async (m, {conn, text, isPrems}) => {
     
     function pickRandom(list) {
       return list[Math.floor(list.length * Math.random())];
-    }
+    }*/

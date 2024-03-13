@@ -22,8 +22,8 @@ const items = {
    
     sell: {
         exp: { money: pickRandom([0.50])},
-        limit: { money: pickRandom([1, 2]) },
-        money: { limit: pickRandom([0.2, 0.1, 0.3,0.5])},
+        limit: { money: pickRandom([1, 2, 3]) },
+        money: { exp: pickRandom([1, 2, 2,3])},
         diamond: { limit: 10 },
         gold: { money: pickRandom([10000,20000,30000]) },
 

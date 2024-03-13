@@ -1,4 +1,4 @@
-
+/*
 let handler = async (m, usedPrefix ) => {
     
     // Mensaje de respuesta con el código generado
@@ -9,3 +9,4 @@ Estás a punto de jugar a una ruleta que te puede dar o quitar gran parte de tus
 handler.command = /ruleta/i;
 
 export default handler;
+*/

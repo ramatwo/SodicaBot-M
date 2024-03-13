@@ -1,10 +1,10 @@
 let ro = 100000
 let handler = async (m, { }) => {
 
-let time = global.db.data.users[m.sender].lastrob + 7200000
+let time = global.db.data.users[m.sender].lastrob + 100
 
 
-if (new Date - global.db.data.users[m.sender].lastrob < 7200000) throw `*⫹⫺ ➭⏱️ ∫ Esperá ${msToTime(time - new Date())}*`
+if (new Date - global.db.data.users[m.sender].lastrob < 100) throw `*⫹⫺ ➭⏱️ ∫ Esperá ${msToTime(time - new Date())}*`
 let who
 
 
@@ -19,8 +19,8 @@ let users = global.db.data.users[who]
 let rob = Math.floor(Math.random() * ro * 10)
 
 if (users.exp < rob) return m.reply(`*⫹⫺ ➭⛔ ∫ @${who.split`@`[0]} tiene menos de ${ro} xp*`, null, { mentions: [who] })    
-let resultado = ['bien', 'mal']; 
-let resultado2 = resultado[Math.floor(Math.random() * 2)]
+let resultado = ['bien']; 
+let resultado2 = resultado[Math.floor(Math.random() * 1)]
 
 if (resultado2 === 'bien') {
     global.db.data.users[m.sender].exp += rob
@@ -32,14 +32,14 @@ if (resultado2 === 'bien') {
     m.reply(`*‣ Le afanaste ${rob} EXP a @${who.split`@`[0]}*`, null, { mentions: [who] })
    
 }
-if (resultado2 === 'mal') {
+/*if (resultado2 === 'mal') {
     global.db.data.users[m.sender].exp -= rob
     m.reply(`*🚔 ‣ Te agarró la yuta y no pudiste robar nada. Perdiste ${rob} EXP.*`)
         
            
         
         
-}
+}*/
 
 
 
@@ -48,13 +48,13 @@ if (resultado2 === 'mal') {
 //m.reply(`*‣ Le afanaste ${rob} Xp a @${who.split`@`[0]}*`, null, { mentions: [who] })
 global.db.data.users[m.sender].lastrob = new Date * 1
 }
-handler.help = ['rob']
+handler.help = ['rob80']
 handler.tags = ['econ2']
-handler.command = ['robar', 'rob', 'afanar']
+handler.command = ['robar80', 'rob80', 'afanar80']
 export default handler  
 handler.register = true
 handler.group = true
-handler.rowner = false
+handler.rowner = true
 function msToTime(duration) {
 var seconds = Math.floor((duration / 1000) % 60),
 minutes = Math.floor((duration / (1000 * 60)) % 60),

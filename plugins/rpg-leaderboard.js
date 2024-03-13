@@ -28,10 +28,34 @@ let topwait = "💾 Revisando la base de datos. Espera un momento..."
 
 
 if (command == 'top') {
-  let topdeque = `*⁉️ ∫ Top de qué?*\n\n*➭* Top rango\n${usedPrefix}toprango\n*➭* Top nivel\n${usedPrefix}toplevel\n*➭* Top monedas\n${usedPrefix}topmoney\n*➭* Top diamantes\n${usedPrefix}toplimit\n*➭* Top oro\n${usedPrefix}topgold`
+  let topdeque = `*⁉️ ∫ Top de qué?*\n\n*➭* Top rango\n${usedPrefix}toprango\n*➭* ~Top nivel\n${usedPrefix}toplevel~\n*➭* ~Top monedas~\n~${usedPrefix}topmoney~\n*➭* ~Top diamantes~\n~${usedPrefix}toplimit~\n*➭* ~Top oro~\n~${usedPrefix}topgold~`
   m.reply(topdeque, null, { mentions: conn.parseMention(topdeque) })}
 
-  if (command == 'toprango') {
+  if (command == 'topgen') {
+    m.reply(topwait);
+    let users = Object.entries(global.db.data.users).map(([key, value]) => { 
+        return {...value, jid: key}
+    });
+
+    let sortedExp = users.map(toNumber('exp')).sort(sort('exp'));
+   
+    let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length);
+    let sortedLevel = users.map(toNumber('level')).sort(sort('level'));
+
+    let usersLevel = sortedLevel.map(enumGetKey);
+   
+    let toprango = `💠 *TOP ${len} GENERAL💪* 
+Vos: *#${usersLevel.indexOf(m.sender) + 1}* de *#${usersLevel.length}*
+      
+${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${conn.getName(jid) ? conn.getName(jid) : jid.split('@')[0]} ${role} *lvl ${level} 🔅*`).join('\n')}`;
+
+    setTimeout(() => {
+        m.reply(toprango, null, { mentions: conn.parseMention(toprango) });
+    }, 1000);
+}
+
+  if (command == 'topmen') {
+    
     m.reply(topwait)
     let users = Object.entries(global.db.data.users).map(([key, value]) => { 
       return {...value, jid: key}
@@ -41,14 +65,14 @@ if (command == 'top') {
    
     let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
     let sortedLevel = users.map(toNumber('level')).sort(sort('level'))
-  
+
     let usersLevel = sortedLevel.map(enumGetKey)
-  
-    let toprango = `💠 *TOP ${len} RANGO 💪* 
-Tú : *#${usersLevel.indexOf(m.sender) + 1}* de *#${usersLevel.length}*
+   
+    let toprango = `💠 *TOP ${len} GENERAL💪* 
+Vos: *#${usersLevel.indexOf(m.sender) + 1}* de *#${usersLevel.length}*
       
-${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}`
-    m.reply(toprango, null, { mentions: conn.parseMention(toprango) })
+${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role} *lvl ${level} 🔅*`).join`\n`}`
+setTimeout(() => {m.reply(toprango, null, { mentions: conn.parseMention(toprango) })}, 1000)
   }
   
 
@@ -115,11 +139,11 @@ ${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${partic
 
 handler.help = ['top']
 handler.tags = ['xp']
-handler.command = ['leaderboard', 'lb', 'top', 'toprango'] 
+handler.command = ['leaderboard', 'lb', 'top', 'toprango', "topgen", "topmen"] 
 handler.fail = null
 handler.exp = 0
 handler.register = true
-handler.rowner = true
+handler.rowner = false
 
 export default handler
 

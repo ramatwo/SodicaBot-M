@@ -197,8 +197,8 @@ let hiu = user.hiu
 let udang = user.udang
 let ikan = user.ikan 
 let orca = user.orca 
-let pancingan = user.pancingan
-let _pancingan = user.anakpancingan 
+//let pancingan = user.pancingan
+//let _pancingan = user.anakpancingan 
 	 
 
 let ayamb = user.ayamb
@@ -399,11 +399,11 @@ conn.reply(m.chat, str, m)
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ 📦 Daily » ${new Date - user.lastclaim < 86400000 ? '❌' : '✅'}* 
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
-*│ 🎁 Weekly ${new Date - user.lastweekly < 259200000 ? '❌' : '✅'}* 
+*│ 🎁 Weekly ${new Date - user.lastweekly < 2 * 60 * 60 * 1000 + 7 * 24 * 60 * 60 * 1000 ? '❌' : '✅'}* 
 *│┈┈┈┈┈┈┈┈┈┈┈┈*
 *│ 📮 Monthly ${new Date - user.lastmonthly < 2 * 60 * 60 * 1000 + 30 * 24 * 60 * 60 * 1000 ? '❌' : '✅'}* 
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*`.trim()
-
+// 2 * 60 * 60 * 1000 + 7 * 24 * 60 * 60 * 1000 el 7 es 7 dias, si ponemos  2 * 60 * 60 * 1000 + 30 * 24 * 60 * 60 * 1000 con el 30, significa que son 30 dias.
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",

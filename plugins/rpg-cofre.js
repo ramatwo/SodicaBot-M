@@ -38,8 +38,8 @@ let handler = async (m, { isPrems, conn }) => {
     "participant": "0@s.whatsapp.net"
   }
   
-  await conn.sendFile(m.chat, img, 'Cofre.bat', texto, fkontak)
-  //await conn.sendButton(m.chat, texto, wm, img, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], fkontak, m)  
+  await conn.sendFile(m.chat, img, 'Cofre', texto, fkontak)
+
   global.db.data.users[m.sender].lastcofre = new Date * 1
   }
   handler.help = ['daily']

@@ -14,15 +14,13 @@ try{
 await conn.sendFile(m.chat, pp, 'error.jpg', '*https://chat.whatsapp.com/' + await conn.groupInviteCode(group) + '*', m)
 //await conn.sendButton(m.chat, 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group), wm, pp, [[lenguajeGB.smsConMenu(), `${usedPrefix}menu`]], fkontak, adReply)
 } catch (e) {
-await m.reply(`\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, m)   
-//await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${lenguajeGB['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, fkontak, m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)	
+console.log(e)
 }} 
 handler.help = ['linkgroup']
 handler.tags = ['group']
 handler.command = /^enlace|link(gro?up)?$/i
 handler.group = true
 handler.botAdmin = true
-handler.register = true
 export default handler
