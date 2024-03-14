@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
-import fetch from 'node-fetch' 
+//import fetch from 'node-fetch' 
  
 /**
  * @type {import('@adiwajshing/baileys')}  
@@ -1195,7 +1195,7 @@ if (m.text && user.banned && !isROwner) {
 *👉 Podés contactar cmi propietario si se trata de un error:
 recordá enviar una captura de pantalla de cuando fuiste baneado si es que fue público.
 
-👉 wa.me/5491125172076
+👉 wa.me/ramanum
 `.trim();
     
     m.reply(messageText);

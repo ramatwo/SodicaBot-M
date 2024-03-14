@@ -1,4 +1,4 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';  
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1';  
 import './config.js'; 
 import { createRequire } from "module"; 
 import path, { join } from 'path'
@@ -13,11 +13,11 @@ import chalk from 'chalk';
 import syntaxerror from 'syntax-error';
 import { tmpdir } from 'os';
 import { format } from 'util';
-import P from 'pino';
+//import P from 'pino';
 import pino from 'pino';
 import { makeWASocket, protoType, serialize } from './lib/simple.js';
 import { Low, JSONFile } from 'lowdb';
-import { mongoDB, mongoDBV2 } from './lib/mongoDB.js';
+//import { mongoDB, mongoDBV2 } from './lib/mongoDB.js';
 import store from './lib/store.js'
 const { DisconnectReason, useMultiFileAuthState, MessageRetryMap, fetchLatestBaileysVersion } = await import('@adiwajshing/baileys')
 const { CONNECTING } = ws

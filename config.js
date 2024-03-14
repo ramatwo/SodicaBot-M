@@ -12,7 +12,7 @@ import { en, es, pt } from './lib/idiomas/total-idiomas.js'
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰  
 
 global.owner = [
-  ['5491125172076', '⭐Owner', true],  
+  ['5491162480909', '⭐Owner', true],  
   ['5491156664731', '💻Desarrollador', true],
   ['34611817890', 'CAPI', true],  
 
@@ -20,9 +20,9 @@ global.owner = [
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = ['5491125172076'] 
-global.prems = ['5491125172076'] 
-global.ROwner = ['5491125172076'] 
+global.mods = ['34611817890'] 
+global.prems = ['5491162480909'] 
+global.ROwner = ['5491162480909'] 
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
 //Agrega el Idioma que quieres que tenga SodicaBot-M
@@ -93,7 +93,7 @@ global.moment = moment
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
 global.official = [ // Agregate si eres Owner
-['5491125172076', '⭐Owner', 1], 
+['5491162480909', '⭐Owner', 1], 
 ['5491156664731', '💻Desarrollador', 1]
 ['34611817890', '💻Desarrollador', 1],
 
@@ -130,7 +130,7 @@ global.nnnttt2 = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 6 CO
 global.nnnttt3 = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 7 COL
 global.nnnttt4 = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 8 COL
 global.paypal = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn'
-global.asistencia = 'Wa.me/5491125172076' //Dudas? escríbeme...
+global.asistencia = 'Wa.me/5491162480909' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -170,7 +170,7 @@ global.wait = '*⌛ Cargando ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ Cargando ▬▬▭▭▭*'
 global.waittt = '*⌛ Cargando ▬▬▬▬▭▭*'
 global.waitttt = '*⌛ Cargando ▬▬▬▬▬▬▭*'
-global.nomorown = '5491125172076'
+global.nomorown = '5491162480909'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ

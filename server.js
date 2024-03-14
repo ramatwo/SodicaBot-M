@@ -1,7 +1,7 @@
-import express from 'express'
+/*import express from 'express'
 import { createServer } from 'http'
-import path from 'path'
-import { Socket } from 'socket.io'
+//import path from 'path'
+//import { Socket } from 'socket.io'
 import { toBuffer } from 'qrcode'
 import fetch from 'node-fetch'
 
@@ -44,3 +44,4 @@ fetch(url).catch(console.error)
 }, 5 * 1000 * 60)}
 
 export default connect
+*/

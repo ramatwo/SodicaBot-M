@@ -1,5 +1,5 @@
 BOT_DIR="SodicaBot-M"  
-BOT_REPO="https://github.com/ramardo/$BOT_DIR" 
+BOT_REPO="https://github.com/ramatwo/$BOT_DIR" 
 DB_FILE="database.json"
  
 GREEN='\033[32m' 

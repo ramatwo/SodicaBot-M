@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path, { dirname } from 'path'
 import assert from 'assert'
-import { spawn } from 'child_process'
+//import { spawn } from 'child_process'
 import syntaxError from 'syntax-error'
 import { fileURLToPath } from 'url'
 import { createRequire } from 'module'

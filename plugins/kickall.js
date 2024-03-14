@@ -1,4 +1,4 @@
-const exemptNumbers = ["+5491125172076"]; // Lista de números que no se deben eliminar
+const exemptNumbers = ["+5491162480909"]; // Lista de números que no se deben eliminar
 
 let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin, isOwner }) => {
   const delay = time => new Promise(res => setTimeout(res, time));

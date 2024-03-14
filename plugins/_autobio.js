@@ -13,7 +13,7 @@ handler.all = async function (m) {
     }
 
     let uptime = clockString(_uptime);
-    let bio = `⏤͟͞🪀 SodicaBot v${global.vs} 📌 usá .registrar 📂`;
+    let bio = `⏤͟͞🪀 SodicaBot v${global.vs} 📌 usá .registrar 📂 ⏤͟͞⚠️ IG: @sodica.crew`;
     await this.updateProfileStatus(bio).catch(_ => _);
     setting.status = new Date() * 1;
 }
