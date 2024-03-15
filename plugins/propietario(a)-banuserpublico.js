@@ -27,7 +27,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
         number = user.split('@')[0];
 
-        if (user === conn.user.jid) return conn.reply(m.chat, 'No puedes banear al bot, gay', null, { mentions: [user] });
+        if (user === conn.user.jid) return conn.reply(m.chat, 'Tenés q responder el mensaje del usuario', null, { mentions: [user] });
 
         for (let i = 0; i < global.owner.length; i++) {
             ownerNumber = global.owner[i][0];
@@ -44,16 +44,16 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         users[user].banned = true;
         usr = m.sender.split('@')[0];
 
-        let msj1 = "```⫹⫺ ➭⛔ ∫ Enviando solicitud de bloqueo a la base de datos...```";
-        let msj2 = "```⫹⫺ ➭✅ ∫ Solicitud recibida y aceptada...```";
+        let msj1 = "```⫹⫺ ➭⛔ ∫ Enviando solicitud de bloqueo a la base de datos```";
+        //let msj2 = "```⫹⫺ ➭✅ ∫ Solicitud recibida y aceptada...```";
         let msj3 = "```👤➭⛔ ∫ Usuario baneado correctamente.```";
 
         await conn.reply(m.chat, msj1, null, { mentions: [user] });
-        await conn.reply(m.chat, msj2, null, { mentions: [user] });
+        //await conn.reply(m.chat, msj2, null, { mentions: [user] });
         await conn.reply(m.chat, msj3, null, { mentions: [user] });
 
         // Enviar mensaje al grupo "Baneos" directamente usando la ID
-        let grupoBaneosId = '120363218507325347@g.us';
+        let grupoBaneosId = '120363242415086957@g.us';
         await conn.sendMessage(grupoBaneosId, { text: `*⛔  ∫ Nuevo usuario baneado:* +${number}\n*‼️  ∫ Motivo:* _${reason}_` }, 'conversation');
 
         await conn.reply(user, lenguajeGB.smsPropban6(number, usr, reason), null, { mentions: [user, m.sender] });

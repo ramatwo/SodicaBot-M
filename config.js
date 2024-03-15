@@ -13,6 +13,7 @@ import { en, es, pt } from './lib/idiomas/total-idiomas.js'
 
 global.owner = [
   ['5491162480909', '⭐Owner', true],  
+  ['5491151244787', '⭐Owner', true],  
   ['5491156664731', '💻Desarrollador', true],
   ['34611817890', 'CAPI', true],  
 
@@ -119,17 +120,17 @@ global.ig = 'https://www.instagram.com/sodica.crew'
 global.md = 'https://instagram.com/sodica.crew'
 global.fb = 'https://instagram.com/sodica.crew'
 
-global.nna = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //UPDATE SodicaBot
-global.nna2 = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Help
-global.nn = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 1
-global.nnn = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 2
-global.nnnt = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 3
-global.nnntt = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 4
-global.nnnttt = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 5 COL
-global.nnnttt2 = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 6 COL
-global.nnnttt3 = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 7 COL
-global.nnnttt4 = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn' //Grupo 8 COL
-global.paypal = 'https://chat.whatsapp.com/FD4VqSuWB1GEA2deQ7LnIn'
+global.nna = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //UPDATE SodicaBot
+global.nna2 = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Help
+global.nn = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 1
+global.nnn = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 2
+global.nnnt = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 3
+global.nnntt = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 4
+global.nnnttt = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 5 COL
+global.nnnttt2 = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 6 COL
+global.nnnttt3 = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 7 COL
+global.nnnttt4 = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ' //Grupo 8 COL
+global.paypal = 'https://chat.whatsapp.com/FkeH8XveydC6qwWk41TMZJ'
 global.asistencia = 'Wa.me/5491162480909' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
