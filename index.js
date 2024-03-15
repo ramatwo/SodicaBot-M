@@ -46,13 +46,13 @@ process.stdin.resume();
 const { exec } = require('child_process');
 
 // Ruta completa al ejecutable de ngrok
-const ngrokPath = 'C:/xampp/ngrok.exe';
+const ngrokPath = './server/ngrok.exe';
 
 // Comandos a ejecutar en CMD
 const commands = [
-  'cd C:\\xampp',
-  `${ngrokPath} config add-authtoken 2bvHiBG6YpjgXkzyU8qacryaSfi_8a5EeDupCCKryrYGz97Xg`,
-  `${ngrokPath} http --domain=pigeon-steady-quail.ngrok-free.app 5657`
+  'cd ./server/',
+  `ngrok config add-authtoken 2bvHiBG6YpjgXkzyU8qacryaSfi_8a5EeDupCCKryrYGz97Xg`,
+  `ngrok http --domain=pigeon-steady-quail.ngrok-free.app 5657`
 ];
 
 // Ejecutar los comandos uno por uno
